@@ -1,0 +1,51 @@
+.hotel_hero_bg {
+  background-image: url("../../assets/hotel-page/landing-bg.png");
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.hotel_hero_bg h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg_setting {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-shadow {
+    text-shadow: -3px 7px 12px rgba(0,0,0,0.23);
+}
+
+/* about card */
+.hotel_about_card {
+  padding: 2rem 3rem 5rem 3rem;
+  width: 60%;
+  background-color: #f1e8d7;
+  border-radius: 1.5rem;
+
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.19);
+}
+
+.hotel_about_card_header h1 {
+    font-family: 'Signika', sans-serif;
+}
+
+.hotel_about_card_border {
+    width: 90%;
+    border: 1px #F46A06 solid;
+}
+.hotel_about_card_body h2 {
+    color: #F46A06;
+    font-family: 'Quicksand', sans-serif;
+}
+.hotel_about_card_body p {
+    font-family: 'Signika', sans-serif;
+}
+.hotel_hero_back {
+    color: black;
+    margin-top: 20rem;
+}

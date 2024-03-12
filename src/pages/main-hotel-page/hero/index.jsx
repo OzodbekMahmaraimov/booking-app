@@ -1,13 +1,32 @@
-import React from 'react'
+import React from "react";
+import "../index.css";
+import AboutCard from "../components/cards/aboutCard";
+import { FaLeftLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function HotelHero() {
   return (
-    <div className='w-full'>
-        <div className='hotel_hero_bg w-full'>
-            
-        </div>
+    <div className="w-full h-full">
+      <div className="hotel_hero_bg w-full h-screen bg_setting flex items-end pb-32 ps-32">
+        <h1 className="text-white text-4xl font-bold">
+          Average price 170000Rwf / 170$
+        </h1>
+      </div>
+      <div className="flex justify-center absolute -bottom-64">
+        <AboutCard
+          name={"Hotel Des Milles Collines"}
+          bodyName={"Hotel Descritpiton"}
+          description={
+            "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda."
+          }
+        />
+      </div>
+      <div className="w-[80%] flex gap-3 hotel_hero_back justify-end items-center ">
+        <FaLeftLong size='3rem' />
+        <Link to="/" className="text-2xl font-bold text-yellow-600">Back to Hotels</Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default HotelHero
+export default HotelHero;
