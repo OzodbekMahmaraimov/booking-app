@@ -1,16 +1,15 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./assets/css/style.css";
 import App from "./app";
-import "./assets/style.css";
 // import Main from "./components/layout/main";
-import ProfileMain from "./pages/app/profile/editProfile/profileMain";
+import PayMain from "./pages/app/homeRestaurant/restourantPayment/payMain";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
 	<BrowserRouter>
-		<ProfileMain />
+		<PayMain />
 	</BrowserRouter>
 );

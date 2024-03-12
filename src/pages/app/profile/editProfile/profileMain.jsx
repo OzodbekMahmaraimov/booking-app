@@ -1,5 +1,5 @@
-import Navbar from "../../../../components/layout/homeRestaurant/navbar/Navbar";
 import ProfileEdit from "./ProfileEdit";
+import Navbar from "../../homeRestaurant/navbar/Navbar";
 
 const ProfileMain = () => {
 	return (
