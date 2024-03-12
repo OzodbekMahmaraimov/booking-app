@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Routes as Switch } from "react-router-dom";
+import { Route, Routes as Switch } from "react-router-dom";
 import { App } from "../pages";
 
 interface RouterProps {}
