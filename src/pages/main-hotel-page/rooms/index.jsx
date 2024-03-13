@@ -1,8 +1,11 @@
 import React from 'react'
+import RoomCard from '../components/cards/roomCard'
 
 function HotelRooms() {
   return (
-    <div>HotelRooms</div>
+    <div className='hotel_page_main'>
+      <RoomCard/>
+    </div>
   )
 }
 

@@ -23,7 +23,7 @@ function HotelHero() {
       </div>
       <div className="w-[80%] flex gap-3 hotel_hero_back justify-end items-center ">
         <FaLeftLong size='3rem' />
-        <Link to="/" className="text-2xl font-bold text-yellow-600">Back to Hotels</Link>
+        <Link to="/" className="text-2xl font-bold text-yellow-600 text-shadow">Back to Hotels</Link>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+/* Hero page */
 .hotel_hero_bg {
   background-image: url("../../assets/hotel-page/landing-bg.png");
   border-bottom-left-radius: 3rem;
@@ -48,4 +49,36 @@
 .hotel_hero_back {
     color: black;
     margin-top: 20rem;
+}
+/* Hero page end */
+
+
+/* Service page */
+
+.hotel_service_border {
+    width: 90%;
+    border: 1px #000 solid;
+}
+
+/* Servise card */
+
+.servis_card {
+    border: 10px solid;
+    border-color: #F1E8D7;
+    border-radius: 2rem;
+}
+
+.servis_card_img > img{
+    object-fit: cover;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+/* end service page */
+
+/* rooms page */
+
+.room_card_main {
+    width: 100%;
+    background-color: #F1E8D7;
 }
