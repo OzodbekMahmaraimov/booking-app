@@ -1,28 +1,56 @@
-import React from 'react';
-import { parkingImg } from '../../../../assets/hotel-page';
+import React from "react";
+import { landingBg, parkingImg } from "../../../../assets/hotel-page";
 
-const RoomCard = () => {
+const RoomCard = ({
+  name,
+  buttonName,
+  contentName,
+  description,
+  priceRWF,
+  priceUSD,
+  rooms,
+  img,
+}) => {
   return (
-    <div className="max-w-sm rounded shadow-lg bg-white room_card_main">
-      {/* <img className="w-full" src={parkingImg} alt="Room" />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">Premium Room</div>
-        <p className="text-gray-700 text-base">
-          Our premium room has a single bed with a small balcony outside and a TV in the room it can host a couple or an individual.
-        </p>
-      </div>
-      <div className="px-6 pt-4 pb-2">
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">175000/RWF</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">175/USD</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">4 Rooms</span>
-      </div>
-      <div className="px-6 pt-4 pb-2">
-        <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
-          Book now
+    <div className=" rounded-xl shadow-lg room_card_main pb-10">
+      {/* Header */}
+      <div className="flex justify-between items-center p-8">
+        <h1 className="text-2xl font-semibold">{name}</h1>
+        <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded text-shadow shadow-lg">
+          {buttonName}
         </button>
-      </div> */}
-      
-
+      </div>
+      {/* card body */}
+      <div className="w-full px-10">
+        <div className="flex room_card_body overflow-hidden">
+          {/* card body img */}
+          <img className="w-5/12 object-cover" src={img} alt="" />
+          {/* card body content */}
+          <div className="p-5 bg-white room_card_body_content ">
+            <h2 className="text-2xl font-bold">{contentName}</h2>
+            <div className="flex justify-center w-full  ">
+              <p className="w-9/12 text-lg py-3 tracking-wider">
+                {description}
+              </p>
+            </div>
+            <div className="room_card_body_content_div p-7">
+              <span className="flex justify-between p-3">
+                <h3 className="text-xl font-semibold">Room price</h3>
+                <span>
+                  <p className="text-lg text-center">
+                    <b>{priceRWF}</b>
+                  </p>
+                  <p className="text-lg text-center">{priceUSD}</p>
+                </span>
+              </span>
+              <span className="flex justify-between p-3">
+                <h3 className="text-xl font-semibold">Room availability</h3>
+                <p className="text-lg text-center">{rooms}</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

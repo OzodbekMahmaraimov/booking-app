@@ -8,14 +8,14 @@ function HotelServices() {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       {/* Service header */}
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center mb-20">
         <div className="flex w-[90%]">
           <h1 className="text-start text-2xl font-bold py-5 text-shadow">Services we offer</h1>
         </div>
         <div className="hotel_service_border"></div>
       </div>
       {/* Service cards */}
-      <div className="grid grid-cols-2 gap-x-32 gap-y-14 5">
+      <div className="grid grid-cols-2 gap-x-32 gap-y-14">
         <ServiceCard img={parkingImg} text='Free car parking'/>
         <ServiceCard img={swimmingImg} text='Swimming Pool'/>
         <ServiceCard img={workingImg} text='Fitness center'/>

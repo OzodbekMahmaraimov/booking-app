@@ -19,6 +19,13 @@
     text-shadow: -3px 7px 12px rgba(0,0,0,0.23);
 }
 
+.cards_img {
+    transition: all 0.5s;
+}
+.cards_img:hover {
+    transform: scale(1.1);
+}
+
 /* about card */
 .hotel_about_card {
   padding: 2rem 3rem 5rem 3rem;
@@ -70,6 +77,7 @@
 
 .servis_card_img > img{
     object-fit: cover;
+    transition: all 0.5s;
     &:hover {
         transform: scale(1.1);
     }
@@ -78,7 +86,36 @@
 
 /* rooms page */
 
+.room_page_main {
+    border: 15px solid;
+    border-color: #F1E8D7;
+    border-radius: 2rem;
+}
+
+/* rooms card */
+
 .room_card_main {
     width: 100%;
     background-color: #F1E8D7;
+}
+
+.room_card_body {
+    border: 8px solid;
+    border-color: #F46A06;
+    border-radius: 1.5rem;
+}
+
+.room_card_body_content_div {
+    background-color: #F1E8D7;
+    border-radius: 1.5rem;
+}
+
+/* end rooms page */
+
+/* Gallary page */
+
+.gallary_card {
+    border: 8px solid;
+    border-color: #F1E8D7;
+    border-radius: 1.5rem;
 }
