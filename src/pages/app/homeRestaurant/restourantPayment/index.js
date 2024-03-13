@@ -1,1 +1,1 @@
-export { default as RestourantPayment } from "./resPayment";
+export { default as RestourantPayment } from "./payMain";

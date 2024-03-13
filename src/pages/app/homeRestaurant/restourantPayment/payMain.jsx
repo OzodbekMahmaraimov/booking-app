@@ -2,7 +2,7 @@ import React from "react";
 import RestourantPayment from "./resPayment";
 import Navbar from "../navbar/Navbar";
 
-function PayMain() {
+function ResPayMain() {
 	return (
 		<div>
 			<Navbar />
@@ -11,4 +11,4 @@ function PayMain() {
 	);
 }
 
-export default PayMain;
+export default ResPayMain;

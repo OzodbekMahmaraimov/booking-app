@@ -49,6 +49,11 @@ const RestaurantPayment = () => {
 				<img src={order.image} alt={order.title} className="w-56 h-40 rounded mr-2" />
 			</div>
 			<div className="px-3">
+				{currentFilter === "all" && (
+					<div className="text-orange-500 font-bold mb-2">
+						{order.status.replace(/_/g, " ").toUpperCase()}
+					</div>
+				)}
 				<button className="w-full bg-orange-500 rounded text-white px-2 py-1 font-bold ml-2">
 					{order.btn}
 				</button>

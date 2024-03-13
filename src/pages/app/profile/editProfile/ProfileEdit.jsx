@@ -18,17 +18,29 @@ const ProfileEdit = () => {
 					<div className="w-11/12 border-2 border-black flex items-center flex-col mb-10">
 						<div className="bg-[#F1E8D7] w-11/12 h-20 flex justify-between p-5 items-center mb-5 mt-10 px-30 rounded-md">
 							<p className="text-3xl">User name</p>
-							<input type="text" className="w-3/5 h-10 active:border-none" />
+							<input
+								style={{ outline: "none", borderRadius: "10px" }}
+								type="text"
+								className="w-3/5 h-10 active:border-none"
+							/>
 							<img className="w-8" src={pencil} alt="" />
 						</div>
 						<div className="bg-[#F1E8D7] w-11/12 h-20 flex justify-between p-5 items-center mb-5 rounded-md">
 							<p className="text-3xl">User number</p>
-							<input type="text" className="w-3/5 h-10 active:border-none" />
+							<input
+								style={{ outline: "none", borderRadius: "10px" }}
+								type="text"
+								className="w-3/5 h-10 active:border-none"
+							/>
 							<img className="w-8" src={pencil} alt="" />
 						</div>
 						<div className="bg-[#F1E8D7] w-11/12 h-20 flex justify-between p-5 items-center mb-5 rounded-md">
 							<p className="text-3xl">User email address</p>
-							<input type="text" className="w-3/5 h-10 active:border-none" />
+							<input
+								style={{ outline: "none", borderRadius: "10px" }}
+								type="text"
+								className="w-3/5 h-10 active:border-none"
+							/>
 						</div>
 						<div className="bg-[#F1E8D7] w-11/12 h-20 flex justify-between p-5 items-center mb-10 rounded-md">
 							<p className="text-3xl">User profile image</p>
