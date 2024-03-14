@@ -1,10 +1,12 @@
 import React from "react";
 import RoomCard from "../components/cards/roomCard";
 import { landingBg } from "../../../assets/hotel-page";
+import CheckOutCard from "../components/cards/checkOutCard";
 
 function HotelRooms() {
   return (
     <div className="room_page_main w-full p-20 mt-20 flex flex-col gap-10">
+      {/* <CheckOutCard/> */}
       <RoomCard
         img={landingBg}
         name="Premium Room"
