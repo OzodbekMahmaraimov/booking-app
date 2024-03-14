@@ -1,6 +1,60 @@
+<<<<<<< HEAD
 .font-quicksand {
     font-family: "Quicksand", sans-serif;
 }
 .font-signika {
     font-family: "Signika", sans-serif;
+=======
+/* Lexend font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+.font-quicksand {
+    font-family: "Quicksand", sans-serif;
+}
+
+.font-signika {
+    font-family: "Signika", sans-serif;
+}
+
+.font-lexend {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+/* gallery */
+/* Add this CSS to your stylesheet */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-image--large {
+    grid-row: span 2;
+}
+
+.gallery-image--wide {
+    grid-column: span 3;
+}
+
+.visaCard-view input[type="number"]::-webkit-inner-spin-button,
+.visaCard-view input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.visaCard-view input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.visaCard-view input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+>>>>>>> ozodbek/main
 }

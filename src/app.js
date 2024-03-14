@@ -1,10 +1,13 @@
 import React from 'react'
 import Main from './components/layout/main'
 import { Route, Routes } from 'react-router-dom'
-import HomeRestaurant from './components/layout/homeRestaurant/homeRestaurant'
 import OrderLanding from './pages/app/orderLandingPage'
 import Login from './pages/auth/login'
+<<<<<<< HEAD
 import { MainHotelDashboard } from './pages/main-hotel-dashboard'
+=======
+import HomeRestaurant from './pages/app/homeRestaurant/homeRestaurant'
+>>>>>>> ozodbek/main
 
 const App = () => {
   return (
