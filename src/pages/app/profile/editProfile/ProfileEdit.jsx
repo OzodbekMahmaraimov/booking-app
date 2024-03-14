@@ -37,6 +37,8 @@ const ProfileEdit = () => {
 						<div className="bg-[#F1E8D7] w-11/12 h-20 flex justify-between p-5 items-center mb-5 rounded-md">
 							<p className="text-3xl">User email address</p>
 							<input
+
+
 								style={{ outline: "none", borderRadius: "10px" }}
 								type="text"
 								className="w-3/5 h-10 active:border-none"
