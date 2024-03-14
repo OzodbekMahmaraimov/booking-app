@@ -8,10 +8,10 @@ import ComplateTaxiBooking from './complate-taxi-booking'
 import Details from './details'
 import LocationMap from './location-map'
 
-const Main = () => {
+const MainOrder = () => {
   return (
     <Routes>
-      <Route path='/' Component={OrderLanding} />
+      <Route path='/order-landing page' Component={OrderLanding} />
       <Route path='/order-landing page/hotels' Component={Hotels} />
       <Route path='/order-landing page/restuarant' Component={Restuarant} />
       <Route path='/order-landing page/cafe' Component={Cafe} />
@@ -23,4 +23,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default MainOrder
