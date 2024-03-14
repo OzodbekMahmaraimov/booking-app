@@ -1,58 +1,106 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-function CheckOutCard() {
+const CheckOutCard = () => {
+  const [checkInDate, setCheckInDate] = useState('');
+  const [checkOutDate, setCheckOutDate] = useState('');
+  const [adults, setAdults] = useState(0);
+  const [children, setChildren] = useState(0);
+  const [rooms, setRooms] = useState(0);
+  const [amenity, setAmenity] = useState('Fan');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Here you would handle the submission of the data, maybe sending it to a server
+  };
+
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg border border-gray-200 shadow-md">
-      <div className="flex flex-col p-4">
-        {/* Check-in Date & Time */}
-        <div className="flex items-center justify-between mb-4">
-          <label className="flex items-center text-gray-700">
-            <span className="w-6 h-6 inline-block mr-2"><img src="/path-to-checkin-icon" alt="Check-in"/></span>
-            Checkin date & time
-          </label>
-          <span className="text-orange-500">✓</span>
-        </div>
-
-        {/* Checkout Date & Time */}
-        <div className="flex items-center justify-between mb-4">
-          <label className="flex items-center text-gray-700">
-            <span className="w-6 h-6 inline-block mr-2"><img src="/path-to-checkout-icon" alt="Checkout"/></span>
-            Checkout date & time
-          </label>
-          <span className="text-orange-500">✓</span>
-        </div>
-
-        {/* Divider */}
-        <hr className="my-4"/>
-
-        {/* Number of Guests */}
-        <div className="mb-4 text-gray-700">
-          <span className="mr-2"><img src="/path-to-guest-icon" alt="Guests"/></span>
-          0 Adults, 0 Children, 0 room
-        </div>
-
-        {/* Amenities Options */}
-        <div className="flex items-center mb-4">
-          <input type="radio" id="fan" name="amenities" className="hidden peer" />
-          <label for="fan" className="flex items-center cursor-pointer peer-checked:border-orange-500 mr-4">
-            <span className="w-4 h-4 inline-block mr-2 rounded-full border border-gray-300 peer-checked:bg-orange-500"></span>
-            Fan
-          </label>
-
-          <input type="radio" id="air-conditioned" name="amenities" className="hidden peer" />
-          <label for="air-conditioned" className="flex items-center cursor-pointer peer-checked:border-orange-500">
-            <span className="w-4 h-4 inline-block mr-2 rounded-full border border-gray-300 peer-checked:bg-orange-500"></span>
-            Air conditioned
-          </label>
-        </div>
-
-        {/* Proceed Button */}
-        <button className="w-full bg-orange-500 text-white p-2 rounded-md hover:bg-orange-600">
-          Proceed
-        </button>
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 border border-gray-300">
+      {/* Date Picker Inputs */}
+      <div className="flex flex-col mb-4">
+        <label htmlFor="checkin-date" className="mb-2 text-lg text-gray-700">Check-in Date & Time</label>
+        <input
+          type="datetime-local"
+          id="checkin-date"
+          value={checkInDate}
+          onChange={(e) => setCheckInDate(e.target.value)}
+          className="px-3 py-2 border border-gray-300"
+        />
       </div>
-    </div>
-  )
-}
+      <div className="flex flex-col mb-4">
+        <label htmlFor="checkout-date" className="mb-2 text-lg text-gray-700">Check-out Date & Time</label>
+        <input
+          type="datetime-local"
+          id="checkout-date"
+          value={checkOutDate}
+          onChange={(e) => setCheckOutDate(e.target.value)}
+          className="px-3 py-2 border border-gray-300"
+        />
+      </div>
 
-export default CheckOutCard
+      {/* Number of People and Rooms */}
+      <div className="grid grid-cols-3 gap-4 mb-4">
+        <div className="flex flex-col">
+          <label htmlFor="adults" className="mb-2 text-lg text-gray-700">Adults</label>
+          <input
+            type="number"
+            id="adults"
+            value={adults}
+            onChange={(e) => setAdults(e.target.value)}
+            className="px-3 py-2 border border-gray-300"
+          />
+        </div>
+        <div className="flex flex-col">
+          <label htmlFor="children" className="mb-2 text-lg text-gray-700">Children</label>
+          <input
+            type="number"
+            id="children"
+            value={children}
+            onChange={(e) => setChildren(e.target.value)}
+            className="px-3 py-2 border border-gray-300"
+          />
+        </div>
+        <div className="flex flex-col">
+          <label htmlFor="rooms" className="mb-2 text-lg text-gray-700">Rooms</label>
+          <input
+            type="number"
+            id="rooms"
+            value={rooms}
+            onChange={(e) => setRooms(e.target.value)}
+            className="px-3 py-2 border border-gray-300"
+          />
+        </div>
+      </div>
+
+      {/* Amenities Radio Buttons */}
+      <div className="flex items-center mb-4">
+        <input
+          id="fan"
+          type="radio"
+          name="amenity"
+          value="Fan"
+          checked={amenity === 'Fan'}
+          onChange={() => setAmenity('Fan')}
+          className="mr-2"
+        />
+        <label htmlFor="fan" className="mr-4">Fan</label>
+        <input
+          id="air-conditioned"
+          type="radio"
+          name="amenity"
+          value="Air conditioned"
+          checked={amenity === 'Air conditioned'}
+          onChange={() => setAmenity('Air conditioned')}
+          className="mr-2"
+        />
+        <label htmlFor="air-conditioned">Air conditioned</label>
+      </div>
+
+      {/* Submit Button */}
+      <button type="submit" className="w-full px-4 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
+        Proceed
+      </button>
+    </form>
+  );
+};
+
+export default CheckOutCard;
