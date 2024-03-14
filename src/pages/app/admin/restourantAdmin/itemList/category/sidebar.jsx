@@ -10,7 +10,7 @@ const ResAdminSidebar = () => {
 	return (
 		<div className="p-5">
 			{/* top white piece */}
-			<div className="w-[100%] bg-white h-[650px] rounded-xl  px-4 py-3">
+			<div className="w-[100%] bg-white h-max rounded-xl  px-4 py-3">
 				{/* logo */}
 				<div className="flex items-center justify-center  mt-8 mb-10">
 					<img src={logo} alt="" />
@@ -49,8 +49,11 @@ const ResAdminSidebar = () => {
 						<img src={vector} alt="" />
 						<p className="text-xl">Transportation Summary</p>
 					</div>
-					<div className="mt-10 flex justify-center w-full">
+					<div className="mt-5 flex justify-center w-full">
 						<button className="bg-[#F46A06] py-3 px-5 text-xl text-white rounded-xl">Logout</button>
+					</div>
+					<div>
+						<p className="text-xl mt-5">@2022 All rights reserved</p>
 					</div>
 				</div>
 			</div>

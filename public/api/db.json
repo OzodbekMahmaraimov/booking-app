@@ -1,15 +1,158 @@
 {
-    "category": [
-        {
-            "id": 1,
-            "name": "Category 1"
-        }
-    ],
-    "slider": [
-        {
-            "id": 1,
-            "name": "Slider 1"
-        }
-    ]
-    
+	"category": [
+		{
+			"id": 1,
+			"name": "category 1"
+		}
+	],
+	"slider": [
+		{
+			"id": 1,
+			"name": "Slider 1"
+		}
+	],
+	"admin": {
+		"restAdmin": [
+			{
+				"id": "1",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "2",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "3",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "4",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "5",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "6",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "7",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "8",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "9",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "10",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "11",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "12",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "13",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "14",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "15",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "16",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "17",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "18",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "19",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			},
+			{
+				"id": "20",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
+			}
+		]
+	}
 }

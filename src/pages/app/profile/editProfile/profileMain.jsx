@@ -1,4 +1,4 @@
-import ProfileEdit from "./ProfileEdit";
+import ProfileEdit from "./profileEdit";
 import Navbar from "../../homeRestaurant/navbar/Navbar";
 
 const ProfileMain = () => {

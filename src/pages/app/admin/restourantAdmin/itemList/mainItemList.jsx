@@ -4,7 +4,7 @@ import ItemList from "./category/list";
 
 const ResMainItemList = () => {
 	return (
-		<div className="bg-[#F46A06] w-full h-screen flex justify-between">
+		<div className="bg-[#F46A06] w-full lg:h-screen h-max flex justify-between">
 			<div className="w-[25%]">
 				<ResAdminSidebar />
 			</div>

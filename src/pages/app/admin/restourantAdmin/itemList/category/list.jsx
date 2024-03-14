@@ -7,6 +7,10 @@ const ItemList = () => {
 	const [selectedItems, setSelectedItems] = useState({});
 	const [currentPage, setCurrentPage] = useState(1);
 	const itemsPerPage = 5;
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = () => setIsModalOpen(true);
+	const closeModal = () => setIsModalOpen(false);
 
 	const items = [
 		{ id: "#1", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
@@ -20,6 +24,15 @@ const ItemList = () => {
 		{ id: "#9", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
 		{ id: "#10", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
 		{ id: "#11", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#12", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#13", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#14", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#15", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#16", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#17", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#18", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#19", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
+		{ id: "#20", name: "Cappuccino(iced)", category: "Coffee", price: "2500.00RWF", quantity: 20 },
 	];
 
 	const lastPageIndex = currentPage * itemsPerPage;
@@ -119,8 +132,16 @@ const ItemList = () => {
 										<td>{item.category}</td>
 										<td>{item.price}</td>
 										<td>{item.quantity}</td>
-										<td>
-											<img src={menuIcon} alt="menu icon" />
+										<td className="cursor-pointer">
+											<img src={menuIcon} alt="menu icon" onClick={openModal} />
+											{/* Agar modal ochiq bo'lsa uni ko'rsatish */}
+											{isModalOpen && (
+												<div className="modal fixed top-0 left-0 w-[50%] h-[80%] bg-white flex justify-center items-center">
+													{/* Modal mazmunini bu yerga qo'shing */}
+													{/* Modalni yopish uchun tugma yoki boshqa element qo'shing */}
+													<button onClick={closeModal}>Close Modal</button>
+												</div>
+											)}
 										</td>
 									</tr>
 								))}
