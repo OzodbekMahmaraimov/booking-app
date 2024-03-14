@@ -3,6 +3,7 @@ import HotelHero from "./hero";
 import HotelServices from "./services";
 import HotelRooms from "./rooms";
 import HotelGallary from "./gallary";
+import Footer from "./components/footer/Footer";
 
 function HotelMain() {
   return (
@@ -18,7 +19,7 @@ function HotelMain() {
         <HotelServices />
       </section>
       {/* Rooms page */}
-      <section>
+      <section className="px-10">
         <HotelRooms />
       </section>
       {/* Gallary page */}
@@ -26,7 +27,10 @@ function HotelMain() {
         <HotelGallary />
       </section>
       {/* Footer */}
-      <footer>footer</footer>
+      <footer className="flex flex-col justify-center items-center pt-20">
+        <div className="border-2 border-black w-10/12"></div>
+        <Footer/>
+      </footer>
     </div>
   );
 }

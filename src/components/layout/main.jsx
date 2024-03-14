@@ -1,9 +1,10 @@
 import React from 'react'
+import HotelMain from '../../pages/main-hotel-page';
 
 const Main = () => {
   return (
     <div>
-      <h1>Main</h1>
+      <HotelMain/>
     </div>
   )
 }

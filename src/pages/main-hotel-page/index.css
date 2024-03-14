@@ -1,0 +1,121 @@
+/* Hero page */
+.hotel_hero_bg {
+  background-image: url("../../assets/hotel-page/landing-bg.png");
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.hotel_hero_bg h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg_setting {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-shadow {
+    text-shadow: -3px 7px 12px rgba(0,0,0,0.23);
+}
+
+.cards_img {
+    transition: all 0.5s;
+}
+.cards_img:hover {
+    transform: scale(1.1);
+}
+
+/* about card */
+.hotel_about_card {
+  padding: 2rem 3rem 5rem 3rem;
+  width: 60%;
+  background-color: #f1e8d7;
+  border-radius: 1.5rem;
+
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.19);
+}
+
+.hotel_about_card_header h1 {
+    font-family: 'Signika', sans-serif;
+}
+
+.hotel_about_card_border {
+    width: 90%;
+    border: 1px #F46A06 solid;
+}
+.hotel_about_card_body h2 {
+    color: #F46A06;
+    font-family: 'Quicksand', sans-serif;
+}
+.hotel_about_card_body p {
+    font-family: 'Signika', sans-serif;
+}
+.hotel_hero_back {
+    color: black;
+    margin-top: 20rem;
+}
+/* Hero page end */
+
+
+/* Service page */
+
+.hotel_service_border {
+    width: 90%;
+    border: 1px #000 solid;
+}
+
+/* Servise card */
+
+.servis_card {
+    border: 10px solid;
+    border-color: #F1E8D7;
+    border-radius: 2rem;
+}
+
+.servis_card_img > img{
+    object-fit: cover;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+/* end service page */
+
+/* rooms page */
+
+.room_page_main {
+    border: 15px solid;
+    border-color: #F1E8D7;
+    border-radius: 2rem;
+}
+
+/* rooms card */
+
+.room_card_main {
+    width: 100%;
+    background-color: #F1E8D7;
+}
+
+.room_card_body {
+    border: 8px solid;
+    border-color: #F46A06;
+    border-radius: 1.5rem;
+}
+
+.room_card_body_content_div {
+    background-color: #F1E8D7;
+    border-radius: 1.5rem;
+}
+
+/* end rooms page */
+
+/* Gallary page */
+
+.gallary_card {
+    border: 8px solid;
+    border-color: #F1E8D7;
+    border-radius: 1.5rem;
+}
