@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaEye, FaToolbox } from 'react-icons/fa';
 import RoomBookingModal from '../components/room-description-modal';
-import MainHotelDashboardButton from '../components/button';
+// import MainHotelDashboardButton from '../components/button';
 
 export const MainDashboardManageRooms = () => {
     // Bu erda jadval ma'lumotlari bo'lishi mumkin, hozircha qattiq kodlangan
@@ -41,7 +41,7 @@ export const MainDashboardManageRooms = () => {
             <div>
                 <div className='flex justify-between items-center'>
                     <h1>Manage Rooms</h1>
-                    <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>Add room</MainHotelDashboardButton>
+                    {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>Add room</MainHotelDashboardButton> */}
                 </div>
             </div>
             <div className='border w-full my-5'>

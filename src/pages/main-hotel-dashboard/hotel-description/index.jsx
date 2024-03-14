@@ -1,5 +1,5 @@
 import React from 'react'
-import MainHotelDashboardButton from '../components/button';
+// import MainHotelDashboardButton from '../components/';
 
 const HotelDashboardDescription = () => {
     return (
@@ -14,8 +14,8 @@ const HotelDashboardDescription = () => {
                     <div className='mt-10'>
                         <textarea name="" id="" className='border  rounded-lg bg-orange-200 border-orange-400 w-full h-40 p-5'></textarea>
                         <div className='flex gap-3 justify-end mt-5'>
-                            <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
-                            <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
+                            {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
+                            <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ const HotelDashboardDescription = () => {
                             placeholder="Enter the hotel's address"
                         />
                     </div>
-                    <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
+                    {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
                 </div>
                 <div className='grid gap-y-4 col-span-1 w-full'>
                     <div className='w-full'>
@@ -70,9 +70,9 @@ const HotelDashboardDescription = () => {
                             name="hotelAddress"
                             className=" w-44 p-2 border-2 border-gray-400 rounded-md text-orange-500 placeholder:text-orange-500 focus:outline-none focus:border-orange-600"
                         />
-                        <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
+                        {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
                     </div>
-                    <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
+                    {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
                 </div>
             </div>
         </div>
