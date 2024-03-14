@@ -10,9 +10,9 @@
 <h1>Alisher: Order landing page + map + indabo cafe</h1>
 <h1>Behruz: Booking room all pages </h1>
 <h1>Abdulaziz: Main hotel dashboard all pages </h1>
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>After all are added</p>
 <h1>Hech kimdan xato chiqmadi !</h1>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
 In the project directory, you can run:
