@@ -1,25 +1,39 @@
 import React, { useState } from 'react'
-import MainHotelDashboardModal from './components/modal';
-import MainHotelDashboardButton from './components/button';
-import Dashboard from './Dashboard';
+import HotelDashboard from './Dashboard';
+// import { Route, Routes } from 'react-router-dom';
+import MaindashboardSidebar from './components/sitebar';
+import MainHotelMyAccount from './my-accaunt';
+import HotelDashboardManageServises from './manage-serveses';
+import HotelDashboardDescription from './hotel-description';
+import { MainDashboardManageRooms } from './magage-rooms';
+import { MainDashboardNavigation } from './components/navigation';
+import MainDashboardRoomForm from './magage-rooms/addnewroom';
+import TableComponent from './hotelmanager-dashboard';
 
 export const MainHotelDashboard = () => {
 
     const [isModalOpen, setModalOpen] = useState(false);
 
     return (
-        <section className='w-full h-max bg-orange-500 p-5'>
-            <button
-                className="rounded bg-blue-500 text-white p-2 hover:bg-blue-400"
-                onClick={() => setModalOpen(!isModalOpen)}
-            >
-                Open Modal
-            </button>
-            <div>
-                <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>UPDATE</MainHotelDashboardButton>
+        <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
+            {/* <Routes>
+                <Route path='/MainHotelDashboard/nimadir' Component={<Dashboard/>} />
+            </Routes> */}
+
+            <MaindashboardSidebar />
+            <div className='col-span-3'>
+                <div className='py-5'>
+                    <MainDashboardNavigation/>
+                </div>
+                {/* <HotelDashboard/> */}
+                {/* <HotelDashboardManageServises /> */}
+                {/* <MainHotelMyAccount/> */}
+                {/* <HotelDashboardDescription/> */}
+                {/* <MainDashboardManageRooms/> */}
+                {/* <TableComponent/> */}
+                <MainDashboardRoomForm/>
+
             </div>
-            <MainHotelDashboardModal isOpen={isModalOpen} closeModal={() => setModalOpen(false)} />
-            <Dashboard/>
         </section>
     )
 }

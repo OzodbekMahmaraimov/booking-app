@@ -19,7 +19,18 @@ const MainHotelDashboardModal = ({ isOpen, closeModal }) => {
                     </div>
                 </div>
             </div>
+            {/* <button
+                className="rounded bg-blue-500 text-white p-2 hover:bg-blue-400"
+                onClick={() => setModalOpen(!isModalOpen)}
+                >
+                Open Modal
+                </button>
+                <div>
+                <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>UPDATE</MainHotelDashboardButton>
+                </div>
+            <MainHotelDashboardModal isOpen={isModalOpen} closeModal={() => setModalOpen(false)} /> */}
         </div>
+
     )
 }
 

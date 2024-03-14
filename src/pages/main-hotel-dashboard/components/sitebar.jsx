@@ -6,7 +6,7 @@ const MaindashboardSidebar = () => {
     const normalLinkClass = "text-gray-600 hover:bg-orange-100";
 
     return (
-        <div className="h-screen shadow bg-white rounded-lg overflow-y-auto w-64 ">
+        <div className="h-screen shadow bg-white rounded-lg overflow-y-auto w-full col-span-1">
             <div className="px-6 py-8 flex items-center h-max">
                 <img
                     src="/path-to-profile-picture.jpg" // Profil rasmingiz yo'lini kiriting
@@ -19,38 +19,34 @@ const MaindashboardSidebar = () => {
                 </div>
             </div>
             <nav className="mt-8 flex flex-col gap-10 px-5">
-                <a
-                    exact
-                    to="/dashboard"
-                    className={({ isActive }) => (isActive ? activeLinkClass : normalLinkClass) + " flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
+                <div
+                    className={" flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 bg-red-200 flex-row"}
                 >
-                    <FaTachometerAlt className="mr-3" /> <p>Dashboard</p>
-                </a>
-                <a
-                    to="/hotel-description"
-                    className={({ isActive }) => (isActive ? activeLinkClass : normalLinkClass) + " flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
+                    <FaTachometerAlt className="mr-3" size={30}/> 
+                    <p>Dashboard</p>
+                </div>
+                <div
+                    className={ " flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
                 >
-                    <FaBed className="mr-3" /> <p>Hotel description</p>
-                </a>
-                <a
+                    <FaBed className="mr-3" size={30}/> <p>Hotel description</p>
+                </div>
+                <div
                     to="/manage-rooms"
-                    className={({ isActive }) => (isActive ? activeLinkClass : normalLinkClass) + " flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
+                    className={" flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
                 >
-                    <FaConciergeBell className="mr-3" /> <p>Manage Rooms</p>
-                </a>
-                <a
-                    to="/manage-services"
-                    className={({ isActive }) => (isActive ? activeLinkClass : normalLinkClass) + " flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
+                    <FaConciergeBell className="mr-3" size={30}/> <p>Manage Rooms</p>
+                </div>
+                <div
+                    className={" flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
                 >
-                    <FaUser className="mr-3" /> <p>Manage services</p>
-                </a>
-                <a
-                    to="/my-account"
-                    className={({ isActive }) => (isActive ? activeLinkClass : normalLinkClass) + " flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
+                    <FaUser className="mr-3" size={30}/> <p>Manage services</p>
+                </div>
+                <div
+                    className={ " flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row"}
                 >
-                    <FaUser className="mr-3" />
+                    <FaUser className="mr-3" size={30}/>
                     <p>My account</p>
-                </a>
+                </div>
             </nav>
         </div>
     );
