@@ -6,6 +6,7 @@ import SignUp from './pages/auth/signUp'
 import IndexMain from './pages/main-admin-page'
 import MainOrder from './pages/app/orderLandingPage/routes'
 import { MainHotelDashboard } from './pages/main-hotel-dashboard'
+import Hotelroutes from './pages/main-hotel-page/routes'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       </Routes>
       <MainOrder />
       <MainHotelDashboard />
+      <Hotelroutes/>
     </>
   )
 }
