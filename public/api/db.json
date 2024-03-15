@@ -341,7 +341,7 @@
 					]
 				},
 				"managers": {
-					"hotel-managers": [
+					"hotelManagers": [
 						{
 							"id": 1,
 							"fistname": "kimdir",
@@ -352,7 +352,7 @@
 							"role": "hotel_manager"
 						}
 					],
-					"restorant-managers": [
+					"restorantManagers": [
 						{
 							"id": 1,
 							"fistname": "kimdir",
@@ -363,7 +363,7 @@
 							"role": "restorant_manager"
 						}
 					],
-					"coffe-shop-managers": [
+					"coffeShopManagers": [
 						{
 							"id": 1,
 							"fistname": "kimdir",
