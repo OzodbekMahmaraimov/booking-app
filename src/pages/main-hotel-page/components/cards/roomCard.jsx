@@ -11,18 +11,21 @@ const RoomCard = ({
   priceUSD,
   rooms,
   img,
+  setRooms
 }) => {
   const [modal, setModal] = useState(false)
   
   const openModal = () => setModal(true)
   const closeModal = () => setModal(false)
 
+  const changeRoomCard = () => setRooms(2)
+
   return (
     <div className=" rounded-xl shadow-lg room_card_main pb-10">
       {/* Header */}
       <div className="flex justify-between items-center p-8">
         <h1 className="text-2xl font-semibold">{name}</h1>
-        <button onClick={openModal} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded text-shadow shadow-lg">
+        <button onClick={changeRoomCard} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded text-shadow shadow-lg">
           {buttonName}
         </button>
       </div>
