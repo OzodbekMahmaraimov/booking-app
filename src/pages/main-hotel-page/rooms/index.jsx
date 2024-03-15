@@ -28,7 +28,9 @@ function HotelRooms() {
       ) : rooms === 2 ? (
         <CheckOutCard change={setRooms}/>
       ) : rooms === 3 ? (
-        <AboutCard change={setRooms}/>
+        <CheckoutInfo change={setRooms}/>
+      ) : rooms === 4 ? (
+        <PaymentForm  change={setRooms}/>
       ) : (
         setRooms(1)
       )}

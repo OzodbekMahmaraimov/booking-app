@@ -1,6 +1,6 @@
 import React from "react";
 
-const CheckoutInfo = () => {
+const CheckoutInfo = ({change}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle the submission of the form
@@ -61,6 +61,9 @@ const CheckoutInfo = () => {
         {/* Proceed Button */}
         <div className="w-full flex justify-center items-center">
           <button
+          onClick={() => {
+            change(4)
+          }}
             type="submit"
             className=" shadow-2xl text-shadow bg-orange-500 text-white py-2 px-28 rounded hover:bg-orange-600 transition-colors"
           >
