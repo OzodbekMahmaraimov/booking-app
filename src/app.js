@@ -7,7 +7,8 @@ import IndexMain from "./pages/main-admin-page";
 import MainOrder from "./pages/app/orderLandingPage/routes";
 import { MainHotelDashboard } from "./pages/main-hotel-dashboard";
 import { Costumer, Dashboard, OrderList } from "./pages/app/admin/restourantAdmin/category";
-import ItemList from "./pages/app/admin/restourantAdmin/itemList/category/list";
+import ItemList from "./pages/app/admin/restourantAdmin/category/list";
+import ResMainItemList from "./pages/app/admin/restourantAdmin/category/main";
 // import ResMainItemList from "./pages/app/admin/restourantAdmin/itemList/mainItemList";
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
 				<Route path="/loginSignUp" Component={Login} />
 				<Route path="/signUp" Component={SignUp} />
 				<Route path="/orderlist" Component={OrderList} />
-				<Route path="/itemlist" Component={ItemList} />
+				<Route path="/itemlist" Component={ResMainItemList} />
 				<Route path="/customer" Component={Costumer} />
 			</Routes>
 			<MainOrder />

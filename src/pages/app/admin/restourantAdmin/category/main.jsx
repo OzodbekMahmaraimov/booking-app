@@ -1,6 +1,7 @@
 import React from "react";
-import ResAdminSidebar from "./category/sidebar";
-import ItemList from "./category/list";
+import { Costumer, OrderList } from ".";
+import ResAdminSidebar from "../components/sidebar";
+import ItemList from "./list";
 
 const ResMainItemList = () => {
 	return (

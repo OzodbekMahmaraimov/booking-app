@@ -5,7 +5,7 @@ import line from "../../../../../assets/images/Line 10.png";
 import { Dashboard } from ".";
 import { MainDashboardManageRooms } from "../../../../main-hotel-dashboard/magage-rooms";
 import AdminDashboard from "./dashboard";
-import ResAdminSidebar from "../resAdminSidebar/sidebar";
+import ResAdminSidebar from "../components/sidebar";
 
 const castTasble = [
 	{

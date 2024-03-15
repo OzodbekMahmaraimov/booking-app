@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import homeIcon from "./../../../../../../assets/images/Vector (1).png";
-import blackLine from "./../../../../../../assets/images/Line 10.png";
-import menuIcon from "./../../../../../../assets/images/svg.svg";
-import ResAdminSidebar from "../../resAdminSidebar/sidebar";
+import homeIcon from "./../../../../../assets/images/Vector (1).png";
+import blackLine from "./../../../../../assets/images/Line 10.png";
+import menuIcon from "./../../../../../assets/images/svg.svg";
+import ResAdminSidebar from "../components/sidebar";
 
 const ItemList = () => {
 	const [selectedItems, setSelectedItems] = useState({});
@@ -71,7 +71,7 @@ const ItemList = () => {
 	return (
 		<div>
 			<div className="flex items-center justify-between py-3 px-4 mt-5 ">
-				<ResAdminSidebar className="w-[25%]" />
+				{/* <ResAdminSidebar className="w-[25%]" /> */}
 				<div className="flex  gap-1 ">
 					<div>
 						<img src={homeIcon} alt="home icon" />
