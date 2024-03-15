@@ -9,6 +9,7 @@ import ItemList from "../pages/app/admin/restourantAdmin/category/list";
 import MainOrder from "../pages/app/orderLandingPage/routes";
 import { MainHotelDashboard } from "../pages/main-hotel-dashboard";
 import HomeRestaurant from "./../pages/app/homeRestaurant/homeRestaurant";
+import Hotelroutes from "../pages/main-hotel-page/routes";
 
 const App = () => {
 	return (
@@ -25,6 +26,7 @@ const App = () => {
 			</Routes>
 			<MainOrder />
 			<MainHotelDashboard />
+			<Hotelroutes/>
 		</>
 	);
 };
