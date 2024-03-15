@@ -340,11 +340,19 @@
 						}
 					]
 				},
-				"managers":{
-					"hotel-managers":[],
-					"restorant-managers":[]
+				"managers": {
+					"hotel-managers": [
+						{
+							"id": 1,
+							"fistname": "<NAME>",
+                            "lastname": "0784567890",
+                            "phone ": 12134124,
+                            "email": "Soy asian- restaurant",
+                            "parol": "1050000 Rwf"
+						}
+					],
+					"restorant-managers": []
 				}
-				
 			}
 		}
 	},
