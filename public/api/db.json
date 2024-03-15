@@ -344,14 +344,36 @@
 					"hotel-managers": [
 						{
 							"id": 1,
-							"fistname": "<NAME>",
-                            "lastname": "0784567890",
+							"fistname": "kimdir",
+                            "lastname": "nimadir",
                             "phone ": 12134124,
-                            "email": "Soy asian- restaurant",
-                            "parol": "1050000 Rwf"
+                            "email": "nimadir@gmail.com",
+                            "parol": "1234",
+							"role": "hotel_manager"
 						}
 					],
-					"restorant-managers": []
+					"restorant-managers": [
+						{
+							"id": 1,
+							"fistname": "kimdir",
+                            "lastname": "nimadir",
+                            "phone ": 12134124,
+                            "email": "nimadir@gmail.com",
+                            "parol": "1234",
+							"role": "restorant_manager"
+						}
+					],
+					"coffe-shop-managers": [
+						{
+							"id": 1,
+							"fistname": "kimdir",
+                            "lastname": "nimadir",
+                            "phone ": 12134124,
+                            "email": "nimadir@gmail.com",
+                            "parol": "12345",
+							"role": "coffe_shop_manager"
+						}
+					]
 				}
 			}
 		}
