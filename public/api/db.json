@@ -344,5 +344,81 @@
 				}
 			]
 		}
-	]
+	],
+	"hotel-manage": {
+		"manage-hotels-dashboard": {
+			"Total-Rooms": 10,
+			"Room-Types": 5,
+			"Reserations": 5,
+			"Complains": 10,
+			"Booked-rooms": 5,
+			"Available-Rooms": 5,
+			"Total-checked-in": 10,
+			"pending-payments": 5,
+			"TOTAL EARNINGS": 5,
+			"Pending payment": 10
+		},
+		"Manage-your-account": {
+			"Manager-Name": "tesha-polvon",
+			"Manager-Phone": "0123456789",
+			"Manager-Email": "nefr@gmail.com",
+			"Manager-img": "123 Main Street, New York, NY 10011",
+			"Manager-Password": "123",
+			"Restaurant name": "uy topdi restarani"
+		},
+		"manage-hotels-dashboard-rooms": [
+			{
+				"id": 1,
+				"Room-no": "1003",
+				"Room-Type": true,
+				"Room-Status": true,
+				"Room-Description": "daxshat joy",
+				"Room-Image": "/image.png",
+				"check-in": true,
+				"check-out": true,
+				"Total-payment": 2200,
+				"Pending payments": false
+			},
+			{
+				"id": 2,
+				"Room-no": "1233",
+				"Room-Type": false,
+				"Room-Status": true,
+				"Room-Description": "zor hona",
+				"Room-Image": "/image.png",
+				"check-in": true,
+				"check-out": true,
+				"Total-payment": 2200,
+				"Pending payments": false
+			}
+		],
+		"manage-hotels-description": [
+			{
+				"id": 1,
+				"description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
+				"hotel-adress": "KIyovu -kigali",
+				"hotel-stars": 4,
+				"hotel-img": "/image.png",
+				"hotel-priice": 17000
+			}
+		],
+		"Services-hotel-offers": [
+			{
+				"id": 1,
+				"name": "Free car parking"
+			},
+			{
+				"id": 2,
+				"name": "Fitness center"
+			}
+		],
+		"regester": [
+			{
+				"id": 1,
+				"name": "",
+				"password": "",
+				"rol": "user"
+			}
+		]
+	}
 }
