@@ -3,9 +3,9 @@ import { aboutCardImg } from "../../../../assets/hotel-page";
 import { FaStar } from "react-icons/fa6";
 import "../../index.css";
 
-function AboutCard({ name, bodyName, description }) {
+function AboutCard({ name, bodyName, description, clas }) {
   return (
-    <div className="hotel_about_card flex flex-col items-center justify-center">
+    <div className={`hotel_about_card ${clas} flex flex-col items-center justify-center`}>
       {/* card-header */}
       <div className="w-full flex items-center justify-between hotel_about_card_header gap-3">
         <div className="flex items-end  ">

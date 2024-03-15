@@ -14,7 +14,7 @@ function HotelMain() {
       {/* navbar */}
       <Navbar />
       {/* Hero page */}
-      <section>
+      <section className="pt-10">
         <HotelHero />
       </section>
       {/* Service page */}
