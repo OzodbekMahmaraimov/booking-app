@@ -105,8 +105,13 @@ export const Customer = () => {
 	return (
 		<div className="w-full bg-orange-400">
 			<div className="flex">
+<<<<<<< HEAD
 				<ResAdminSidebar className="w-[25%]" />
 				<div className="w-[70%]">
+=======
+				<ResAdminSidebar className="w-[30%]" />
+				<div className="w-[75%]">
+>>>>>>> 432661b6b54745e6f6f2721d1ea603cfb025c417
 					<div className="flex ml-4 px-2">
 						<img className="w-10 h-10 mt-20 ml-4" src={home} alt="" />
 						<img className="w-5 h-12 mt-20 ml-2" src={line} alt="" />

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const CheckOutCard = () => {
-  const [checkInDate, setCheckInDate] = useState('');
-  const [checkOutDate, setCheckOutDate] = useState('');
+const CheckOutCard = ({ change }) => {
+  const [checkInDate, setCheckInDate] = useState("");
+  const [checkOutDate, setCheckOutDate] = useState("");
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
   const [rooms, setRooms] = useState(0);
-  const [amenity, setAmenity] = useState('Fan');
+  const [amenity, setAmenity] = useState("Fan");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,59 +14,89 @@ const CheckOutCard = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 border border-gray-300">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-md mx-auto bg-white p-8 border rounded-xl gallary_card shadow-2xl border-gray-300"
+    >
       {/* Date Picker Inputs */}
       <div className="flex flex-col mb-4">
-        <label htmlFor="checkin-date" className="mb-2 text-lg text-gray-700">Check-in Date & Time</label>
+        <label
+          htmlFor="checkin-date"
+          className="mb-2 text-shadow text-lg text-gray-700"
+        >
+          Check-in Date & Time
+        </label>
         <input
           type="datetime-local"
           id="checkin-date"
           value={checkInDate}
           onChange={(e) => setCheckInDate(e.target.value)}
-          className="px-3 py-2 border border-gray-300"
+          className="px-3 py-2 border rounded-xl shadow-xl border-gray-300"
         />
       </div>
       <div className="flex flex-col mb-4">
-        <label htmlFor="checkout-date" className="mb-2 text-lg text-gray-700">Check-out Date & Time</label>
+        <label
+          htmlFor="checkout-date"
+          className="mb-2 text-lg text-shadow text-gray-700"
+        >
+          Check-out Date & Time
+        </label>
         <input
           type="datetime-local"
           id="checkout-date"
           value={checkOutDate}
           onChange={(e) => setCheckOutDate(e.target.value)}
-          className="px-3 py-2 border border-gray-300"
+          className="px-3 py-2 border rounded-xl shadow-xl border-gray-300"
         />
       </div>
 
       {/* Number of People and Rooms */}
       <div className="grid grid-cols-3 gap-4 mb-4">
         <div className="flex flex-col">
-          <label htmlFor="adults" className="mb-2 text-lg text-gray-700">Adults</label>
+          <label
+            htmlFor="adults"
+            className="mb-2 text-lg text-shadow text-gray-700"
+          >
+            Adults
+          </label>
+
           <input
             type="number"
             id="adults"
             value={adults}
             onChange={(e) => setAdults(e.target.value)}
-            className="px-3 py-2 border border-gray-300"
+            className="px-3 py-2 border rounded-xl shadow-xl border-gray-300"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="children" className="mb-2 text-lg text-gray-700">Children</label>
+          <label
+            htmlFor="children"
+            className="mb-2 text-lg text-shadow text-gray-700"
+          >
+            Children
+          </label>
+
           <input
             type="number"
             id="children"
             value={children}
             onChange={(e) => setChildren(e.target.value)}
-            className="px-3 py-2 border border-gray-300"
+            className="px-3 py-2 border rounded-xl shadow-xl border-gray-300"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="rooms" className="mb-2 text-lg text-gray-700">Rooms</label>
+          <label
+            htmlFor="rooms"
+            className="mb-2 text-lg text-shadow text-gray-700"
+          >
+            Rooms
+          </label>
           <input
             type="number"
             id="rooms"
             value={rooms}
             onChange={(e) => setRooms(e.target.value)}
-            className="px-3 py-2 border border-gray-300"
+            className="px-3 py-2 border rounded-xl shadow-xl border-gray-300"
           />
         </div>
       </div>
@@ -78,25 +108,39 @@ const CheckOutCard = () => {
           type="radio"
           name="amenity"
           value="Fan"
-          checked={amenity === 'Fan'}
-          onChange={() => setAmenity('Fan')}
+          checked={amenity === "Fan"}
+          onChange={() => setAmenity("Fan")}
           className="mr-2"
         />
-        <label htmlFor="fan" className="mr-4">Fan</label>
+        <label htmlFor="fan" className="mr-4 text-shadow">
+          Fan
+        </label>
+
         <input
           id="air-conditioned"
           type="radio"
           name="amenity"
           value="Air conditioned"
-          checked={amenity === 'Air conditioned'}
-          onChange={() => setAmenity('Air conditioned')}
-          className="mr-2"
+          checked={amenity === "Air conditioned"}
+          onChange={() => setAmenity("Air conditioned")}
+          className="mr-2 "
         />
-        <label htmlFor="air-conditioned">Air conditioned</label>
+        <label
+          htmlFor="air-conditioned text-shadow
+        "
+        >
+          Air conditioned
+        </label>
       </div>
 
       {/* Submit Button */}
-      <button type="submit" className="w-full px-4 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
+      <button
+        type="submit"
+        onClick={() => {
+          change(3);
+        }}
+        className="w-full px-4 py-2 bg-orange-500 text-white font-bold text-shadow shadow-xl rounded hover:bg-orange-600"
+      >
         Proceed
       </button>
     </form>
