@@ -116,7 +116,7 @@ const OrderLanding = () => {
             currentProduct.map(item => (
               <div className="p-7 w-1/3">
                 <Cards
-                  key={item.id}
+                  id={item.id}
                   image={item.img}
                   name={item.name}
                   detailsLink='/details'

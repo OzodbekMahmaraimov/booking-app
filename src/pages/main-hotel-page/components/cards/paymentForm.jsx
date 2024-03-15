@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PaymentForm = () => {
   const [paymentMethod, setPaymentMethod] = useState("mtn");
@@ -45,7 +46,7 @@ const PaymentForm = () => {
             <div className="flex flex-col">
               <span className="ml-2">MTN Mobile Money</span>
               <div className="w-90">
-                <img className="object-cover w-8/12 rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwIYVltxlV1qgOPt64nrBldDOF85xVltVTqlDcyO71WK2oAx6UqmuIchL_yosZwZxH6Y&usqp=CAU" alt="" />
+                <LazyLoadImage className="object-cover w-8/12 rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwIYVltxlV1qgOPt64nrBldDOF85xVltVTqlDcyO71WK2oAx6UqmuIchL_yosZwZxH6Y&usqp=CAU" alt="" />
               </div>
             </div>
           </label>
@@ -63,7 +64,7 @@ const PaymentForm = () => {
             <div className="flex flex-col">
               <span className="ml-2">VISA</span>
               <div className="w-full h-32">
-                <img className="object-cover w-full h-32 rounded-lg" src="https://play-lh.googleusercontent.com/DB-E7TSbWobxBzjS6IenXRXhkg2gNOM_685qcnKoPs9D6I9Y_4MdbQi9nhRvRCC9m5g" alt="" />
+                <LazyLoadImage className="object-cover w-full h-32 rounded-lg" src="https://play-lh.googleusercontent.com/DB-E7TSbWobxBzjS6IenXRXhkg2gNOM_685qcnKoPs9D6I9Y_4MdbQi9nhRvRCC9m5g" alt="" />
               </div>
             </div>
           </label>
