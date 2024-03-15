@@ -6,7 +6,7 @@ const SignUp = () => {
     return (
         <div
             className='w-full h-screen bg-[#F1E8D7] flex justify-start items-center flex-col  '>
-            <p className='text-6xl mt-20 mb-5 font-semibold'>Create account</p>
+            <p className='text-6xl mt-10 mb-5 font-semibold'>Create account</p>
             <p className='text-lg mb-3'>Hello User, thank you for choosing this journey with Us lets create account first</p>
             <div className=' w-[25%] mb-3'>
                 <label className="block mb-2 text-sm font-medium text-gray-900 ">FullaName</label>
@@ -27,12 +27,12 @@ const SignUp = () => {
                 <label className="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
                 <input type="text" id='password' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full py-3 pl-5 outline-none focus:border-spacing-1 focus:border-[#F1E8D7]   " placeholder="Enter your email" required />
             </div>
-            <div className=' w-[25%] mb-16'>
+            <div className=' w-[25%] mb-8'>
                 <label className="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
                 <input type="password" id='password' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full py-3 pl-5 outline-none focus:border-spacing-1 focus:border-[#F1E8D7]   " placeholder="Password" required />
             </div>
            
-            <div className=' w-[25%] mb-7'>
+            <div className=' w-[25%] mb-5'>
                 <button
                     // onClick={handleSubmit}
                     className='bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>Sign up</button>
