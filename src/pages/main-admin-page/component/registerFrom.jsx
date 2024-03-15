@@ -10,6 +10,7 @@ function RegistrationForm() {
 		email: "",
 		password: "",
 	});
+	
 	return (
 		<div className="max-w-xl mx-auto mt-5">
 			<form className="space-y-6 ">
@@ -97,6 +98,7 @@ function RegistrationForm() {
 					</button>
 				</div>
 			</form>
+			
 		</div>
 	);
 }
