@@ -21,7 +21,7 @@ function HotelRooms() {
           description={
             "Our premium room has a signle bed with a small balcon outside and a tv in the room it can host a couple or an individual."
           }
-          priceRWF={"175000/rwf"}
+          priceRWF={"175000/rwf"}                                         
           priceUSD={"175/USD"}
           rooms={"4 Rooms"}
         />
