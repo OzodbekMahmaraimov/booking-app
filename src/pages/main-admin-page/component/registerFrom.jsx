@@ -10,21 +10,6 @@ function RegistrationForm() {
 		email: "",
 		password: "",
 	});
-
-	//   const handleChange = (e) => {
-	//     const { name, value } = e.target;
-	//     setFormData((prevFormData) => ({~
-	//       ...prevFormData,
-	//       [name]: value,
-	//     }));
-	//   };
-
-	//   const handleSubmit = (e) => {
-	//     e.preventDefault();
-	//     // Handle the form submission
-	//     console.log(formData);
-	//   };
-
 	return (
 		<div className="max-w-xl mx-auto mt-5">
 			<form className="space-y-6 ">

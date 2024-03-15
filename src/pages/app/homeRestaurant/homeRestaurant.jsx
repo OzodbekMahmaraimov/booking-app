@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import Navbar from './navbar/Navbar';
-import Home from './home/home';
-import Alert from './alert/Alert';
-import './home.css'
-
-const HomeRestaurant = () => {
-
-  return (
-    <div className='home-restaurant'>
-      <Navbar/>
-      <Home />
-      <Alert />
-=======
 // frameworks
 import 'react-lazy-load-image-component/src/effects/blur.css';
 // style
@@ -61,7 +46,6 @@ const HomeRestaurant = () => {
         <hr className='border-[0.5px] mx-auto w-full' />
         <h5 className='text-center text-lg py-2'>Copyright@ 2022 Design by B.Moise</h5>
       </footer>
->>>>>>> ozodbek/main
     </div>
   )
 }

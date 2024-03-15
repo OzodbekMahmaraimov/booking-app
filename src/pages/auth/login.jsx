@@ -23,7 +23,7 @@ const Login = () => {
     <>
       <div
         className='w-full h-screen bg-[#F1E8D7] flex justify-start items-center flex-col  '>
-        <p className='text-6xl mt-40 mb-5 font-semibold'>Sign in</p>
+        <p className='text-6xl mt-20 mb-5 font-semibold'>Sign in</p>
         <p className='text-lg mb-3'>Sign into your account to be able to make operations on the system</p>
         <div className=' w-[25%] mb-5'>
           <label className="block mb-2 text-sm font-medium text-gray-900 ">Last name</label>
