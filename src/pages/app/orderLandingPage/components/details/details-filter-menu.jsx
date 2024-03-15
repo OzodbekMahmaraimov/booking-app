@@ -25,7 +25,6 @@ const DetailsFilterMenu = ({ itemsCount }) => {
             </span>
             {data.map(item => (
                 <Link
-                    to=''
                     onClick={() => activeHandler(item.id)}
                     className={`${active.id === item.id ? 'text-[#F46A06]' : 'text-black'} 
                     hover:text-[#F46A06] duration-200`}>

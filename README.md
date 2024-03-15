@@ -2,6 +2,8 @@
 
 <h1><a href="https://www.figma.com/file/dOWXll72Gww8GR88QvXG5B/Online-Hospitality-Facility-Finder-System-Design-(Community)?type=design&node-id=84-3096&mode=design&t=kE13BdU6pTYSKosy-0">Maket figma</a></h1>
 
+<p>pagination componentini yozib quydim quyib ishlatasila. url -> orderlandingpage => components => pagination.jsx companenti</p>
+
 <h1>Sardorbek: Sign-up & Create Account & Familiya Managers (ADMIN DASHBOARD)</h1>
 <h1>Ozodbek: Home Restaurant Page </h1>
 <h1>Asilbek: ADMIN DASHBOARD Manage Payment & Account & Analytics</h1>
@@ -12,6 +14,8 @@
 <h1>Abdulaziz: Main hotel dashboard all pages </h1>
 <p>After all are added</p>
 <h1>Hech kimdan xato chiqmadi !</h1>
+<h1>Bola asosiy repositoriyga utvolila !</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
