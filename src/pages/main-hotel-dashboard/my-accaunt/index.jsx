@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaUser, FaPhone, FaEnvelope, FaImage, FaLock, FaUtensils, FaEdit } from 'react-icons/fa';
+import MaindashboardSidebar from '../components/sitebar';
+import { MainDashboardNavigation } from '../components/navigation';
 
 const InputGroup = ({ id, type, name, value, handleChange, placeholder, icon }) => {
     return (
@@ -44,52 +46,66 @@ const MainHotelMyAccount = () => {
     };
 
     return (
-        <div className='w-full p-3 bg-orange-100 rounded-md'>
-            <div className="max-w-full mx-auto my-10 p-6 bg-white  rounded-md shadow-md">
-                <h2 className="text-xl font-semibold text-center text-orange-700 mb-6">Manage your account</h2>
-                <form onSubmit={handleSubmit} className='flex flex-col gap-y-3'>
-                    <InputGroup
-                        id="managerName"
-                        type="text"
-                        name="managerName"
-                        value={formData.managerName}
-                        handleChange={handleChange}
-                        placeholder="Manager Name"
-                        icon={<FaUser />}
-                    />
+        <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
 
-                    {/* Repeat for other input groups */}
-                    <InputGroup
-                        id="managerPhone"
-                        type="tel"
-                        name="managerPhone"
-                        value={formData.managerPhone}
-                        handleChange={handleChange}
-                        placeholder="Manager Phone number"
-                        icon={<FaPhone />}
-                    />
+            {/* ------------- *********** sitebar start **************** -------------- */}
+            <MaindashboardSidebar />
+            {/* ------------- *********** sitebar end **************** -------------- */}
 
-                    <InputGroup
-                        id="managerPhone"
-                        type="tel"
-                        name="managerPhone"
-                        value={formData.managerPhone}
-                        handleChange={handleChange}
-                        placeholder="Manager Phone number"
-                        icon={<FaPhone />}
-                    />
 
-                    <div className="mt-4">
-                        <button
-                            type="submit"
-                            className="w-full p-3 text-white bg-orange-500 rounded-md hover:bg-orange-600 transition duration-200"
-                        >
-                            Update your account
-                        </button>
+            <div div className='col-span-3' >
+                {/* ------------- *********** navigasion component start **************** -------------- */}
+                <div className='py-5'>
+                    <MainDashboardNavigation />
+                </div>
+                <div className='w-full p-3 bg-orange-100 rounded-md'>
+                    <div className="max-w-full mx-auto my-10 p-6 bg-white  rounded-md shadow-md">
+                        <h2 className="text-xl font-semibold text-center text-orange-700 mb-6">Manage your account</h2>
+                        <form onSubmit={handleSubmit} className='flex flex-col gap-y-3'>
+                            <InputGroup
+                                id="managerName"
+                                type="text"
+                                name="managerName"
+                                value={formData.managerName}
+                                handleChange={handleChange}
+                                placeholder="Manager Name"
+                                icon={<FaUser />}
+                            />
+
+                            {/* Repeat for other input groups */}
+                            <InputGroup
+                                id="managerPhone"
+                                type="tel"
+                                name="managerPhone"
+                                value={formData.managerPhone}
+                                handleChange={handleChange}
+                                placeholder="Manager Phone number"
+                                icon={<FaPhone />}
+                            />
+
+                            <InputGroup
+                                id="managerPhone"
+                                type="tel"
+                                name="managerPhone"
+                                value={formData.managerPhone}
+                                handleChange={handleChange}
+                                placeholder="Manager Phone number"
+                                icon={<FaPhone />}
+                            />
+
+                            <div className="mt-4">
+                                <button
+                                    type="submit"
+                                    className="w-full p-3 text-white bg-orange-500 rounded-md hover:bg-orange-600 transition duration-200"
+                                >
+                                    Update your account
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

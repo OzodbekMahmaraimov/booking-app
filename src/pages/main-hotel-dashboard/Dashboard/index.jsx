@@ -52,12 +52,19 @@ const HotelDashboard = () => {
   return (
     <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
 
+      {/* ------------- *********** sitebar start **************** -------------- */}
       <MaindashboardSidebar />
+      {/* ------------- *********** sitebar end **************** -------------- */}
+
+
       < div className='col-span-3' >
+        {/* ------------- *********** navigasion component start **************** -------------- */}
         <div className='py-5'>
-          <MainDashboardNavigation/>
+          <MainDashboardNavigation />
         </div>
-        <div className="p-6 bg-orange-100 w-full h-full  rounded-xl">
+        {/* ------------- *********** navigasion component end **************** -------------- */}
+
+        <div className="p-6 bg-orange-100 w-full   rounded-xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-5">
             {/* cards */}
             <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
@@ -86,10 +93,12 @@ const HotelDashboard = () => {
 
           </div>
 
+          {/* ------------- *********** line into blocks **************** -------------- */}
+
           <div className='border border-gray-500 w-full'></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-5">
-            {/* cards */}
+
             <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
               <div className={`text-4xl `}>🛏️</div>
               <div className="mt-2 text-3xl font-semibold">43</div>
@@ -115,7 +124,7 @@ const HotelDashboard = () => {
             </div>
 
           </div>
-
+          {/* ------------- *********** line into blocks **************** -------------- */}
           <div className='border border-gray-500 w-full'></div>
 
           <div className='grid grid-cols-2 py-5'>
@@ -133,7 +142,6 @@ const HotelDashboard = () => {
 
         </div>
       </div>
-
     </section>
 
   );
