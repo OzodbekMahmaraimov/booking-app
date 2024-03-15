@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AdminDasheboard from "./dashboard";
 import home from "../../../../../assets/img/Vector (1).png";
 import line from "../../../../../assets/images/Line 10.png";
@@ -7,54 +7,106 @@ import { MainDashboardManageRooms } from "../../../../main-hotel-dashboard/magag
 import AdminDashboard from "./dashboard";
 import ResAdminSidebar from "../components/sidebar";
 
-const castTasble = [
-	{
-		id: 1,
-		phone: "+998907748674",
-		name: "Byiringiro Moise",
-		total: "6000Rwf",
-		last: "3000Rwf",
-		send: "...",
-	},
-	{
-		id: 2,
-		phone: "+998907748674",
-		name: "Byiringiro Moise",
-		total: "6000Rwf",
-		last: "3000Rwf",
-		send: "...",
-	},
-	{
-		id: 3,
-		phone: "+998907748674",
-		name: "Byiringiro Moise",
-		total: "6000Rwf",
-		last: "3000Rwf",
-		send: "...",
-	},
-	{
-		id: 4,
-		phone: "+998907748674",
-		name: "Byiringiro Moise",
-		total: "6000Rwf",
-		last: "3000Rwf",
-		send: "...",
-	},
-	{
-		id: 5,
-		phone: "+998907748674",
-		name: "Byiringiro Moise",
-		total: "6000Rwf",
-		last: "3000Rwf",
-		send: "...",
-	},
-];
+
+   
 export const Customer = () => {
+	const [selectedItems, setSelectedItems] = useState({});
+	const [currentPage, setCurrentPage] = useState(1);
+	const itemsPerPage = 5;
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	
+
+	const castTasble = [
+		{
+			id: 1,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+		{
+			id: 2,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+		{
+			id: 3,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+		{
+			id: 4,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+		{
+			id: 5,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+		{
+			id: 6,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+		{
+			id: 6,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+		{
+			id: 7,
+			phone: "+998907748674",
+			name: "Byiringiro Moise",
+			total: "6000Rwf",
+			last: "3000Rwf",
+			send: "...",
+		},
+	];
+
+	
+
+	const lastPageIndex = currentPage * itemsPerPage;
+	const firstPageIndex = lastPageIndex - itemsPerPage;
+	const currentItems = castTasble.slice(firstPageIndex, lastPageIndex);
+
+	
+
+	
+
+	
+	const nextPage = () => {
+		setCurrentPage((prevPage) => prevPage + 1);
+	};
+
+	const prevPage = () => {
+		setCurrentPage((prevPage) => prevPage - 1);
+	};
 	return (
 		<div className="w-full bg-orange-400">
 			<div className="flex">
 				<ResAdminSidebar className="w-[25%]" />
-				<div className="w-[75%]">
+				<div className="w-[70%]">
 					<div className="flex ml-4 px-2">
 						<img className="w-10 h-10 mt-20 ml-4" src={home} alt="" />
 						<img className="w-5 h-12 mt-20 ml-2" src={line} alt="" />
@@ -78,7 +130,7 @@ export const Customer = () => {
 								<th>Last order</th>
 								<th></th>
 							</tr>
-							{castTasble.map((item, i) => (
+							{currentItems.map((item, i) => (
 								<tr key={item.id}>
 									<td className="p-4">{item.id}</td>
 									<td>{item.phone}</td>
@@ -89,14 +141,22 @@ export const Customer = () => {
 								</tr>
 							))}
 						</table>
-						<div className="py-3">
-							<button className="bg-orange-500 rounded-md w-32 h-10 text-white font-bold">
-								Previous
-							</button>
-							<button className="bg-orange-500 rounded-md w-32 h-10 text-white font-bold ml-2">
-								Next
-							</button>
-						</div>
+						<div className="p-2">
+						<button
+							onClick={ prevPage }
+							disabled={currentPage === 1}
+							className="bg-[#F46A06] m-1 hover:bg-white hover:text-black text-white hover:transition-all border-2 border-[#F46A06] py-2 px-3 rounded-md"
+						>
+							Previous
+						</button>
+						<button
+							onClick={nextPage}
+							disabled={currentPage >= Math.ceil(castTasble.length / itemsPerPage)}
+							className="bg-[#F46A06] m-1 hover:bg-white hover:text-black text-white hover:transition-all border-2 border-[#F46A06] py-2 px-3 rounded-md"
+						>
+							Next
+						</button>
+					</div>
 					</div>
 				</div>
 			</div>
