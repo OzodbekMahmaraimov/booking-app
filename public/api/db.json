@@ -756,6 +756,13 @@
 				"category": "Coffee",
 				"price": "2500.00RWF",
 				"quantity": 20
+			},
+			{
+				"id": "21",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
 			}
 		],
 		"mainadmin": {
