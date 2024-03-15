@@ -1,10 +1,13 @@
 import React from "react";
-import logo from "./../../../../../../assets/images/HFfinder.png";
-import userIcon from "./../../../../../../assets/images/Component 5.png";
-import menuIcon1 from "../../../../../../assets/images/clarity_list-line.png";
-import menuIcon2 from "../../../../../../assets/images/clarity_list-line (1).png";
-import anally from "../../../../../../assets/images/logos_google-analytics.png";
-import vector from "../../../../../../assets/images/Vector.png";
+import logo from "./../../../../../assets/images/HFfinder.png";
+import userIcon from "./../../../../../assets/images/Component 5.png";
+import menuIcon1 from "../../../../../assets/images/clarity_list-line.png";
+import menuIcon2 from "../../../../../assets/images/clarity_list-line (1).png";
+import anally from "../../../../../assets/images/logos_google-analytics.png";
+import vector from "../../../../../assets/images/Vector.png";
+import customers from "../../../../../assets/images/raphael_customer.png";
+import { Link } from "react-router-dom";
+import ItemList from "../category/list";
 
 const ResAdminSidebar = () => {
 	return (
@@ -33,14 +36,24 @@ const ResAdminSidebar = () => {
 				{/* menu category */}
 				<div className="flex flex-col justify-start">
 					{/* first */}
-					<div className="mt-7 flex items-center bg-[#F46A06] gap-2 p-2 rounded-xl hover:cursor-pointer select-none">
-						<img src={menuIcon1} alt="" />
-						<p className="text-xl">Item List</p>
-					</div>
-					<div className="mt-7 flex items-center  gap-2 p-2 rounded-xl hover:bg-[#ccc] hover:cursor-pointer select-none">
-						<img src={menuIcon2} alt="" />
-						<p className="text-xl">Order List</p>
-					</div>
+					<Link to="/itemlist">
+						<div className="mt-7 flex items-center  gap-2 p-2 rounded-xl hover:bg-[#ccc] hover:cursor-pointer select-none">
+							<img src={menuIcon1} alt="" />
+							<p className="text-xl">Item List</p>
+						</div>
+					</Link>
+					<Link to="/orderlist">
+						<div className="mt-7 flex items-center  gap-2 p-2 rounded-xl hover:bg-[#ccc] hover:cursor-pointer select-none">
+							<img src={menuIcon2} alt="" />
+							<p className="text-xl">Order List</p>
+						</div>
+					</Link>
+					<Link to="/customer">
+						<div className="mt-7 flex items-center  gap-2 p-2 rounded-xl hover:bg-[#ccc] hover:cursor-pointer select-none">
+							<img src={customers} alt="" />
+							<p className="text-xl">Customer</p>
+						</div>
+					</Link>
 					<div className="mt-7 flex items-center gap-2 p-2 rounded-xl hover:bg-[#ccc] hover:cursor-pointer select-none">
 						<img src={anally} alt="" />
 						<p className="text-xl">Manage Payments</p>

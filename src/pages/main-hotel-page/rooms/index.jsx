@@ -3,6 +3,8 @@ import RoomCard from "../components/cards/roomCard";
 import { landingBg } from "../../../assets/hotel-page";
 import CheckOutCard from "../components/cards/checkOutCard";
 import AboutCard from "../components/cards/aboutCard";
+import CheckoutInfo from "../components/cards/checkoutInfoCard";
+import PaymentForm from "../components/cards/paymentForm";
 
 function HotelRooms() {
   const [rooms, setRooms] = useState(1);
@@ -30,6 +32,7 @@ function HotelRooms() {
       ) : (
         setRooms(1)
       )}
+
     </div>
   );
 }

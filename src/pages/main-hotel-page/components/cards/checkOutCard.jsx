@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const CheckOutCard = ({change}) => {
-  const [checkInDate, setCheckInDate] = useState('');
-  const [checkOutDate, setCheckOutDate] = useState('');
+  const [checkInDate, setCheckInDate] = useState("");
+  const [checkOutDate, setCheckOutDate] = useState("");
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
   const [rooms, setRooms] = useState(0);
-  const [amenity, setAmenity] = useState('Fan');
+  const [amenity, setAmenity] = useState("Fan");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -41,6 +41,7 @@ const CheckOutCard = ({change}) => {
       <div className="grid grid-cols-3 gap-4 mb-4">
         <div className="flex flex-col">
           <label htmlFor="adults" className="mb-2 text-lg text-shadow text-gray-700">Adults</label>
+
           <input
             type="number"
             id="adults"
@@ -51,6 +52,7 @@ const CheckOutCard = ({change}) => {
         </div>
         <div className="flex flex-col">
           <label htmlFor="children" className="mb-2 text-lg text-shadow text-gray-700">Children</label>
+
           <input
             type="number"
             id="children"
@@ -61,6 +63,7 @@ const CheckOutCard = ({change}) => {
         </div>
         <div className="flex flex-col">
           <label htmlFor="rooms" className="mb-2 text-lg text-shadow text-gray-700">Rooms</label>
+
           <input
             type="number"
             id="rooms"
@@ -78,11 +81,12 @@ const CheckOutCard = ({change}) => {
           type="radio"
           name="amenity"
           value="Fan"
-          checked={amenity === 'Fan'}
-          onChange={() => setAmenity('Fan')}
+          checked={amenity === "Fan"}
+          onChange={() => setAmenity("Fan")}
           className="mr-2"
         />
         <label htmlFor="fan" className="mr-4 text-shadow">Fan</label>
+
         <input
           id="air-conditioned"
           type="radio"
@@ -91,6 +95,7 @@ const CheckOutCard = ({change}) => {
           checked={amenity === 'Air conditioned'}
           onChange={() => setAmenity('Air conditioned')}
           className="mr-2 "
+
         />
         <label htmlFor="air-conditioned text-shadow
         ">Air conditioned</label>
@@ -102,6 +107,7 @@ const CheckOutCard = ({change}) => {
       }} className="w-full px-4 py-2 bg-orange-500 text-white font-bold text-shadow shadow-xl rounded hover:bg-orange-600">
         Proceed
       </button>
+
     </form>
   );
 };
