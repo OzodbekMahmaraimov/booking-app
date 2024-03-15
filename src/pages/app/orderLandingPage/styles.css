@@ -24,3 +24,26 @@
         box-shadow: 0px 4px 4px 0px #0000006b;
     }
 }
+
+/* detailsning gallery qismi uchun style */
+.zoom-gallery {
+    animation: all 1s ease-in-out;
+    animation-name: zoom-modal;
+}
+
+@keyframes zoom-modal {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 70%;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}

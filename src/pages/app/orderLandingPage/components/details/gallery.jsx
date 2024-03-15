@@ -56,7 +56,7 @@ const Gallery = ({ imgData }) => {
                             &gt;
                         </button>
                         <img
-                            className="max-h-full max-w-full"
+                            className="max-h-full max-w-full zoom-gallery"
                             src={modalImage}
                             alt="Modal Image"
                         />
