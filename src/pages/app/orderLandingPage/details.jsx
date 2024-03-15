@@ -49,6 +49,7 @@ const Details = () => {
   const [items, setItems] = useState(data)
   const [itemsCount, setItemsCount] = useState(0)
   const goBack = () => window.history.back();
+  sessionStorage.getItem('detailsId')
 
   useEffect(() => {
     setItemsCount(items && items.map(c => c.shoppingCount).reduce((a, b) => a + b))
@@ -59,7 +60,7 @@ const Details = () => {
       <Navbar navdata={navdata} />
       {/* first section bg img */}
       <div
-        className='bg-cover bg-center w-full h-[75vh] rounded-b-2xl'
+        className='bg-cover bg-center w-full h-[85vh] rounded-b-2xl'
         style={{ backgroundImage: `url(${detailsBg})` }}></div>
 
       <div className='max-w-[1200px] mx-auto relative'>
