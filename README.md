@@ -14,6 +14,8 @@
 <h1>Abdulaziz: Main hotel dashboard all pages </h1>
 <p>After all are added</p>
 <h1>Hech kimdan xato chiqmadi !</h1>
+<h1>Bola asosiy repositoriyga utvolila !</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
