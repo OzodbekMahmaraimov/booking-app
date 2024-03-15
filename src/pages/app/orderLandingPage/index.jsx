@@ -4,12 +4,7 @@ import Cards from "./components/cards";
 import FilterMenu from "./components/filter-menu";
 import FirstSection from "./components/firstSection";
 import './styles.css';
-import {
-  img1, img2, img3, img4, img5, img6,
-  hotel1, hotel2, hotel3, hotel4, hotel5, hotel6,
-  res1, res2, res3, res4, res5, res6,
-  cofe1, cofe2, cofe3, cofe4, cofe5, cofe6
-} from "../../../assets/landing-img";
+import { img1 } from "../../../assets/landing-img";
 import AboutFinder from "./components/about-finder";
 import Footer from "./components/footer";
 import { useEffect, useState } from "react";
@@ -59,9 +54,10 @@ const OrderLanding = () => {
       .then(res => {
         setMainData(res.data.mainOrder)
         setMainDataFilter(res.data.mainOrder)
+        console.log(res.data.mainOrder.img)
       }).catch((err) => console.log(err))
-  }
 
+  }
   const filterHandler = categoryName => {
     if (categoryName === 'all') {
       setMainData(mainDataFilter)
