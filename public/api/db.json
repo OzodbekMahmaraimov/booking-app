@@ -153,198 +153,200 @@
 				"price": "2500.00RWF",
 				"quantity": 20
 			}
+		],
+		"mainadmin": [
+			{
+				"payment": [
+					{
+						"user": [
+							{
+								"id": "1",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "2",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "3",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "4",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "5",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "6",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "7",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "8",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "9",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "10",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "11",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "12",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "13",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "14",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "15",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "16",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "17",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "18",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "19",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							},
+							{
+								"id": "20",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
+								"facility": "Soy asian- restaurant",
+								"paid": "1050000 Rwf",
+								"earned": "20000Rwf"
+							}
+						]
+					}
+				]
+			}
 		]
+
 	},
-	"mainadmin": [
-		{
-			"payment": [
-				{
-					"user": [
-						{
-							"id": "1",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "2",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "3",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "4",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "5",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "6",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "7",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "8",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "9",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "10",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "11",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "12",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "13",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "14",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "15",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "16",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "17",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "18",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "19",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						},
-						{
-							"id": "20",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
-						}
-					]
-				}
-			]
-		}
-	],
+	
 	"hotel-manage": {
 		"manage-hotels-dashboard": {
 			"Total-Rooms": 10,
@@ -421,7 +423,7 @@
 			}
 		]
 	},
-	
+
 	"main-admin-dashboard": {
 		"hotelmanager": [
 			{
