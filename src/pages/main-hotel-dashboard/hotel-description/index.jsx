@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
+import axios from 'axios';
+import { Api } from '../components/api';
 // import MainHotelDashboardButton from '../components/';
 
 const HotelDashboardDescription = () => {
+    const [description, setdescription] = useState(null)
+    useEffect(() => {
+        getHotelDescription()
+    }, [])
+
+    function getHotelDescription() {
+        axios.get(`${Api}hotel-manage/`)
+            .then((res) => {
+                console.log(res.data);
+                setdescription(res.data["manage-hotels-description"])
+                console.log(res.data["manage-hotels-description"]);
+            }).catch((err) => {
+                console.error(err)
+            })
+    }
     return (
         <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
 
