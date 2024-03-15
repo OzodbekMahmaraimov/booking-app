@@ -27,7 +27,7 @@ export const MainDashboardNavigation = () => {
             <li key={name} className="flex items-center">
               <Link to={routeTo} className="flex items-center px-4 py-2 rounded-md text-sm font-medium gap-4 flex-row">
                 {name}
-              </Link>/
+              </Link>👉🏻
             </li>
           );
         })}
