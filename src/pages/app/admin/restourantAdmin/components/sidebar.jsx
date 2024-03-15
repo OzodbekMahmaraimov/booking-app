@@ -7,7 +7,7 @@ import anally from "../../../../../assets/images/logos_google-analytics.png";
 import vector from "../../../../../assets/images/Vector.png";
 import customers from "../../../../../assets/images/raphael_customer.png";
 import { Link } from "react-router-dom";
-import ItemList from "./../itemList/category/list";
+import ItemList from "../category/list";
 
 const ResAdminSidebar = () => {
 	return (

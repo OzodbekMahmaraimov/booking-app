@@ -2,7 +2,7 @@ import React from "react";
 import home from "../../../../../assets/images/Vector (1).png";
 import line from "../../../../../assets/images/Line 10.png";
 import AdminDashboard from "./dashboard";
-import ResAdminSidebar from "../resAdminSidebar/sidebar";
+import ResAdminSidebar from "../components/sidebar";
 
 const navData = [
 	{ id: 1, name: "All Orders" },
