@@ -5,6 +5,7 @@ import Login from './pages/auth/login'
 import SignUp from './pages/auth/signUp'
 import IndexMain from './pages/main-admin-page'
 import MainOrder from './pages/app/orderLandingPage/routes'
+import { MainHotelDashboard } from './pages/main-hotel-dashboard'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/signUp' Component={SignUp} />
       </Routes>
       <MainOrder />
+      <MainHotelDashboard />
     </>
   )
 }

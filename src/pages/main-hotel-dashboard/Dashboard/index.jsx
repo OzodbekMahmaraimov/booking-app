@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Api } from '../components/api';
+import MaindashboardSidebar from '../components/sitebar';
+import { MainDashboardNavigation } from '../components/navigation';
 
 // Har bir statistika kartochkasini ifodalovchi komponent
 const StatCard = ({ icon, number, label }) => {
@@ -38,7 +40,7 @@ const HotelDashboard = () => {
   useEffect(() => {
     getAllRooms()
   }, [])
-  
+
   function getAllRooms() {
     axios.get(`${Api}manage-hotels-dashboard-rooms `)
       .then((res) => {
@@ -48,81 +50,92 @@ const HotelDashboard = () => {
       })
   }
   return (
-    <div className="p-6 bg-orange-100 w-full h-full  rounded-xl">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-5">
-        {/* cards */}
-        <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">{allRooms}</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
+    <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
 
-        <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
+      <MaindashboardSidebar />
+      < div className='col-span-3' >
+        <div className='py-5'>
+          <MainDashboardNavigation/>
         </div>
+        <div className="p-6 bg-orange-100 w-full h-full  rounded-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-5">
+            {/* cards */}
+            <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">{allRooms}</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
 
-        <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">2</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
+            <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">2</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center  p-4">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+
+          </div>
+
+          <div className='border border-gray-500 w-full'></div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-5">
+            {/* cards */}
+            <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center  p-4">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+
+          </div>
+
+          <div className='border border-gray-500 w-full'></div>
+
+          <div className='grid grid-cols-2 py-5'>
+            <div className="flex flex-col col-span-1 items-center justify-center p-4 border-r-2 border-gray-500">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+            <div className="flex flex-col items-center justify-center  p-4">
+              <div className={`text-4xl `}>🛏️</div>
+              <div className="mt-2 text-3xl font-semibold">43</div>
+              <div className="text-md text-gray-700">Total Rooms</div>
+            </div>
+          </div>
+
         </div>
-
-        <div className="flex flex-col items-center justify-center  p-4">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
-
       </div>
 
-      <div className='border border-gray-500 w-full'></div>
+    </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-5">
-        {/* cards */}
-        <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center  p-4">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
-
-      </div>
-
-      <div className='border border-gray-500 w-full'></div>
-
-      <div className='grid grid-cols-2 py-5'>
-        <div className="flex flex-col col-span-1 items-center justify-center p-4 border-r-2 border-gray-500">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
-        <div className="flex flex-col items-center justify-center  p-4">
-          <div className={`text-4xl `}>🛏️</div>
-          <div className="mt-2 text-3xl font-semibold">43</div>
-          <div className="text-md text-gray-700">Total Rooms</div>
-        </div>
-      </div>
-
-    </div>
   );
 };
 

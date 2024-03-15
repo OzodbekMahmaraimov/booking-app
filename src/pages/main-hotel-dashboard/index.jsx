@@ -9,32 +9,18 @@ import { MainDashboardManageRooms } from './magage-rooms';
 import { MainDashboardNavigation } from './components/navigation';
 import MainDashboardRoomForm from './magage-rooms/addnewroom';
 import TableComponent from './hotelmanager-dashboard';
+import { Route, Routes } from 'react-router-dom';
 
 export const MainHotelDashboard = () => {
 
     const [isModalOpen, setModalOpen] = useState(false);
 
     return (
-        <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
-            {/* <Routes>
-                <Route path='/MainHotelDashboard/nimadir' Component={<Dashboard/>} />
-            </Routes> */}
-
-            <MaindashboardSidebar />
-            <div className='col-span-3'>
-                <div className='py-5'>
-                    <MainDashboardNavigation/>
-                </div>
-                {/* <HotelDashboard/> */}
-                {/* <HotelDashboardManageServises /> */}
-                {/* <MainHotelMyAccount/> */}
-                {/* <HotelDashboardDescription/> */}
-                {/* <MainDashboardManageRooms/> */}
-                {/* <TableComponent/> */}
-                <MainDashboardRoomForm/>
-
-            </div>
-        </section>
+        <>
+            <Routes>
+                <Route path='/MainHotelDashboard/nimadir' Component={HotelDashboard} />
+            </Routes>
+        </>
     )
 }
 
