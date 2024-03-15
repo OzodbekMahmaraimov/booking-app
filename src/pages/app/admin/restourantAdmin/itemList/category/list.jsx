@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import homeIcon from "./../../../../../../assets/images/Vector (1).png";
 import blackLine from "./../../../../../../assets/images/Line 10.png";
 import menuIcon from "./../../../../../../assets/images/svg.svg";
+import ResAdminSidebar from "../../resAdminSidebar/sidebar";
 
 const ItemList = () => {
 	const [selectedItems, setSelectedItems] = useState({});
@@ -69,8 +70,9 @@ const ItemList = () => {
 
 	return (
 		<div>
-			<div className="flex items-center justify-between py-3 px-4 mt-5">
-				<div className="flex items-center gap-1">
+			<div className="flex items-center justify-between py-3 px-4 mt-5 ">
+				<ResAdminSidebar className="w-[25%]" />
+				<div className="flex  gap-1 ">
 					<div>
 						<img src={homeIcon} alt="home icon" />
 					</div>
@@ -92,8 +94,8 @@ const ItemList = () => {
 					</button>
 				</div>
 			</div>
-			<div className="w-[95%] h-[570px] rounded-xl bg-[#F1E8D7] p-2">
-				<div className="bg-white w-full h-full rounded-xl">
+			<div className="w-[75%] h-[570px] rounded-xl bg-[#F1E8D7] p-2 flex">
+				<div className="bg-white w-[100%] h-full rounded-xl">
 					<div className="p-2">
 						<button className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
 							Add new item
