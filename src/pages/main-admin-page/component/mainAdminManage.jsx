@@ -1,5 +1,9 @@
 import React from 'react'
 import RegistrationForm from './registerFrom'
+<<<<<<< HEAD
+=======
+import RegisterTable from './registerTable'
+>>>>>>> sardorbek/main
 
 const MainAdminManager = () => {
     const interButton = [
@@ -15,7 +19,11 @@ const MainAdminManager = () => {
 
     ]
     return (
+<<<<<<< HEAD
         <div className='w-full h-screen bg-[#FFF] rounded-lg'>
+=======
+        <div className='w-full h-auto bg-[#FFF] rounded-lg'>
+>>>>>>> sardorbek/main
             <div className='flex justify-evenly items-center'>
                 {interButton &&
                     interButton.map((res, i) =>
@@ -25,9 +33,18 @@ const MainAdminManager = () => {
                     )
                 }
             </div>
+<<<<<<< HEAD
             <div>
                 <RegistrationForm />
             </div>
+=======
+            
+            <div>
+                <RegistrationForm />
+                <RegisterTable/>
+            </div>
+            
+>>>>>>> sardorbek/main
         </div >
     )
 }
