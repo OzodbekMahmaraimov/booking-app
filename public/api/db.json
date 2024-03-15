@@ -420,5 +420,14 @@
 				"rol": "user"
 			}
 		]
+	},
+	
+	"main-admin-dashboard": {
+		"hotelmanager": [
+			{
+				"id": 1,
+				"name": "FullNames"
+			}
+		]
 	}
 }
