@@ -1,4 +1,17 @@
 {
+    "category": [
+        {
+            "id": 1,
+            "name": "Category 1" 
+        }
+    ],
+    "slider": [
+        {
+            "id": 1,
+            "name": "Slider 1"
+        }
+    ]
+}
 	"category": [
 		{
 			"id": 1,
