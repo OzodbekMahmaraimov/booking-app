@@ -8,44 +8,35 @@ import axios from 'axios';
 import { Api, byId } from '../components/api';
 
 const MainDashboardRoomForm = () => {
-  const [elfrom, setelfrom] = useState(false)
-  const [roomdata, setroomdata] = useState({})
+  const [roomData, setRoomData] = useState({});
+  const [allRooms, setAllRooms] = useState([]);
+  const [roomsLength, setRoomsLength] = useState(0);
 
   useEffect(() => {
     getHotelManageData();
-  }, [])
+  }, []);
 
   const getHotelManageData = async () => {
     try {
       const response = await axios.get('http://localhost:3000/hotel-manage');
-      const roomsData = response.data;
-      console.log(roomsData);
-      setroomdata(roomsData);
-      // Endi roomsData o'zgaruvchisida "manage-hotels-dashboard-rooms" yo'lidagi ma'lumotlar bor
-      // Siz bu ma'lumotlar bilan kerakli amallarni bajara olasiz
+      setRoomData(response.data);
+      setAllRooms(response.data["manage-hotels-dashboard-rooms"]);
+      setRoomsLength(response.data["manage-hotels-dashboard-rooms"].length);
     } catch (error) {
       console.error('Error fetching hotel manage data:', error);
     }
   };
 
-  // Funksiyani chaqirish
-
   const handleSave = () => {
-    const roomNumber = document.getElementById('room-number').value;
-    const roomPrice = document.getElementById('room-price').value;
-    const roomType = document.getElementById('room-type').value;
-    const roomDescription = document.getElementById('room-description').value;
-    const roomImage = document.getElementById('room-image').files[0];
+    const roomNumber = byId('room-number').value;
+    const roomPrice = byId('room-price').value;
+    const roomType = byId('room-type').value == 'Premium' ? true : false;
+    const roomDescription = byId('room-description').value;
+    const roomImage = byId('room-image').files[0];
 
-    // Elementlarning mavjudligini tekshirish
-    const allFieldsFilled = roomNumber && roomPrice && roomType && roomDescription && roomImage;
-
-    // useState yordamida elfrom qiymatini o'zgartirish
-    setelfrom(allFieldsFilled);
-
-    // allFieldsFilled shart asosida POST so'rovini yuborish
-    if (allFieldsFilled) {
+    if (roomNumber && roomPrice && roomType && roomDescription && roomImage) {
       const formData = new FormData();
+      formData.append("id", roomsLength + 1);
       formData.append('Room-no', roomNumber);
       formData.append('Room-Type', roomType);
       formData.append('Room-Status', true);
@@ -56,17 +47,24 @@ const MainDashboardRoomForm = () => {
       formData.append('Total-payment', roomPrice);
       formData.append('Pending payments', false);
 
-      axios.post(`${Api}manage-hotels-dashboard-rooms`, formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      })
-        .then((res) => {
-          console.log(res.data);
+
+      const object = {};
+      
+      for (let [key, value] of formData.entries()) {
+        object[key] = value;
+      }
+      roomData["manage-hotels-dashboard-rooms"].push(object);
+
+      axios.put('http://localhost:3000/hotel-manage', roomData)
+        .then((response) => {
+          console.log('Room added:', response.data);
+          getHotelManageData(); 
         })
-        .catch((err) => {
-          console.error(err);
+        .catch((error) => {
+          console.error('Error adding new room:', error);
         });
+    } else {
+      console.error('Please fill in all fields.');
     }
   };
 

@@ -1,34 +1,78 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaEye, FaToolbox } from 'react-icons/fa';
 import RoomBookingModal from '../components/room-description-modal';
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
 import MainHotelDashboardButton from '../components/button';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { Api } from '../components/api';
+import { logDOM } from '@testing-library/react';
 // import MainHotelDashboardButton from '../components/button';
 
 export const MainDashboardManageRooms = () => {
+    const [roomDatas, setRoomDatas] = useState([]);
+    const [roomId, setRoomId] = useState(0);
     // Bu erda jadval ma'lumotlari bo'lishi mumkin, hozircha qattiq kodlangan
-    const data = [
-        {
-            roomNo: 'P001',
-            roomType: 'premium room',
-            price: '175000 RWF',
-            status: 'Room booked',
-            checkIn: 'Checked in',
-            checkOut: 'Not yet',
-        },
-        {
-            roomNo: 'P001',
-            roomType: 'premium room',
-            price: '175000 RWF',
-            status: 'Room booked',
-            checkIn: 'Checked in',
-            checkOut: 'Not yet',
-        },
-        // Qo'shimcha ma'lumotlar...
-    ];
-    const [dats] = useState(data);
+    const [roomData, setRoomData] = useState({});
+    const [allRooms, setAllRooms] = useState([]);
+    const [roomsLength, setRoomsLength] = useState(0);
+    const [currentRoomId, setCurrentRoomId] = useState({});
+
+    // ------------- *********** for geting rooms ************************* -------------- //
+    useEffect(() => {
+        getRooms()
+    }, [])
+
+    const getRooms = async () => {
+        try {
+            const res = await axios.get(`${Api}hotel-manage`)
+            setRoomDatas(res.data['manage-hotels-dashboard-rooms']);
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+
+    // ------------- *********** for geting rooms ************************* -------------- //
+
+
+
+
+    useEffect(() => {
+        getHotelManageData();
+    }, []);
+
+    const getHotelManageData = async () => {
+        try {
+            const response = await axios.get('http://localhost:3000/hotel-manage');
+            setRoomData(response.data);
+            setAllRooms(response.data["manage-hotels-dashboard-rooms"]);
+            setRoomsLength(response.data["manage-hotels-dashboard-rooms"].length);
+        } catch (error) {
+            console.error('Error fetching hotel manage data:', error);
+        }
+    };
+
+    const changebooked = (id, status) => {
+
+        setCurrentRoomId(allRooms.find(room => room.id === id))
+        currentRoomId['Room-Status'] = false
+        console.log(currentRoomId['Room-Status']);
+
+
+
+        axios.put('http://localhost:3000/hotel-manage', roomData)
+            .then((response) => {
+                console.log('Room added:', response.data);
+            })
+            .catch((error) => {
+                console.error('Error adding new room:', error);
+            });
+            getRooms()
+    }
+    // Qo'shimcha ma'lumotlar...
 
 
     // Komponentning boshqa qismida
@@ -75,7 +119,7 @@ export const MainDashboardManageRooms = () => {
                         <div className='flex justify-between items-center'>
                             <div className='flex items-center'>
                                 <h1>Show</h1>
-                                <button className='bg-orange-200 rounded-md border-orange-300 border-2 px-3 ml-3'>10</button>
+                                <button className='bg-orange-200 rounded-md border-orange-300 border-2 px-3 ml-3'>{roomsLength}</button>
                             </div>
                             <div className='flex items-center'>
                                 <h1>Search :</h1>
@@ -94,6 +138,7 @@ export const MainDashboardManageRooms = () => {
                                     Room Type
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    price
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Room Status
@@ -110,26 +155,32 @@ export const MainDashboardManageRooms = () => {
                             </tr>
                         </thead>
                         <tbody className="bg-orange-100 divide-y divide-gray-200">
-                            {dats.map((row, i) => (
+                            {roomDatas.length > 0 && roomDatas.map((row, i) => (
                                 <tr key={i}>
-                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{row.roomNo}</td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row.roomType}</td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row.price}</td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row.status}</td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row.checkIn}</td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row.checkOut}</td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{row['Room-no']}</td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row['Room-Type'] ? "premium" : "normal"}</td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row['Total-payment']}</td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row["Room-Status"] == true ? "booked" : "unbooked"}</td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row['check-in'] ? "checked in" : 'not yet'}</td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row['check-in'] ? "checked out" : 'not yet'}</td>
                                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex">
-                                        <p onClick={openModal} href="#" className="text-indigo-600 hover:text-indigo-900">
+                                        <p onClick={() => {
+                                            openModal()
+                                            setRoomId(row.id)
+
+                                        }} href="#" className="text-indigo-600 hover:text-indigo-900">
                                             <FaEye className="inline-block" />
                                         </p>
-                                        <p href="#" className="text-indigo-600 hover:text-indigo-900 ml-4">
+                                        <p onClick={() => {
+                                            changebooked(row.id , row["Room-Status"])
+                                        }} href="#" className="text-indigo-600 hover:text-indigo-900 ml-4">
                                             <FaToolbox className="inline-block" />
                                         </p>
                                     </td>
                                 </tr>
                             ))}
                         </tbody>
-                        {isModalOpen && <RoomBookingModal isOpen={isModalOpen} isclose={closeModal} />}
+                        {isModalOpen && <RoomBookingModal isOpen={isModalOpen} isclose={closeModal} id={roomId} />}
                     </table>
                 </div>
             </div>

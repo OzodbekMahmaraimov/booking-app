@@ -1,7 +1,18 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
-const RoomBookingModal = ({ isOpen, isclose }) => {
+
+const RoomBookingModal = ({ isOpen, isclose, id }) => {
     const [isModalOpen, setModalOpen] = useState(isOpen);
+    const [rooms, setRooms] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3000/hotel-manage').then(res => {
+            const room = res.data['manage-hotels-dashboard-rooms'].find(room => room.id === id);
+            setRooms(room)
+
+        })
+    }, [])
 
     const openModal = () => setModalOpen(!isModalOpen);
     return (
@@ -10,16 +21,10 @@ const RoomBookingModal = ({ isOpen, isclose }) => {
                 <div className="bg-white p-5 rounded-lg shadow-xl m-4 max-w-md w-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">Room booked info</h2>
                     <div className="space-y-3">
-                        <InfoRow label="Room no" value="P001" />
-                        <InfoRow label="Room type" value="Premium room" />
-                        <InfoRow label="Room price" value="175000 Rwf" />
-                        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Customer information</h2>
-                        <InfoRow label="Customer name" value="Byiringiro Moise" />
-                        <InfoRow label="Customer email" value="mbyiringiro18@gmail.com" />
-                        <InfoRow label="Customer phone number" value="+250781850774" />
-                        <InfoRow label="Customer address" value="Kicukiro" />
-                        <InfoRow label="Booked days" value="3" />
-                        <InfoRow label="Money paid" value="175000 RWF" />
+                        <InfoRow label="Room no" value={rooms["Room-no"]} />
+                        <InfoRow label="Room type" value={rooms['Room-Type'] ? "premium" : "normal"} />
+                        <InfoRow label="Room price" value={rooms['Total-payment']} />
+                        <InfoRow label="Room description" value={rooms['Room-Description']} />
                     </div>
                     <div className="mt-6 text-center">
                         <button

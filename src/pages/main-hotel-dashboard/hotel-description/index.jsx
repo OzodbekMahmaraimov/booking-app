@@ -15,11 +15,15 @@ const HotelDashboardDescription = () => {
     function getHotelDescription() {
         axios.get(`${Api}hotel-manage/`)
             .then((res) => {
-                console.log(res.data);
+                
                 setdescription(res.data["manage-hotels-description"])
             }).catch((err) => {
                 console.error(err)
             })
+    }
+
+    function setHotelRoom() {
+
     }
     return (
         <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
