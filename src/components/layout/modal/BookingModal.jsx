@@ -2,8 +2,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import thanks1 from '../../../assets/images/thanks1.svg';
 import thanks2 from '../../../assets/images/thanks2.svg';
 
-const BookingModal = ({ setModal, setIsPay }) => {
-  if (!setModal) return null;
+const BookingModal = ({ setModal, setIsPay, isModal }) => {
+  if (!isModal) return null;
 
   return (
     <div className="fixed modal-backdrop top-0 z-20 flex justify-center items-center left-0 inset-0 bg-gray-600 bg-opacity-50 overflow-hidden h-screen w-full">
