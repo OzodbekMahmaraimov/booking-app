@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.landing-main {
+    font-family: "Quicksand", sans-serif;
+}
+
+.details-main-font {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* btn styles */
+.landing-btn {
+    width: 241px;
+    height: 58px;
+    border-radius: 5px;
+    background: #F46A06;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    &:hover {
+        background: #f68738;
+        box-shadow: 0px 4px 4px 0px #0000006b;
+    }
+}
+
+/* detailsning gallery qismi uchun style */
+.zoom-gallery {
+    animation: all 1s ease-in-out;
+    animation-name: zoom-modal;
+}
+
+@keyframes zoom-modal {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 70%;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
