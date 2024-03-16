@@ -1066,8 +1066,92 @@
 			}
 		]
 	},
-	"manager-dashboard":{
-		
+	"manager-dashboard": {
+		"orderlist":[
+			{
+				"orderId":1,
+				"time":"08:30:12",
+				"date":"2022-04-20",
+				"name":"Moise Byiringiro",
+				"ordered":"yes",
+				"status":"Pending"
+			},
+			{
+				"orderId":2,
+				"time":"08:30:12",
+				"date":"2022-04-20",
+				"name":"Moise Byiringiro",
+				"ordered":"yes",
+				"status":"Paid"
+			},
+			{
+				"orderId":3,
+				"time":"08:30:12",
+				"date":"2022-04-20",
+				"name":"Moise Byiringiro",
+				"ordered":"yes",
+				"status":"Canceled"
+			},
+			{
+				"orderId":4,
+				"time":"08:30:12",
+				"date":"2022-04-20",
+				"name":"Moise Byiringiro",
+				"ordered":"yes",
+				"status":"Paid"
+			},
+			{
+				"orderId":5,
+				"time":"08:30:12",
+				"date":"2022-04-20",
+				"name":"Moise Byiringiro",
+				"ordered":"yes",
+				"status":"Pending"
+			}
+		],
+		"customers":[
+			{
+				"id":1,
+				"phone":"+998907748674",
+				"name":"BWOK RESTAURANT",
+				"spend":"6000Rwf",
+				"order":"3000Rwf"
+
+			},
+			{
+				"id":2,
+				"phone":"+998907748674",
+				"name":"BWOK RESTAURANT",
+				"spend":"6000Rwf",
+				"order":"3000Rwf"
+
+			},
+			{
+				"id":3,
+				"phone":"+998907748674",
+				"name":"BWOK RESTAURANT",
+				"spend":"6000Rwf",
+				"order":"3000Rwf"
+
+			},
+			{
+				"id":4,
+				"phone":"+998907748674",
+				"name":"BWOK RESTAURANT",
+				"spend":"6000Rwf",
+				"order":"3000Rwf"
+
+			},
+			{
+				"id":5,
+				"phone":"+998907748674",
+				"name":"BWOK RESTAURANT",
+				"spend":"6000Rwf",
+				"order":"3000Rwf"
+
+			}
+		]
+
 	}
 
 }
