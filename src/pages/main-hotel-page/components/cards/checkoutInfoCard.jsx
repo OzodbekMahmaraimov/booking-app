@@ -7,7 +7,7 @@ const CheckoutInfo = ({change}) => {
   };
 
   return (
-    <div className="w-full shadow-2xl mx-auto bg-white p-6 border border-gray-300">
+    <div className="w-7/12 shadow-2xl mx-auto bg-white p-6 border border-gray-300">
       <form onSubmit={handleSubmit}>
         {/* Room Information Section */}
         <div className="mb-6">
