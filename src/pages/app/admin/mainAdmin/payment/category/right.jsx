@@ -1,165 +1,195 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Table, Button, Modal } from "antd";
-import homeIcon from "../../../../../../assets/img/Vector (2).png";
-import blackLine from "../../../../../../assets/img/Line 10.png";
-// import PrintList from "././print"; // Import the PrintList component
-// import YourComponent from "././print";
-// import ExportToExcel from "./"; // Import the ExportToExcel component
+import axios from "axios";
+import homeImg from "../../../../../../assets/img/Vector (1).png";
+import LineImg from "../../../../../../assets/img/Line 10.png";
+import "../../../../../../assets/css/style.css";
 
+const http = "http://localhost:3001/admin";
 const Right = () => {
-	const [loading, setLoading] = useState(false);
-	const [data, setData] = useState(generateData());
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
 
-	const handlePrintList = () => {
-		setLoading(true);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-		setTimeout(() => {
-			setLoading(false);
-		}, 2000);
-	};
+  const fetchData = () => {
+    axios
+      .get(`${http}?search=${searchInput}`)
+      .then((response) => {
+        const filteredData = response.data.mainadmin.payment.user.filter((item) =>
+          item.name.toLowerCase().includes(searchInput.toLowerCase())
+        );
+        setData(filteredData);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+      });
+  };
 
-	const handleDelete = (record) => {
-		Modal.confirm({
-			title: "Confirm Delete",
-			content: "Are you sure you want to delete this item?",
-			okText: "Yes",
-			okType: "danger",
-			cancelText: "No",
-			onOk: () => {
-				const updatedData = data.filter((item) => item.key !== record.key);
-				setData(updatedData);
-				console.log(`Deleted item with key: ${record.key}`);
-			},
-			onCancel: () => {
-				console.log("Deletion canceled");
-			},
-		});
-	};
+  const handleSearchInputChange = (e) => {
+    setSearchInput(e.target.value);
+  };
 
-	function generateData() {
-		return new Array(20).fill().map((_, index) => ({
-			key: index,
-			name: `Name ${index + 1}`,
-			phoneNumber: "0784567890",
-			action: "Booking",
-			facilityName: "Hotel milles",
-			moneyPaid: "1050000",
-			moneyEarned: "200000 Rwf",
-		}));
-	}
+  const handleSearch = () => {
+    fetchData();
+  };
 
-	const columns = [
-		{
-			title: "Names",
-			dataIndex: "name",
-			key: "name",
-			width: 150,
-		},
-		{
-			title: "Phone number",
-			dataIndex: "phoneNumber",
-			key: "phoneNumber",
-			width: 150,
-		},
-		{
-			title: "Action",
-			dataIndex: "action",
-			key: "action",
-			width: 150,
-		},
-		{
-			title: "Facility name",
-			dataIndex: "facilityName",
-			key: "facilityName",
-			width: 150,
-		},
-		{
-			title: "Money paid",
-			dataIndex: "moneyPaid",
-			key: "moneyPaid",
-			width: 150,
-		},
-		{
-			title: "Money earned",
-			dataIndex: "moneyEarned",
-			key: "moneyEarned",
-			width: 150,
-		},
-		{
-			title: "Delete",
-			dataIndex: "delete",
-			key: "delete",
-			width: 100,
-			render: (_, record) => (
-				<Button onClick={() => handleDelete(record)} danger>
-					Delete
-				</Button>
-			),
-		},
-	];
+  const handlePrintList = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
 
-	return (
-		<div className="px-4 w-full">
-			<div>
-				<div className="flex items-center justify-between py-3 px-4">
-					<div className="flex items-center gap-1">
-						<div>
-							<img src={homeIcon} alt="" />
-						</div>
-						<div>
-							<img src={blackLine} alt="" />
-						</div>
-						<div>
-							<p className="text-black cursor-pointer text-xl">Home</p>
-						</div>
-					</div>
-					<div className="flex items-center gap-2">
-						<input
-							type="text"
-							className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-							placeholder="Search"
-						/>
-						<button className="px-4 py-2.5 text-white border-[2px] border-solid border-white rounded-xl">
-							Search
-						</button>
-					</div>
-				</div>
-				<div className="bg-white p-5 rounded-xl">
-					<div
-						className="rounded-md"
-						style={{
-							borderCollapse: "collapse",
-							borderSpacing: 0,
-							overflowX: "auto",
-						}}
-					>
-						<div
-							className="bg-white w-full rounded-xl border border-gray-300"
-							style={{
-								maxHeight: "600px",
-								overflowY: "auto",
-								borderRight: "none", // Hide right border
-							}}
-						>
-							<Table dataSource={data} columns={columns} pagination={false} />
-						</div>
-					</div>
+  const handleDelete = (record) => {
+    Modal.confirm({
+      title: "Confirm Delete",
+      content: "Are you sure you want to delete this item?",
+      okText: "Yes",
+      okType: "danger",
+      cancelText: "No",
+      onOk: () => {
+        const updatedData = data.filter((item) => item.id !== record.id);
+        setData(updatedData);
+        console.log(`Deleted item with ID: ${record.id}`);
+      },
+      onCancel: () => {
+        console.log("Deletion canceled");
+      },
+    });
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
+  const columns = [
+    {
+      title: "Names",
+      dataIndex: "name",
+      key: "name",
+      width: 150,
+    },
+    {
+      title: "Phone number",
+      dataIndex: "number",
+      key: "phoneNumber",
+      width: 150,
+    },
+    {
+      title: "Action",
+      dataIndex: "action",
+      key: "action",
+      width: 150,
+    },
+    {
+      title: "Facility name",
+      dataIndex: "facility",
+      key: "facilityName",
+      width: 150,
+    },
+    {
+      title: "Money paid",
+      dataIndex: "paid",
+      key: "moneyPaid",
+      width: 150,
+    },
+    {
+      title: "Money earned",
+      dataIndex: "earned",
+      key: "moneyEarned",
+      width: 150,
+    },
+    {
+      title: "Delete",
+      dataIndex: "delete",
+      key: "delete",
+      width: 100,
+      render: (_, record) => (
+        <Button onClick={() => handleDelete(record)} className="bg-orange-400 px-10 text-white">
+          Delete
+        </Button>
+      ),
+    },
+  ];
+		return (
+			<div className="px-4 w-full">
 					<div>
-						<Button
-							type="primary"
-							loading={loading}
-							onClick={handlePrintList}
-							className="rounded-md"
-							style={{ backgroundColor: "#FFA500", color: "#fff" }}
-						>
-							Print List
-						</Button>
+							<div className="flex items-center justify-between py-3 px-4">
+									<div className="flex items-center gap-3">
+											<img src={homeImg} alt="" />
+											<img src={LineImg} alt="" />
+											<p>Home</p>
+									</div>
+									<div className="flex items-center gap-3">
+											<input
+													type="text"
+													placeholder="Search..."
+													value={searchInput}
+													className="outline-none"
+													onChange={handleSearchInputChange}
+													onKeyPress={handleKeyPress} // Added onKeyPress event handler
+													style={{
+															padding: "0.5rem",
+															border: "1px solid #ccc",
+															borderRadius: "5px",
+															marginRight: "1rem",
+													}}
+											/>
+											<button
+													onClick={handleSearch}
+													className="border-[1px] border-white border-solid select-none"
+													style={{
+															padding: "0.5rem 1rem",
+															backgroundColor: "#F46A06",
+															color: "#fff",
+															borderRadius: "5px",
+															cursor: "pointer",
+													}}
+											>
+													Search
+											</button>
+									</div>
+							</div>
+							<div className="bg-white p-5 rounded-xl">
+									<div
+											className="rounded-md"
+											style={{
+													borderCollapse: "collapse",
+													borderSpacing: 0,
+													overflowX: "auto",
+											}}
+									>
+											<div
+													className="bg-[#d7cfcf] w-full rounded-xl section border border-gray-300"
+													style={{
+															maxHeight: "500px",
+															overflowY: "auto",
+															borderRight: "none",
+													}}
+											>
+													<Table dataSource={data} columns={columns} pagination={false} />
+											</div>
+									</div>
+									<div>
+											<Button
+													type="primary"
+													loading={loading}
+													onClick={handlePrintList}
+													className="rounded-md mt-3"
+													style={{ backgroundColor: "#FFA500", color: "#fff" }}
+											>
+													Print List
+											</Button>
+									</div>
+							</div>
 					</div>
-				</div>
-				{/* <YourComponent data={data} /> */}
-				{/* <ExportToExcel data={data} /> */}
 			</div>
-		</div>
 	);
 };
 

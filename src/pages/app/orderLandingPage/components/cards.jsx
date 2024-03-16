@@ -12,7 +12,7 @@ const Cards = ({ image, id, name, detailsLink }) => {
                     alt="card img" />
             </div>
             <Link to={detailsLink} onClick={() => {
-                sessionStorage.setItem('detailsId', id)
+                sessionStorage.setItem('detailsId', JSON.stringify(id))
             }}>
                 <h3 className='text-center w-[90%] mx-auto bg-white border border-slate-300 mt-4
                 py-1.5 rounded-xl shadow-md shadow-gray-400 font-bold tracking-wide text-[1.1rem]'>

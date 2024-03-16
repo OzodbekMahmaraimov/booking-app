@@ -51,20 +51,32 @@ const castTasble = [
 ];
 export const Customer = () => {
 	return (
-		<div className="w-full bg-orange-400">
+		<div className="w-full bg-[#F46A06]">
 			<div className="flex">
 				<ResAdminSidebar className="w-[30%]" />
 				<div className="w-[75%]">
-					<div className="flex ml-4 px-2">
-						<img className="w-10 h-10 mt-20 ml-4" src={home} alt="" />
-						<img className="w-5 h-12 mt-20 ml-2" src={line} alt="" />
-						<h1 className="mt-[100px] ml-1 font-bold text-xl">Restaurant Manager Dashboard</h1>
-						<div className="flex items-center"></div>
-						<div className="flex flex-col-reverse w-1/4 ml-[200px]">
-							<input className="rounded-full w-full h-8 border-2 border-white " type="text" />
+					<div className="flex mt-10">
+						<div className="flex w-full items-center gap-1">
+							<div>
+								<img src={home} alt="home icon" />
+							</div>
+							<div>
+								<img src={line} alt="separator line" />
+							</div>
+							<div>
+								<p className="text-black cursor-pointer text-xl">Home</p>
+							</div>
 						</div>
-						<div className="flex flex-col-reverse ml-2 ">
-							<button className="font-bold rounded-full border-4 border-white w-20">Search</button>
+						<div className="flex items-center gap-2">
+							<input
+								type="text"
+								className="w-[500px] outline-none px-3 py-3 rounded-xl"
+								placeholder="Search"
+								// onChange={handleSearchChange}
+							/>
+							<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
+								Search
+							</button>
 						</div>
 					</div>
 
