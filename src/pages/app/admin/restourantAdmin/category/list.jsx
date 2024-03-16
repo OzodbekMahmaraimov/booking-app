@@ -6,6 +6,7 @@ import notFound from "./../../../../../assets/images/200w.gif";
 
 import ResAdminSidebar from "../components/sidebar";
 import axios from "axios";
+import ItemListNew from "../components/modal";
 
 const ItemList = () => {
 	const [currentPage, setCurrentPage] = useState(1);
@@ -15,6 +16,15 @@ const ItemList = () => {
 	const [selectedItems, setSelectedItems] = useState({});
 	const [items, setItems] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("");
+	const [showModal, setShowModal] = useState(false);
+
+	const handleAddItem = () => {
+			setShowModal(true); // Modalni ko'rsatish
+	};
+
+	const handleCloseModal = () => {
+			setShowModal(false); // Modalni yopish
+	};
 
 	const handleSearchChange = (event) => {
 		setSearchTerm(event.target.value.toLowerCase());
@@ -130,9 +140,10 @@ const ItemList = () => {
 				<div className="w-full mt-5 h-[570px] rounded-xl bg-[#F1E8D7] p-2">
 					<div className="bg-white w-full h-full rounded-xl">
 						<div className="p-2">
-							<button className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
+							<button onClick={handleAddItem} className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
 								Add new item
 							</button>
+							{showModal && <ItemListNew closeModal={handleCloseModal} />}
 							<button
 								onClick={deleteSelectedItems}
 								className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md"
