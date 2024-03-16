@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { mtn, visa } from "../../../../assets/hotel-page";
 import CreditCardForm from "./visa";
+import BookingModal from "../modals/BookingModal";
 
 const PaymentForm = () => {
   const [paymentMethod, setPaymentMethod] = useState("mtn");
   const [mobileNumber, setMobileNumber] = useState("");
+  const [paymentModal, setPaymentModal] = useState(false);
   const [cardDetails, setCardDetails] = useState({
     cardNumber: "",
     cardHolderName: "",
@@ -23,6 +25,7 @@ const PaymentForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setPaymentModal(true)
     // Handle form submission logic here
     // This could include validation and sending data to a payment processing backend
   };
@@ -115,6 +118,7 @@ const PaymentForm = () => {
           Pay now
         </button>
       </div>
+      <BookingModal setModal={setPaymentModal} isModal={paymentModal}/>
     </form>
   );
 };
