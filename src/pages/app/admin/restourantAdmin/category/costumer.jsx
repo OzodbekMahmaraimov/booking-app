@@ -20,7 +20,7 @@ export const Customer = () => {
 	
 
 	useEffect(() => {
-        axios.get("http://localhost:3005/manager-dashboard")
+        axios.get("http://localhost:3001/manager-dashboard")
             .then((res) => {
                 setCustomer(res.data.customers);
 				

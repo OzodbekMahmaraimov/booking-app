@@ -21,7 +21,7 @@ const Order_LIst = () => {
     ];
 
     useEffect(() => {
-        axios.get("http://localhost:3005/manager-dashboard")
+        axios.get("http://localhost:3001/manager-dashboard")
             .then((res) => {
                 setOrder(res.data.orderlist);
                 setCurrentPage(1); // Sahifani qayta boshlash
