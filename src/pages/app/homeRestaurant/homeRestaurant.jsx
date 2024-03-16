@@ -15,31 +15,51 @@ import Galery from '../../../components/layout/galery/Galery';
 import MtnCard from '../../../components/layout/mtnCard/MtnCard';
 import VisaCard from '../../../components/layout/visaCard/VisaCard';
 import Details from '../../../components/layout/details/Details';
+import BookingModal from '../../../components/layout/modal/BookingModal';
 
 
 const HomeRestaurant = () => {
 
   const [visaCard, setVisaCard] = useState(false)
+  const [modal, setModal] = useState(false);
+  const [isPay, setIsPay] = useState(false);
+
+  const closeModal = (e) => {
+    if (e.target.classList[1] === "modal-backdrop") {
+      setModal(false)
+    };
+    if (e.key === "Escape") setModal(false);
+    console.log(e.target.className[2]);
+  }
+
 
   return (
-    <div className='home-restaurant'>
+    <div onClick={closeModal} onKeyDown={closeModal} className='home-restaurant'>
       <Navbar />
       <Home />
       <Alert />
       <Service />
-      {/* <section className={`${styles.container} flex flex-col gap-12 border-2 shadow-lg mt-16`}>
-        <div className='w-full flex flex-col md:flex-row justify-between items-center mt-10 px-7'>
-          <PayCard setVisaCard={setVisaCard} />
-          <DeliveryTime />
-        </div>
-        <hr className='border-[0.5px] mx-auto w-[90%]' />
+      {isPay
+        ?
+        <Details />
+        :
+        <section className={`${styles.container} flex flex-col gap-12 border-2 shadow-lg mt-16`}>
+          <div className='w-full flex flex-col md:flex-row justify-between items-center mt-10 px-7'>
+            <PayCard setVisaCard={setVisaCard} />
+            <DeliveryTime />
+          </div>
+          <hr className='border-[0.5px] mx-auto w-[90%]' />
 
-        {visaCard
-          ? <VisaCard />
-          : <MtnCard />
-        }
-      </section>   */}
-      <Details />
+          {visaCard ? <VisaCard setModal={setModal} /> : <MtnCard setModal={setModal} />}
+
+
+        </section>
+      }
+
+
+      {modal && <BookingModal setModal={setModal} setIsPay={setIsPay} />}
+
+
 
       <Galery />
       <footer className={`${styles.container} my-12`}>
