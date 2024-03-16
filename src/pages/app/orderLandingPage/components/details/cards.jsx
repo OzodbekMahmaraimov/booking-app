@@ -1,6 +1,6 @@
 import DetailsBtn from "./detailsBtn"
 
-const Cards = ({ item, setItemsFilterData }) => {
+const Cards = ({ item, setItemsFilterData, setModalImage }) => {
     const incHandler = (id) => {
         setItemsFilterData(items => items.map(item => {
             if (item.id === id) {
@@ -48,7 +48,7 @@ const Cards = ({ item, setItemsFilterData }) => {
             </div>
             <div className="flex justify-between items-start p-3 mt-2">
                 <DetailsBtn name={item.btn1} />
-                <DetailsBtn name='Add to order' />
+                <span onClick={() => setModalImage(true)}><DetailsBtn name='Add to order' /></span>
             </div>
         </div>
     )
