@@ -12,15 +12,17 @@ const ItemList = () => {
 	const [error, setError] = useState(null); // State to capture any error
 	const [selectedItems, setSelectedItems] = useState({});
 	const [items, setItems] = useState([]);
+	const [allItems, setAllItems] = useState([]); // Barcha ma'lumotlar uchun yangi state
+	const [searchTerm, setSearchTerm] = useState("");
 
 	useEffect(() => {
 		setIsLoading(true);
 		axios
 			.get("http://localhost:3000/admin/") // URLni o'zgartiring
 			.then((res) => {
-				console.log(res.data.restAdmin);
-				const storedItems = JSON.parse(localStorage.getItem("items")) || [];
-				setItems(storedItems);
+				const apiItems = res.data.restAdmin; // API javobiga moslashuv
+				setAllItems(apiItems); // Barcha ma'lumotlarni saqlash
+				setItems(apiItems); // Ko'rsatish uchun ma'lumotlarni saqlash
 				setIsLoading(false);
 			})
 			.catch((error) => {
@@ -29,6 +31,21 @@ const ItemList = () => {
 				setIsLoading(false);
 			});
 	}, []);
+
+	const handleSearch = (event) => {
+		const searchTerm = event.target.value;
+		setSearchTerm(searchTerm); // Qidiruv matnini yangilash
+		if (!searchTerm) {
+			setItems(allItems); // Agar qidiruv bo'sh bo'lsa, barcha ma'lumotlarni ko'rsatish
+		} else {
+			const filteredItems = allItems.filter(
+				(item) =>
+					item.name.toLowerCase().includes(searchTerm.toLowerCase()) || // Mahsulot nomi bo'yicha filtrlash
+					item.category.toLowerCase().includes(searchTerm.toLowerCase()) // Kategoriya bo'yicha filtrlash
+			);
+			setItems(filteredItems); // Filtrlangan natijalarni saqlash
+		}
+	};
 
 	const lastPageIndex = currentPage * itemsPerPage;
 	const firstPageIndex = lastPageIndex - itemsPerPage;
@@ -98,6 +115,8 @@ const ItemList = () => {
 							type="text"
 							className="w-[500px] outline-none px-3 py-3 rounded-xl"
 							placeholder="Search"
+							value={searchTerm}
+							onChange={handleSearch}
 						/>
 						<button className="px-4 py-2.5 text-white border-[2px] border-solid border-white rounded-xl">
 							Search
@@ -156,7 +175,7 @@ const ItemList = () => {
 							</table>
 						</div>
 						{/* Pagination controls */}
-						<div className="p-2">
+						<div id="btn-div" className="p-2">
 							<button
 								onClick={prevPage}
 								disabled={currentPage === 1}
