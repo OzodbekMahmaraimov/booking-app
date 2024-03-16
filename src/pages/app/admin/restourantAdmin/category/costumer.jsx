@@ -52,10 +52,10 @@ export const Customer = () => {
 	
 	
 	return (
-		<div className="w-full bg-orange-400">
+		<div className="w-full bg-[#F46A06]">
 			<div className="flex">
-				<ResAdminSidebar className="w-[25%]" />
-				<div className="w-[70%]">
+				<ResAdminSidebar className="w-[30%]" />
+				<div className="w-[75%]">
 					<div className="flex ml-4 px-2">
 						<img className="w-10 h-10 mt-20 ml-4" src={home} alt="" />
 						<img className="w-5 h-12 mt-20 ml-2" src={line} alt="" />
@@ -71,54 +71,33 @@ export const Customer = () => {
 
 					<div className=" mt-6 ml-4 bg-white rounded-xl border-[10px] border-white-600 px-1 py-4">
 						<table className="mt-4 w-full ml-1 text-center rounded-lg">
-							
-							 <thead>
-							 <tr className="border-2 w-full bg-[#F1E8D7] h-10 ">
-							 <th>Customer ID</th>
+							<tr className="border-2 w-full bg-[#F1E8D7] h-10 ">
+								<th>Customer ID</th>
 								<th>Customer phone</th>
 								<th>Customer Name</th>
 								<th>Total Spent</th>
 								<th>Last order</th>
 								<th></th>
 							</tr>
-							</thead>	
-							<tbody>
-							{currentItems.length > 0 ? (
-                                    currentItems.map((item, i) => (
-                                        <tr key={i} className="border-b border-gray-400">
-                                            <td className="p-4">{item.id}</td>
-                                            <td>{item.phone}</td>
-                                            <td>{item.name}</td>
-                                            <td>{item.spend}</td>
-                                            <td>{item.order}</td>
-                                            <td>{item.status}</td>
-                                        </tr>
-                                    ))
-                                ) : (
-                                    <tr className="border-b border-gray-400">
-                                        <td colSpan="6" className="font-bold text-lg py-3">
-                                            No orders found
-                                        </td>
-                                    </tr>
-                                )}
-							</tbody>
+							{castTasble.map((item, i) => (
+								<tr key={item.id}>
+									<td className="p-4">{item.id}</td>
+									<td>{item.phone}</td>
+									<td>{item.name}</td>
+									<td>{item.total}</td>
+									<td>{item.last}</td>
+									<td>{item.send}</td>
+								</tr>
+							))}
 						</table>
-						<div className="p-2">
-						<button
-							onClick={ prevPage }
-							disabled={currentPage === 1}
-							className="bg-[#F46A06] m-1 hover:bg-white hover:text-black text-white hover:transition-all border-2 border-[#F46A06] py-2 px-3 rounded-md"
-						>
-							Previous
-						</button>
-						<button
-							onClick={nextPage}
-							disabled={currentItems.length < itemsPerPage}
-							className="bg-[#F46A06] m-1 hover:bg-white hover:text-black text-white hover:transition-all border-2 border-[#F46A06] py-2 px-3 rounded-md"
-						>
-							Next
-						</button>
-					</div>
+						<div className="py-3">
+							<button className="bg-orange-500 rounded-md w-32 h-10 text-white font-bold">
+								Previous
+							</button>
+							<button className="bg-orange-500 rounded-md w-32 h-10 text-white font-bold ml-2">
+								Next
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

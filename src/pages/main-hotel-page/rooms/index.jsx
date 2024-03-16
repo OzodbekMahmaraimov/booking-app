@@ -5,9 +5,18 @@ import CheckOutCard from "../components/cards/checkOutCard";
 import AboutCard from "../components/cards/aboutCard";
 import CheckoutInfo from "../components/cards/checkoutInfoCard";
 import PaymentForm from "../components/cards/paymentForm";
+import axios from 'axios'
+import { apiUrl } from "../../../Api";
 
 function HotelRooms() {
   const [rooms, setRooms] = useState(1);
+
+  const getRooms = () => {
+    axios.get(`${apiUrl}hotel-manage`)
+    .then((res) => {
+      console.log(res);
+    })
+  }
   return (
     <div className="room_page_main w-full p-20 mt-20 flex flex-col gap-10">
       {/* <CheckOutCard/> */}
@@ -21,7 +30,7 @@ function HotelRooms() {
           description={
             "Our premium room has a signle bed with a small balcon outside and a tv in the room it can host a couple or an individual."
           }
-          priceRWF={"175000/rwf"}
+          priceRWF={"175000/rwf"}                                         
           priceUSD={"175/USD"}
           rooms={"4 Rooms"}
         />

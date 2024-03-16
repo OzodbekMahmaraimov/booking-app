@@ -2,7 +2,7 @@ import React from 'react'
 
 const DetailsInfo = ({ name, title, description }) => {
     return (
-        <div className='absolute -top-14 w-full bg-[#F1E8D7] shadow-xl rounded-xl shadow-[#a9a299] py-10 px-24'>
+        <div className='absolute -top-24 w-full bg-[#F1E8D7] shadow-xl rounded-xl shadow-[#a9a299] py-10 px-24'>
             <h1
                 style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}
                 className='text-2xl font-bold tracking-wider text-black opacity-90 mb-5'>

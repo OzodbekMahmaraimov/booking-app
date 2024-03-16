@@ -4,7 +4,7 @@ import Product from '../product/Product'
 // images
 import productImage from '../../../assets/images/product.jpg';
 
-const MtnCard = () => {
+const MtnCard = ({ setModal }) => {
 
     const [products, setProducts] = useState([
         { id: 1, name: "Chicken wrap", price: 3000, quantity: 1 },
@@ -25,11 +25,11 @@ const MtnCard = () => {
     return (
         <>
             <div className='w-[90%] px-5 mx-auto bg-[#F1E8D7] mb-8'>
-                <div class="flex flex-col sm:flex-row pt-10 mb-5 w-full">
-                    <h3 class="font-semibold text-xl uppercase w-[50%]">Product</h3>
-                    <h3 class="font-semibold text-xl uppercase w-1/5 text-center">Price</h3>
-                    <h3 class="font-semibold text-xl uppercase w-1/5 text-center">Quantity</h3>
-                    <h3 class="font-semibold text-xl uppercase w-1/5 text-center">Subtotal</h3>
+                <div className="flex flex-col sm:flex-row pt-10 mb-5 w-full">
+                    <h3 className="font-semibold text-xl uppercase w-[50%]">Product</h3>
+                    <h3 className="font-semibold text-xl uppercase w-1/5 text-center">Price</h3>
+                    <h3 className="font-semibold text-xl uppercase w-1/5 text-center">Quantity</h3>
+                    <h3 className="font-semibold text-xl uppercase w-1/5 text-center">Subtotal</h3>
                 </div>
                 <div className='flex flex-col gap-5'>
                     {products.map((product) => (
@@ -48,7 +48,7 @@ const MtnCard = () => {
                         <span className='text-lg'>Total: </span>
                         <span className='text-lg'>{`${total.toLocaleString()} RWF`}</span>
                     </div>
-                    <button className='w-full md:w-auto bg-[#F46A06] text-white font-bold text-xl py-4 px-8'>
+                    <button onClick={() => setModal(true)} className='w-full md:w-auto bg-[#F46A06] text-white font-bold text-xl py-4 px-8 duration-300 active:scale-90'>
                         PAY
                     </button>
                 </div>

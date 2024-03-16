@@ -3,6 +3,8 @@ import { FaEye, FaToolbox } from 'react-icons/fa';
 import RoomBookingModal from '../components/room-description-modal';
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
+import MainHotelDashboardButton from '../components/button';
+import { Link } from 'react-router-dom';
 // import MainHotelDashboardButton from '../components/button';
 
 export const MainDashboardManageRooms = () => {
@@ -36,6 +38,11 @@ export const MainDashboardManageRooms = () => {
     const openModal = () => setModalOpen(!isModalOpen);
     const closeModal = () => setModalOpen(false);
 
+    //set new room or update room
+    // function setRoom(room) {
+
+    // }
+
 
 
     return (
@@ -55,7 +62,9 @@ export const MainDashboardManageRooms = () => {
                     <div>
                         <div className='flex justify-between items-center'>
                             <h1>Manage Rooms</h1>
-                            {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>Add room</MainHotelDashboardButton> */}
+                            <Link to="/MainDashboard/RoomForm">
+                                <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>Add room</MainHotelDashboardButton>
+                            </Link>
                         </div>
                     </div>
                     <div className='border w-full my-5'>
@@ -75,7 +84,7 @@ export const MainDashboardManageRooms = () => {
                         </div>
                         <div></div>
                     </div>
-                    <table className="min-w-full  bg-orange-200 rounded-xl">
+                    <table className="min-w-full  bg-orange-200 rounded-xl mb-3">
                         <thead className=" rounded-xl">
                             <tr className='rounded-lg'>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">

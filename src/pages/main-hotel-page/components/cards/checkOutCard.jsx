@@ -10,13 +10,14 @@ const CheckOutCard = ({ change }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    change(3);
     // Here you would handle the submission of the data, maybe sending it to a server
   };
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-md mx-auto bg-white p-8 border rounded-xl gallary_card shadow-2xl border-gray-300"
+      className="max-w-xl mx-auto bg-white p-8 border rounded-xl gallary_card shadow-2xl border-gray-300"
     >
       {/* Date Picker Inputs */}
       <div className="flex flex-col mb-4">
@@ -134,15 +135,18 @@ const CheckOutCard = ({ change }) => {
       </div>
 
       {/* Submit Button */}
+      <div className="w-full flex justify-center">
+
       <button
         type="submit"
         onClick={() => {
-          change(3);
+         
         }}
-        className="w-full px-4 py-2 bg-orange-500 text-white font-bold text-shadow shadow-xl rounded hover:bg-orange-600"
+        className="w-7/12 px-4 py-2 bg-orange-500 text-white font-bold text-shadow shadow-2xl rounded hover:bg-orange-600"
       >
         Proceed
       </button>
+      </div>
     </form>
   );
 };

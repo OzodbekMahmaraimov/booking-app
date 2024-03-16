@@ -13,7 +13,7 @@ const Login = () => {
     const  password = document.getElementById('password').value
 
     createUserWithEmailAndPassword(database,email,password).then(res=>{
-      console.log(res,'authdata');
+      console.log(res);
       history('/HomeRestaurant')
       alert("Succesfully")
     })
