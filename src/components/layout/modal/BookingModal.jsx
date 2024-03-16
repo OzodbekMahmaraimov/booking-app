@@ -2,7 +2,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import thanks1 from '../../../assets/images/thanks1.svg';
 import thanks2 from '../../../assets/images/thanks2.svg';
 
-const BookingModal = ({ setIsPay, setModal }) => {
+const BookingModal = ({ setModal, setIsPay }) => {
+  if (!setModal) return null;
 
   return (
     <div className="fixed modal-backdrop top-0 z-20 flex justify-center items-center left-0 inset-0 bg-gray-600 bg-opacity-50 overflow-hidden h-screen w-full">
@@ -15,8 +16,8 @@ const BookingModal = ({ setIsPay, setModal }) => {
         <h4 className='font-semibold'>Your Rooms are
           already booked</h4>
         <button onClick={() => {
-          setIsPay(true);
           setModal(false);
+          setIsPay(true);
         }}
           className='bg-[#F46A06] text-white text-lg py-4 px-10 rounded-[1rem] duration-300 active:scale-90'>Print your ticket</button>
       </div>
