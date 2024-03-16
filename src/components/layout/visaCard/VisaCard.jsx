@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 
 
 
-const VisaCard = () => {
+const VisaCard = ({ setModal }) => {
     return (
         <>
             <div className="w-[90%] visaCard-view mx-auto py-10 bg-[#F1E8D7] mb-8">
@@ -36,7 +36,7 @@ const VisaCard = () => {
                     <h1><span className='text-2xl'>Total amount to be paid :</span> <span className='text-lg'>9000 Rwf / 9 USD</span> </h1>
                 </div>
                 <div className='w-full flex justify-center font-quicksand mt-5'>
-                    <button className='bg-[#F46A06] py-4 px-20 shadow-xl rounded-lg mx-auto text-white text-2xl duration-300 active:scale-90'>
+                    <button onClick={() => setModal(true)} className='bg-[#F46A06] py-4 px-20 shadow-xl rounded-lg mx-auto text-white text-2xl duration-300 active:scale-90'>
                         Pay now
                     </button>
                 </div>

@@ -56,6 +56,7 @@ const CreditCardForm = () => {
             id="expiryDate"
             name="expiryDate"
             type="text"
+            pattern="\d*"
             placeholder="••/••"
             className="mt-1 px-3 py-2 bg-transparent border-b-2 border-white text-white focus:outline-none focus:border-blue-300"
             onChange={handleInputChange}
