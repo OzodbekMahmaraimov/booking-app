@@ -1,14 +1,21 @@
+import React, { useState } from 'react';
+import { Drawer } from 'antd';
 const InfoModal = ({ modalImage, setModalImage }) => {
-
+    const [placement, setPlacement] = useState('right');
     return (
-        <>
-            {modalImage ? (
-                <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-80 z-50">
-                    <p onClick={() => setModalImage(false)}>close</p>
-                </div>
-            ) : null}
-        </>
-    )
-}
-
-export default InfoModal
+        <>{modalImage && (
+            <Drawer
+                title="Drawer with extra actions"
+                placement={placement}
+                width={600}
+                onClose={() => setModalImage(false)}
+                open={modalImage}
+            >
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+            </Drawer>
+        )}</>
+    );
+};
+export default InfoModal;
