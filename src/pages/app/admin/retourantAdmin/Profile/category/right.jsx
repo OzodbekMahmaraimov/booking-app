@@ -4,6 +4,7 @@ import { UploadOutlined } from "@ant-design/icons";
 import homeIcon from "../../../../../../assets/img/Vector (2).png";
 import blackLine from "../../../../../../assets/img/Line 10.png";
 import pencil from "../../../../../../assets/img/Vector (6).png";
+import { SearchInput } from ".";
 
 const Right = () => {
 	const [name, setName] = useState("");
@@ -60,11 +61,7 @@ const Right = () => {
 						</div>
 					</div>
 					<div className="flex items-center gap-2">
-						<input
-							type="text"
-							className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-							placeholder="Search"
-						/>
+					<SearchInput/>
 						<button className="px-4 py-2.5 text-white border-[2px] border-solid border-white rounded-xl">
 							Search
 						</button>
