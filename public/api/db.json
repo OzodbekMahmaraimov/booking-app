@@ -1,1069 +1,1081 @@
 {
-	"category": [
-		{
-			"id": 1,
-			"name": "category 1"
-		}
-	],
-	"slider": [
-		{
-			"id": 1,
-			"name": "Slider 1"
-		}
-	],
-	"orderLandingPage": {
-		"mainOrder": [
-			{
-				"id": 1,
-				"category": "hotel",
-				"name": "Galaxy Hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
+    "category": [
+        {
+            "id": 1,
+            "name": "Category 1"
+        }
+    ],
+    "slider": [
+        {
+            "id": 1,
+            "name": "Slider 1"
+        }
+    ],
+				"category": [
 					{
 						"id": 1,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "coffeDrinks"
+						"name": "category 1"
 					}
 				],
-				"gallery": [
+				"slider": [
 					{
 						"id": 1,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 2,
-				"category": "restuarant",
-				"name": "BWOK RESTAURANT",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 2,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "coffeDrinks"
+						"name": "Slider 1"
 					}
 				],
-				"gallery": [
-					{
-						"id": 2,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 3,
-				"category": "hotel",
-				"name": "Mille colline hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 3,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "coffeDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 3,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 4,
-				"category": "cafe",
-				"name": "Indabo cafe",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 4,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "coffeDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 4,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 5,
-				"category": "restuarant",
-				"name": "Soy asian restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 5,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "coffeDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 5,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 6,
-				"category": "cafe",
-				"name": "The hut cafe",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 6,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "mainDashes"
-					}
-				],
-				"gallery": [
-					{
-						"id": 6,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 7,
-				"category": "restuarant",
-				"name": "BWOK-Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 7,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "mainDashes"
-					}
-				],
-				"gallery": [
-					{
-						"id": 7,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 8,
-				"category": "restuarant",
-				"name": "Soy-Asian Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 8,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "mainDashes"
-					}
-				],
-				"gallery": [
-					{
-						"id": 8,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 9,
-				"category": "restuarant",
-				"name": "Inka-steak Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 9,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "mainDashes"
-					}
-				],
-				"gallery": [
-					{
-						"id": 9,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 10,
-				"category": "restuarant",
-				"name": "Povoire-noire Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 10,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "mainDashes"
-					}
-				],
-				"gallery": [
-					{
-						"id": 10,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 11,
-				"category": "restuarant",
-				"name": "Cucina Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 11,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "snacks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 11,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 12,
-				"category": "restuarant",
-				"name": "Sundowner Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 12,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "snacks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 12,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 13,
-				"category": "hotel",
-				"name": "Galaxy Hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 13,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "snacks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 13,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 14,
-				"category": "hotel",
-				"name": "Classic Hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 14,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "snacks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 14,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 15,
-				"category": "hotel",
-				"name": "Mille colline hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 15,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "snacks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 15,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 16,
-				"category": "hotel",
-				"name": "M-Hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 16,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "softDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 16,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 17,
-				"category": "hotel",
-				"name": "Heaven-Hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 17,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "softDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 17,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 18,
-				"category": "hotel",
-				"name": "Marriot-Hotel",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 18,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "softDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 18,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 19,
-				"category": "cafe",
-				"name": "Camellia Coffee",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 19,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "softDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 19,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 20,
-				"category": "cafe",
-				"name": "Cactus Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 20,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "softDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 20,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 21,
-				"category": "cafe",
-				"name": "Inka-steak Restaurant",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 21,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "alcoholicDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 21,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 22,
-				"category": "cafe",
-				"name": "Indabo Cafe",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 22,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "alcoholicDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 22,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 23,
-				"category": "cafe",
-				"name": "Mocha caffee",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 23,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "alcoholicDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 23,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			},
-			{
-				"id": 24,
-				"category": "cafe",
-				"name": "Pishon Caffee",
-				"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-				"title": "Title name",
-				"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
-				"detailsInfo": [
-					{
-						"id": 24,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
-						"shoppingCount": 0,
-						"name": "Latte(Hot)",
-						"countName": "QTY:",
-						"btn1": "2500 RWF",
-						"detailsFilterName": "alcoholicDrinks"
-					}
-				],
-				"gallery": [
-					{
-						"id": 24,
-						"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
-					}
-				]
-			}
-		]
-	},
-	"admin": {
-
-			"restAdmin": [
-					{
-							"id": "1",
-							"name": "Espresso",
-							"category": "Coffee",
-							"price": "2000.00RWF",
-							"quantity": 30
-					},
-					{
-							"id": "2",
-							"name": "Latte",
-							"category": "Coffee",
-							"price": "3000.00RWF",
-							"quantity": 25
-					},
-					{
-							"id": "3",
-							"name": "Americano",
-							"category": "Coffee",
-							"price": "2500.00RWF",
-							"quantity": 20
-					},
-					{
-							"id": "4",
-							"name": "Mocha",
-							"category": "Coffee",
-							"price": "3500.00RWF",
-							"quantity": 15
-					},
-					{
-							"id": "5",
-							"name": "Tea",
-							"category": "Beverage",
-							"price": "1500.00RWF",
-							"quantity": 40
-					},
-					{
-							"id": "6",
-							"name": "Green Tea",
-							"category": "Beverage",
-							"price": "1800.00RWF",
-							"quantity": 35
-					},
-					{
-							"id": "7",
-							"name": "Hot Chocolate",
-							"category": "Beverage",
-							"price": "3200.00RWF",
-							"quantity": 20
-					},
-					{
-							"id": "8",
-							"name": "Frappe",
-							"category": "Coffee",
-							"price": "3600.00RWF",
-							"quantity": 25
-					},
-					{
-							"id": "9",
-							"name": "Caramel Macchiato",
-							"category": "Coffee",
-							"price": "4000.00RWF",
-							"quantity": 20
-					},
-					{
-							"id": "10",
-							"name": "Flat White",
-							"category": "Coffee",
-							"price": "2800.00RWF",
-							"quantity": 22
-					},
-					{
-							"id": "11",
-							"name": "Iced Tea",
-							"category": "Beverage",
-							"price": "2000.00RWF",
-							"quantity": 30
-					},
-					{
-							"id": "12",
-							"name": "Iced Coffee",
-							"category": "Coffee",
-							"price": "2600.00RWF",
-							"quantity": 18
-					},
-					{
-							"id": "13",
-							"name": "Vanilla Latte",
-							"category": "Coffee",
-							"price": "3700.00RWF",
-							"quantity": 12
-					},
-					{
-							"id": "14",
-							"name": "Cappuccino",
-							"category": "Coffee",
-							"price": "3100.00RWF",
-							"quantity": 30
-					},
-					{
-							"id": "15",
-							"name": "Chai Latte",
-							"category": "Beverage",
-							"price": "3400.00RWF",
-							"quantity": 16
-					},
-					{
-							"id": "16",
-							"name": "Iced Latte",
-							"category": "Coffee",
-							"price": "2900.00RWF",
-							"quantity": 14
-					},
-					{
-							"id": "17",
-							"name": "Black Coffee",
-							"category": "Coffee",
-							"price": "2100.00RWF",
-							"quantity": 30
-					},
-					{
-							"id": "18",
-							"name": "Iced Mocha",
-							"category": "Coffee",
-							"price": "3800.00RWF",
-							"quantity": 10
-					},
-					{
-							"id": "19",
-							"name": "Herbal Tea",
-							"category": "Beverage",
-							"price": "1700.00RWF",
-							"quantity": 20
-					},
-					{
-							"id": "20",
-							"name": "Matcha Latte",
-							"category": "Beverage",
-							"price": "4200.00RWF",
-							"quantity": 18
-					}
-			]
-	},
-
-		"mainadmin": {
-			"category": {
-				"payment": {
-						"user": [
-							{
-								"id": "1",
-								"name": "Daniel Harerimana",
-								"number": "0784567890",
-								"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+				"orderLandingPage": {
+					"mainOrder": [
+						{
+							"id": 1,
+							"category": "hotel",
+							"name": "Galaxy Hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 1,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "coffeDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 1,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "2",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 2,
+							"category": "restuarant",
+							"name": "BWOK RESTAURANT",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 2,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "coffeDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 2,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "3",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 3,
+							"category": "hotel",
+							"name": "Mille colline hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 3,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "coffeDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 3,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "4",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 4,
+							"category": "cafe",
+							"name": "Indabo cafe",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 4,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "coffeDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 4,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "5",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 5,
+							"category": "restuarant",
+							"name": "Soy asian restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 5,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "coffeDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 5,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "6",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 6,
+							"category": "cafe",
+							"name": "The hut cafe",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 6,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "mainDashes"
+								}
+							],
+							"gallery": [
+								{
+									"id": 6,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "7",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 7,
+							"category": "restuarant",
+							"name": "BWOK-Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 7,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "mainDashes"
+								}
+							],
+							"gallery": [
+								{
+									"id": 7,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "8",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 8,
+							"category": "restuarant",
+							"name": "Soy-Asian Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 8,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "mainDashes"
+								}
+							],
+							"gallery": [
+								{
+									"id": 8,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "9",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 9,
+							"category": "restuarant",
+							"name": "Inka-steak Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 9,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "mainDashes"
+								}
+							],
+							"gallery": [
+								{
+									"id": 9,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "10",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 10,
+							"category": "restuarant",
+							"name": "Povoire-noire Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 10,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "mainDashes"
+								}
+							],
+							"gallery": [
+								{
+									"id": 10,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "11",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 11,
+							"category": "restuarant",
+							"name": "Cucina Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 11,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "snacks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 11,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "12",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 12,
+							"category": "restuarant",
+							"name": "Sundowner Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 12,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "snacks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 12,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "13",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 13,
+							"category": "hotel",
+							"name": "Galaxy Hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 13,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "snacks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 13,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "14",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 14,
+							"category": "hotel",
+							"name": "Classic Hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 14,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "snacks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 14,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "15",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 15,
+							"category": "hotel",
+							"name": "Mille colline hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 15,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "snacks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 15,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "16",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 16,
+							"category": "hotel",
+							"name": "M-Hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 16,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "softDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 16,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "17",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 17,
+							"category": "hotel",
+							"name": "Heaven-Hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 17,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "softDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 17,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "18",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 18,
+							"category": "hotel",
+							"name": "Marriot-Hotel",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 18,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "softDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 18,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "19",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 19,
+							"category": "cafe",
+							"name": "Camellia Coffee",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 19,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "softDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 19,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						},
 						{
-							"id": "20",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
-							"facility": "Soy asian- restaurant",
-							"paid": "1050000 Rwf",
-							"earned": "20000Rwf"
+							"id": 20,
+							"category": "cafe",
+							"name": "Cactus Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 20,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "softDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 20,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
+						},
+						{
+							"id": 21,
+							"category": "cafe",
+							"name": "Inka-steak Restaurant",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 21,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "alcoholicDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 21,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
+						},
+						{
+							"id": 22,
+							"category": "cafe",
+							"name": "Indabo Cafe",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 22,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "alcoholicDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 22,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
+						},
+						{
+							"id": 23,
+							"category": "cafe",
+							"name": "Mocha caffee",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 23,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "alcoholicDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 23,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
+						},
+						{
+							"id": 24,
+							"category": "cafe",
+							"name": "Pishon Caffee",
+							"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+							"title": "Title name",
+							"description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
+							"detailsInfo": [
+								{
+									"id": 24,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
+									"shoppingCount": 0,
+									"name": "Latte(Hot)",
+									"countName": "QTY:",
+									"btn1": "2500 RWF",
+									"detailsFilterName": "alcoholicDrinks"
+								}
+							],
+							"gallery": [
+								{
+									"id": 24,
+									"img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+								}
+							]
 						}
 					]
 				},
-				"managers": {
-					"hotelManagers": [
+				"admin": {
+
+						"restAdmin": [
+								{
+										"id": "1",
+										"name": "Espresso",
+										"category": "Coffee",
+										"price": "2000.00RWF",
+										"quantity": 30
+								},
+								{
+										"id": "2",
+										"name": "Latte",
+										"category": "Coffee",
+										"price": "3000.00RWF",
+										"quantity": 25
+								},
+								{
+										"id": "3",
+										"name": "Americano",
+										"category": "Coffee",
+										"price": "2500.00RWF",
+										"quantity": 20
+								},
+								{
+										"id": "4",
+										"name": "Mocha",
+										"category": "Coffee",
+										"price": "3500.00RWF",
+										"quantity": 15
+								},
+								{
+										"id": "5",
+										"name": "Tea",
+										"category": "Beverage",
+										"price": "1500.00RWF",
+										"quantity": 40
+								},
+								{
+										"id": "6",
+										"name": "Green Tea",
+										"category": "Beverage",
+										"price": "1800.00RWF",
+										"quantity": 35
+								},
+								{
+										"id": "7",
+										"name": "Hot Chocolate",
+										"category": "Beverage",
+										"price": "3200.00RWF",
+										"quantity": 20
+								},
+								{
+										"id": "8",
+										"name": "Frappe",
+										"category": "Coffee",
+										"price": "3600.00RWF",
+										"quantity": 25
+								},
+								{
+										"id": "9",
+										"name": "Caramel Macchiato",
+										"category": "Coffee",
+										"price": "4000.00RWF",
+										"quantity": 20
+								},
+								{
+										"id": "10",
+										"name": "Flat White",
+										"category": "Coffee",
+										"price": "2800.00RWF",
+										"quantity": 22
+								},
+								{
+										"id": "11",
+										"name": "Iced Tea",
+										"category": "Beverage",
+										"price": "2000.00RWF",
+										"quantity": 30
+								},
+								{
+										"id": "12",
+										"name": "Iced Coffee",
+										"category": "Coffee",
+										"price": "2600.00RWF",
+										"quantity": 18
+								},
+								{
+										"id": "13",
+										"name": "Vanilla Latte",
+										"category": "Coffee",
+										"price": "3700.00RWF",
+										"quantity": 12
+								},
+								{
+										"id": "14",
+										"name": "Cappuccino",
+										"category": "Coffee",
+										"price": "3100.00RWF",
+										"quantity": 30
+								},
+								{
+										"id": "15",
+										"name": "Chai Latte",
+										"category": "Beverage",
+										"price": "3400.00RWF",
+										"quantity": 16
+								},
+								{
+										"id": "16",
+										"name": "Iced Latte",
+										"category": "Coffee",
+										"price": "2900.00RWF",
+										"quantity": 14
+								},
+								{
+										"id": "17",
+										"name": "Black Coffee",
+										"category": "Coffee",
+										"price": "2100.00RWF",
+										"quantity": 30
+								},
+								{
+										"id": "18",
+										"name": "Iced Mocha",
+										"category": "Coffee",
+										"price": "3800.00RWF",
+										"quantity": 10
+								},
+								{
+										"id": "19",
+										"name": "Herbal Tea",
+										"category": "Beverage",
+										"price": "1700.00RWF",
+										"quantity": 20
+								},
+								{
+										"id": "20",
+										"name": "Matcha Latte",
+										"category": "Beverage",
+										"price": "4200.00RWF",
+										"quantity": 18
+								}
+						]
+				},
+
+					"mainadmin": {
+						"category": {
+							"payment": {
+									"user": [
+										{
+											"id": "1",
+											"name": "Daniel Harerimana",
+											"number": "0784567890",
+											"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "2",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "3",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "4",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "5",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "6",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "7",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "8",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "9",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "10",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "11",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "12",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "13",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "14",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "15",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "16",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "17",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "18",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "19",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									},
+									{
+										"id": "20",
+										"name": "Daniel Harerimana",
+										"number": "0784567890",
+										"action": "Booking",
+										"facility": "Soy asian- restaurant",
+										"paid": "1050000 Rwf",
+										"earned": "20000Rwf"
+									}
+								]
+							},
+							"managers": {
+								"hotelManagers": [
+									{
+										"id": 1,
+										"fistname": "kimdir",
+										"lastname": "nimadir",
+										"phone ": 12134124,
+										"email": "nimadir@gmail.com",
+										"parol": "1234",
+										"role": "hotel_manager"
+									}
+								],
+								"restorantManagers": [
+									{
+										"id": 1,
+										"fistname": "kimdir",
+										"lastname": "nimadir",
+										"phone ": 12134124,
+										"email": "nimadir@gmail.com",
+										"parol": "1234",
+										"role": "restorant_manager"
+									}
+								],
+								"coffeShopManagers": [
+									{
+										"id": 1,
+										"fistname": "kimdir",
+										"lastname": "nimadir",
+										"phone ": 12134124,
+										"email": "nimadir@gmail.com",
+										"parol": "12345",
+										"role": "coffe_shop_manager"
+									}
+								]
+							}
+						}
+					},
+				"hotel-manage": {
+					"manage-hotels-dashboard": {
+						"Total-Rooms": 10,
+						"Room-Types": 5,
+						"Reserations": 5,
+						"Complains": 10,
+						"Booked-rooms": 5,
+						"Available-Rooms": 5,
+						"Total-checked-in": 10,
+						"pending-payments": 5,
+						"TOTAL EARNINGS": 5,
+						"Pending payment": 10
+					},
+					"Manage-your-account": {
+						"Manager-Name": "tesha-polvon",
+						"Manager-Phone": "0123456789",
+						"Manager-Email": "nefr@gmail.com",
+						"Manager-img": "123 Main Street, New York, NY 10011",
+						"Manager-Password": "123",
+						"Restaurant name": "uy topdi restarani"
+					},
+					"manage-hotels-dashboard-rooms": [
 						{
 							"id": 1,
-							"fistname": "kimdir",
-							"lastname": "nimadir",
-							"phone ": 12134124,
-							"email": "nimadir@gmail.com",
-							"parol": "1234",
-							"role": "hotel_manager"
+							"Room-no": "1003",
+							"Room-Type": true,
+							"Room-Status": true,
+							"Room-Description": "daxshat joy",
+							"Room-Image": "/image.png",
+							"check-in": true,
+							"check-out": true,
+							"Total-payment": 2200,
+							"Pending payments": false
+						},
+						{
+							"id": 2,
+							"Room-no": "1233",
+							"Room-Type": false,
+							"Room-Status": true,
+							"Room-Description": "zor hona",
+							"Room-Image": "/image.png",
+							"check-in": true,
+							"check-out": true,
+							"Total-payment": 2200,
+							"Pending payments": false
 						}
 					],
-					"restorantManagers": [
+					"manage-hotels-description": {
+						"id": 1,
+						"description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
+						"hotel-adress": "KIyovu -kigali",
+						"hotel-stars": 4,
+						"hotel-img": "/image.png",
+						"hotel-priice": 17000
+					},
+					"Services-hotel-offers": [
 						{
 							"id": 1,
-							"fistname": "kimdir",
-							"lastname": "nimadir",
-							"phone ": 12134124,
-							"email": "nimadir@gmail.com",
-							"parol": "1234",
-							"role": "restorant_manager"
+							"name": "Free car parking"
+						},
+						{
+							"id": 2,
+							"name": "Fitness center"
 						}
 					],
-					"coffeShopManagers": [
+					"regester": [
 						{
 							"id": 1,
-							"fistname": "kimdir",
-							"lastname": "nimadir",
-							"phone ": 12134124,
-							"email": "nimadir@gmail.com",
-							"parol": "12345",
-							"role": "coffe_shop_manager"
+							"name": "",
+							"password": "",
+							"rol": "user"
+						}
+					]
+				},
+				"main-admin-dashboard": {
+					"hotelmanager": [
+						{
+							"id": 1,
+							"name": "FullNames"
 						}
 					]
 				}
-			}
-		},
-	"hotel-manage": {
-		"manage-hotels-dashboard": {
-			"Total-Rooms": 10,
-			"Room-Types": 5,
-			"Reserations": 5,
-			"Complains": 10,
-			"Booked-rooms": 5,
-			"Available-Rooms": 5,
-			"Total-checked-in": 10,
-			"pending-payments": 5,
-			"TOTAL EARNINGS": 5,
-			"Pending payment": 10
-		},
-		"Manage-your-account": {
-			"Manager-Name": "tesha-polvon",
-			"Manager-Phone": "0123456789",
-			"Manager-Email": "nefr@gmail.com",
-			"Manager-img": "123 Main Street, New York, NY 10011",
-			"Manager-Password": "123",
-			"Restaurant name": "uy topdi restarani"
-		},
-		"manage-hotels-dashboard-rooms": [
-			{
-				"id": 1,
-				"Room-no": "1003",
-				"Room-Type": true,
-				"Room-Status": true,
-				"Room-Description": "daxshat joy",
-				"Room-Image": "/image.png",
-				"check-in": true,
-				"check-out": true,
-				"Total-payment": 2200,
-				"Pending payments": false
-			},
-			{
-				"id": 2,
-				"Room-no": "1233",
-				"Room-Type": false,
-				"Room-Status": true,
-				"Room-Description": "zor hona",
-				"Room-Image": "/image.png",
-				"check-in": true,
-				"check-out": true,
-				"Total-payment": 2200,
-				"Pending payments": false
-			}
-		],
-		"manage-hotels-description": {
-			"id": 1,
-			"description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
-			"hotel-adress": "KIyovu -kigali",
-			"hotel-stars": 4,
-			"hotel-img": "/image.png",
-			"hotel-priice": 17000
-		},
-		"Services-hotel-offers": [
-			{
-				"id": 1,
-				"name": "Free car parking"
-			},
-			{
-				"id": 2,
-				"name": "Fitness center"
-			}
-		],
-		"regester": [
-			{
-				"id": 1,
-				"name": "",
-				"password": "",
-				"rol": "user"
-			}
-		]
-	},
-	"main-admin-dashboard": {
-		"hotelmanager": [
-			{
-				"id": 1,
-				"name": "FullNames"
-			}
-		]
-	}
 }
