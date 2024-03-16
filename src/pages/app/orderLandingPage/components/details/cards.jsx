@@ -1,9 +1,10 @@
 import DetailsBtn from "./detailsBtn"
 
-const Cards = ({ item, setItems }) => {
+const Cards = ({ item, setItemsFilterData }) => {
     const incHandler = (id) => {
-        setItems(items => items.map(item => {
+        setItemsFilterData(items => items.map(item => {
             if (item.id === id) {
+                console.log(item.id);
                 return { ...item, shoppingCount: item.shoppingCount + 1 }; // Increase the count
             }
             return item;
@@ -11,7 +12,7 @@ const Cards = ({ item, setItems }) => {
     }
 
     const decHandler = (id) => {
-        setItems(items => items.map(item => {
+        setItemsFilterData(items => items.map(item => {
             if (item.id === id && item.shoppingCount > 0) {
                 return { ...item, shoppingCount: item.shoppingCount - 1 }; // Decrease the count
             }
@@ -47,7 +48,7 @@ const Cards = ({ item, setItems }) => {
             </div>
             <div className="flex justify-between items-start p-3 mt-2">
                 <DetailsBtn name={item.btn1} />
-                <DetailsBtn name={item.btn2} />
+                <DetailsBtn name='Add to order' />
             </div>
         </div>
     )

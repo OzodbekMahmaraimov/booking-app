@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { landingBg, parkingImg } from "../../../../assets/hotel-page";
 import NoLoginModal from "../modals/noLoginModal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const RoomCard = ({
   name,
@@ -33,7 +34,7 @@ const RoomCard = ({
       <div className="w-full px-10">
         <div className="flex room_card_body overflow-hidden">
           {/* card body img */}
-          <img className="w-5/12 object-cover" src={img} alt="" />
+          <LazyLoadImage className="w-5/12 object-cover" src={img} alt="" />
           {/* card body content */}
           <div className="p-5 bg-white room_card_body_content ">
             <h2 className="text-2xl font-bold">{contentName}</h2>

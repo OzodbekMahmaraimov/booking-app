@@ -756,6 +756,13 @@
 				"category": "Coffee",
 				"price": "2500.00RWF",
 				"quantity": 20
+			},
+			{
+				"id": "21",
+				"name": "Cappuccino(iced)",
+				"category": "Coffee",
+				"price": "2500.00RWF",
+				"quantity": 20
 			}
 		],
 		"mainadmin": {
@@ -945,7 +952,7 @@
 					]
 				},
 				"managers": {
-					"hotel-managers": [
+					"hotelManagers": [
 						{
 							"id": 1,
 							"fistname": "kimdir",
@@ -956,7 +963,7 @@
 							"role": "hotel_manager"
 						}
 					],
-					"restorant-managers": [
+					"restorantManagers": [
 						{
 							"id": 1,
 							"fistname": "kimdir",
@@ -967,7 +974,7 @@
 							"role": "restorant_manager"
 						}
 					],
-					"coffe-shop-managers": [
+					"coffeShopManagers": [
 						{
 							"id": 1,
 							"fistname": "kimdir",
@@ -1029,16 +1036,14 @@
 				"Pending payments": false
 			}
 		],
-		"manage-hotels-description": [
-			{
-				"id": 1,
-				"description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
-				"hotel-adress": "KIyovu -kigali",
-				"hotel-stars": 4,
-				"hotel-img": "/image.png",
-				"hotel-priice": 17000
-			}
-		],
+		"manage-hotels-description": {
+			"id": 1,
+			"description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
+			"hotel-adress": "KIyovu -kigali",
+			"hotel-stars": 4,
+			"hotel-img": "/image.png",
+			"hotel-priice": 17000
+		},
 		"Services-hotel-offers": [
 			{
 				"id": 1,

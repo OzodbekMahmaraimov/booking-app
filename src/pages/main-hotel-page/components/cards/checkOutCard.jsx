@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CheckOutCard = ({change}) => {
+const CheckOutCard = ({ change }) => {
   const [checkInDate, setCheckInDate] = useState("");
   const [checkOutDate, setCheckOutDate] = useState("");
   const [adults, setAdults] = useState(0);
@@ -14,10 +14,18 @@ const CheckOutCard = ({change}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 border rounded-xl gallary_card shadow-2xl border-gray-300">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-xl mx-auto bg-white p-8 border rounded-xl gallary_card shadow-2xl border-gray-300"
+    >
       {/* Date Picker Inputs */}
       <div className="flex flex-col mb-4">
-        <label htmlFor="checkin-date" className="mb-2 text-shadow text-lg text-gray-700">Check-in Date & Time</label>
+        <label
+          htmlFor="checkin-date"
+          className="mb-2 text-shadow text-lg text-gray-700"
+        >
+          Check-in Date & Time
+        </label>
         <input
           type="datetime-local"
           id="checkin-date"
@@ -27,7 +35,12 @@ const CheckOutCard = ({change}) => {
         />
       </div>
       <div className="flex flex-col mb-4">
-        <label htmlFor="checkout-date" className="mb-2 text-lg text-shadow text-gray-700">Check-out Date & Time</label>
+        <label
+          htmlFor="checkout-date"
+          className="mb-2 text-lg text-shadow text-gray-700"
+        >
+          Check-out Date & Time
+        </label>
         <input
           type="datetime-local"
           id="checkout-date"
@@ -40,7 +53,12 @@ const CheckOutCard = ({change}) => {
       {/* Number of People and Rooms */}
       <div className="grid grid-cols-3 gap-4 mb-4">
         <div className="flex flex-col">
-          <label htmlFor="adults" className="mb-2 text-lg text-shadow text-gray-700">Adults</label>
+          <label
+            htmlFor="adults"
+            className="mb-2 text-lg text-shadow text-gray-700"
+          >
+            Adults
+          </label>
 
           <input
             type="number"
@@ -51,7 +69,12 @@ const CheckOutCard = ({change}) => {
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="children" className="mb-2 text-lg text-shadow text-gray-700">Children</label>
+          <label
+            htmlFor="children"
+            className="mb-2 text-lg text-shadow text-gray-700"
+          >
+            Children
+          </label>
 
           <input
             type="number"
@@ -62,8 +85,12 @@ const CheckOutCard = ({change}) => {
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="rooms" className="mb-2 text-lg text-shadow text-gray-700">Rooms</label>
-
+          <label
+            htmlFor="rooms"
+            className="mb-2 text-lg text-shadow text-gray-700"
+          >
+            Rooms
+          </label>
           <input
             type="number"
             id="rooms"
@@ -85,29 +112,40 @@ const CheckOutCard = ({change}) => {
           onChange={() => setAmenity("Fan")}
           className="mr-2"
         />
-        <label htmlFor="fan" className="mr-4 text-shadow">Fan</label>
+        <label htmlFor="fan" className="mr-4 text-shadow">
+          Fan
+        </label>
 
         <input
           id="air-conditioned"
           type="radio"
           name="amenity"
           value="Air conditioned"
-          checked={amenity === 'Air conditioned'}
-          onChange={() => setAmenity('Air conditioned')}
+          checked={amenity === "Air conditioned"}
+          onChange={() => setAmenity("Air conditioned")}
           className="mr-2 "
-
         />
-        <label htmlFor="air-conditioned text-shadow
-        ">Air conditioned</label>
+        <label
+          htmlFor="air-conditioned text-shadow
+        "
+        >
+          Air conditioned
+        </label>
       </div>
 
       {/* Submit Button */}
-      <button type="submit" onClick={() => {
-        change(3)
-      }} className="w-full px-4 py-2 bg-orange-500 text-white font-bold text-shadow shadow-xl rounded hover:bg-orange-600">
+      <div className="w-full flex justify-center">
+
+      <button
+        type="submit"
+        onClick={() => {
+          change(3);
+        }}
+        className="w-7/12 px-4 py-2 bg-orange-500 text-white font-bold text-shadow shadow-2xl rounded hover:bg-orange-600"
+      >
         Proceed
       </button>
-
+      </div>
     </form>
   );
 };

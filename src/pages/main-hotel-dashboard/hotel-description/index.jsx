@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
+import axios from 'axios';
+import { Api } from '../components/api';
+import MainHotelDashboardButton from '../components/button';
 // import MainHotelDashboardButton from '../components/';
 
 const HotelDashboardDescription = () => {
+    const [description, setdescription] = useState({})
+    useEffect(() => {
+        getHotelDescription()
+    }, [])
+
+    function getHotelDescription() {
+        axios.get(`${Api}hotel-manage/`)
+            .then((res) => {
+                console.log(res.data);
+                setdescription(res.data["manage-hotels-description"])
+            }).catch((err) => {
+                console.error(err)
+            })
+    }
     return (
         <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
 
@@ -27,7 +44,7 @@ const HotelDashboardDescription = () => {
                         <div className='p-5'>
                             <h1 className='text-xl'>Hotel description</h1>
                             <div className='mt-10'>
-                                <textarea name="" id="" className='border  rounded-lg bg-orange-200 border-orange-400 w-full h-40 p-5'></textarea>
+                                <textarea name="" id="" defaultValue={description.description} className='border  rounded-lg bg-orange-200 border-orange-400 w-full h-40 p-5'></textarea>
                                 <div className='flex gap-3 justify-end mt-5'>
                                     {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
                             <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
@@ -44,7 +61,7 @@ const HotelDashboardDescription = () => {
                                 <input
                                     type="text"
                                     name="hotelAddress"
-                                    defaultValue="Klyovu - kigali"
+                                    defaultValue={description["hotel-adress"]}
                                     className="w-full p-2 border-2 border-gray-400 rounded-md text-orange-500 placeholder:text-orange-500 focus:outline-none focus:border-orange-600"
                                     placeholder="Enter the hotel's address"
                                 />
@@ -56,7 +73,7 @@ const HotelDashboardDescription = () => {
                                 <input
                                     type="text"
                                     name="hotelAddress"
-                                    defaultValue="Klyovu - kigali"
+                                    defaultValue={description["hotel-stars"]}
                                     className="w-full p-2 border-2 border-gray-400 rounded-md text-orange-500 placeholder:text-orange-500 focus:outline-none focus:border-orange-600"
                                     placeholder="Enter the hotel's address"
                                 />
@@ -71,7 +88,7 @@ const HotelDashboardDescription = () => {
                                 <input
                                     type="text"
                                     name="hotelAddress"
-                                    defaultValue="Klyovu - kigali"
+                                    defaultValue={description["hotel-priice"]}
                                     className="w-full p-2 border-2 border-gray-400 rounded-md text-orange-500 placeholder:text-orange-500 focus:outline-none focus:border-orange-600"
                                     placeholder="Enter the hotel's address"
                                 />
@@ -85,10 +102,9 @@ const HotelDashboardDescription = () => {
                                     name="hotelAddress"
                                     className=" w-44 p-2 border-2 border-gray-400 rounded-md text-orange-500 placeholder:text-orange-500 focus:outline-none focus:border-orange-600"
                                 />
-                                {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
                             </div>
-                            {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
                         </div>
+                        <MainHotelDashboardButton width="w-max" height="h-10" icon={<i className="fa fa-user" />}>change information</MainHotelDashboardButton>
                     </div>
                 </div>
             </div>

@@ -21,14 +21,16 @@ function HotelRooms() {
           description={
             "Our premium room has a signle bed with a small balcon outside and a tv in the room it can host a couple or an individual."
           }
-          priceRWF={"175000/rwf"}
+          priceRWF={"175000/rwf"}                                         
           priceUSD={"175/USD"}
           rooms={"4 Rooms"}
         />
       ) : rooms === 2 ? (
         <CheckOutCard change={setRooms}/>
       ) : rooms === 3 ? (
-        <AboutCard change={setRooms}/>
+        <CheckoutInfo change={setRooms}/>
+      ) : rooms === 4 ? (
+        <PaymentForm  change={setRooms}/>
       ) : (
         setRooms(1)
       )}

@@ -1,6 +1,8 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
+import axios from 'axios'
 import RegistrationForm from "./registerFrom";
 import RegisterTable from "./registerTable";
+import { Api } from "../../main-hotel-dashboard/components/api";
 
 const MainAdminManager = () => {
 	const interButton = [
@@ -15,7 +17,7 @@ const MainAdminManager = () => {
 		},
 	];
 	return (
-		<div className="w-full h-screen bg-[#FFF] rounded-lg">
+		<div className="w-full h-auto bg-[#FFF] rounded-lg">
 			<div className="flex justify-evenly items-center">
 				{interButton &&
 					interButton.map((res, i) => (
