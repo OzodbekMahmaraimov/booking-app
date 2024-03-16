@@ -1,4 +1,17 @@
 {
+    "category": [
+        {
+            "id": 1,
+            "name": "Category 1" 
+        }
+    ],
+    "slider": [
+        {
+            "id": 1,
+            "name": "Slider 1"
+        }
+    ]
+}
 	"category": [
 		{
 			"id": 1,
@@ -616,164 +629,160 @@
 		]
 	},
 	"admin": {
-		"restAdmin": [
-			{
-				"id": "1",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "2",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "3",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "4",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "5",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "6",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "7",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "8",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "9",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "10",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "11",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "12",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "13",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "14",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "15",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "16",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "17",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "18",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "19",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "20",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			},
-			{
-				"id": "21",
-				"name": "Cappuccino(iced)",
-				"category": "Coffee",
-				"price": "2500.00RWF",
-				"quantity": 20
-			}
-		],
+
+			"restAdmin": [
+					{
+							"id": "1",
+							"name": "Espresso",
+							"category": "Coffee",
+							"price": "2000.00RWF",
+							"quantity": 30
+					},
+					{
+							"id": "2",
+							"name": "Latte",
+							"category": "Coffee",
+							"price": "3000.00RWF",
+							"quantity": 25
+					},
+					{
+							"id": "3",
+							"name": "Americano",
+							"category": "Coffee",
+							"price": "2500.00RWF",
+							"quantity": 20
+					},
+					{
+							"id": "4",
+							"name": "Mocha",
+							"category": "Coffee",
+							"price": "3500.00RWF",
+							"quantity": 15
+					},
+					{
+							"id": "5",
+							"name": "Tea",
+							"category": "Beverage",
+							"price": "1500.00RWF",
+							"quantity": 40
+					},
+					{
+							"id": "6",
+							"name": "Green Tea",
+							"category": "Beverage",
+							"price": "1800.00RWF",
+							"quantity": 35
+					},
+					{
+							"id": "7",
+							"name": "Hot Chocolate",
+							"category": "Beverage",
+							"price": "3200.00RWF",
+							"quantity": 20
+					},
+					{
+							"id": "8",
+							"name": "Frappe",
+							"category": "Coffee",
+							"price": "3600.00RWF",
+							"quantity": 25
+					},
+					{
+							"id": "9",
+							"name": "Caramel Macchiato",
+							"category": "Coffee",
+							"price": "4000.00RWF",
+							"quantity": 20
+					},
+					{
+							"id": "10",
+							"name": "Flat White",
+							"category": "Coffee",
+							"price": "2800.00RWF",
+							"quantity": 22
+					},
+					{
+							"id": "11",
+							"name": "Iced Tea",
+							"category": "Beverage",
+							"price": "2000.00RWF",
+							"quantity": 30
+					},
+					{
+							"id": "12",
+							"name": "Iced Coffee",
+							"category": "Coffee",
+							"price": "2600.00RWF",
+							"quantity": 18
+					},
+					{
+							"id": "13",
+							"name": "Vanilla Latte",
+							"category": "Coffee",
+							"price": "3700.00RWF",
+							"quantity": 12
+					},
+					{
+							"id": "14",
+							"name": "Cappuccino",
+							"category": "Coffee",
+							"price": "3100.00RWF",
+							"quantity": 30
+					},
+					{
+							"id": "15",
+							"name": "Chai Latte",
+							"category": "Beverage",
+							"price": "3400.00RWF",
+							"quantity": 16
+					},
+					{
+							"id": "16",
+							"name": "Iced Latte",
+							"category": "Coffee",
+							"price": "2900.00RWF",
+							"quantity": 14
+					},
+					{
+							"id": "17",
+							"name": "Black Coffee",
+							"category": "Coffee",
+							"price": "2100.00RWF",
+							"quantity": 30
+					},
+					{
+							"id": "18",
+							"name": "Iced Mocha",
+							"category": "Coffee",
+							"price": "3800.00RWF",
+							"quantity": 10
+					},
+					{
+							"id": "19",
+							"name": "Herbal Tea",
+							"category": "Beverage",
+							"price": "1700.00RWF",
+							"quantity": 20
+					},
+					{
+							"id": "20",
+							"name": "Matcha Latte",
+							"category": "Beverage",
+							"price": "4200.00RWF",
+							"quantity": 18
+					}
+			]
+	},
+
 		"mainadmin": {
 			"category": {
 				"payment": {
-					"user": [
-						{
-							"id": "1",
-							"name": "Daniel Harerimana",
-							"number": "0784567890",
-							"action": "Booking",
+						"user": [
+							{
+								"id": "1",
+								"name": "Daniel Harerimana",
+								"number": "0784567890",
+								"action": "Booking",
 							"facility": "Soy asian- restaurant",
 							"paid": "1050000 Rwf",
 							"earned": "20000Rwf"
@@ -987,8 +996,7 @@
 					]
 				}
 			}
-		}
-	},
+		},
 	"hotel-manage": {
 		"manage-hotels-dashboard": {
 			"Total-Rooms": 10,

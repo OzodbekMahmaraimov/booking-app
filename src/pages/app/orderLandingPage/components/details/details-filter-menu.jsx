@@ -6,12 +6,12 @@ const DetailsFilterMenu = ({ itemsCount }) => {
     const [active, setActive] = useState({ id: 1 })
 
     const data = [
-        { id: 1, name: 'All' },
-        { id: 2, name: 'Coffee drinks' },
-        { id: 3, name: 'Main dishes' },
-        { id: 4, name: 'Snacks' },
-        { id: 5, name: 'Soft drinks' },
-        { id: 6, name: 'Alcoholic drinks' }
+        { id: 1, category: 'all', name: 'All' },
+        { id: 2, category: 'coffeDrinks', name: 'Coffee drinks' },
+        { id: 3, category: 'mainDashes', name: 'Main dishes' },
+        { id: 4, category: 'snacks', name: 'Snacks' },
+        { id: 5, category: 'softDrinks', name: 'Soft drinks' },
+        { id: 6, category: 'alcoholicDrinks', name: 'Alcoholic drinks' }
     ]
     const activeHandler = (id) => setActive(data.find(c => c.id === id))
 

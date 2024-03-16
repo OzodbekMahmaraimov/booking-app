@@ -2,37 +2,57 @@ import React, { useEffect, useState } from "react";
 import homeIcon from "./../../../../../assets/images/Vector (1).png";
 import blackLine from "./../../../../../assets/images/Line 10.png";
 import menuIcon from "./../../../../../assets/images/svg.svg";
+import notFound from "./../../../../../assets/images/200w.gif";
+
 import ResAdminSidebar from "../components/sidebar";
 import axios from "axios";
 
 const ItemList = () => {
 	const [currentPage, setCurrentPage] = useState(1);
 	const itemsPerPage = 5;
-	const [isLoading, setIsLoading] = useState(false); // State to manage loading status
-	const [error, setError] = useState(null); // State to capture any error
+	const [isLoading, setIsLoading] = useState(false);
+	const [error, setError] = useState(null);
 	const [selectedItems, setSelectedItems] = useState({});
 	const [items, setItems] = useState([]);
+	const [searchTerm, setSearchTerm] = useState("");
+
+	const handleSearchChange = (event) => {
+		setSearchTerm(event.target.value.toLowerCase());
+	};
 
 	useEffect(() => {
 		setIsLoading(true);
-		axios
-			.get("http://localhost:3000/admin/") // URLni o'zgartiring
-			.then((res) => {
-				console.log(res.data.restAdmin);
-				const storedItems = JSON.parse(localStorage.getItem("items")) || [];
-				setItems(storedItems);
-				setIsLoading(false);
-			})
-			.catch((error) => {
-				console.error("There was an error fetching the items: ", error);
-				setError(error.message || "An error occurred");
-				setIsLoading(false);
-			});
+		const localItems = localStorage.getItem("items");
+		if (localItems) {
+			setItems(JSON.parse(localItems));
+			setIsLoading(false);
+		} else {
+			axios
+				.get("http://localhost:3000/admin/")
+				.then((res) => {
+					const apiItems = res.data.restAdmin;
+					localStorage.setItem("items", JSON.stringify(apiItems)); // Local storage'ga saqlaymiz
+					setItems(apiItems);
+					setIsLoading(false);
+				})
+				.catch((error) => {
+					setError(error.message || "An error occurred");
+					setIsLoading(false);
+				});
+		}
 	}, []);
+	const filteredItems =
+		searchTerm.length > 0
+			? items.filter(
+					(item) =>
+						item.name.toLowerCase().includes(searchTerm) ||
+						item.category.toLowerCase().includes(searchTerm)
+			  )
+			: items;
 
 	const lastPageIndex = currentPage * itemsPerPage;
 	const firstPageIndex = lastPageIndex - itemsPerPage;
-	const currentItems = items.slice(firstPageIndex, lastPageIndex);
+	const currentItems = filteredItems.slice(firstPageIndex, lastPageIndex);
 
 	const toggleSelectAll = (e) => {
 		const newSelectedItems = {};
@@ -50,11 +70,12 @@ const ItemList = () => {
 			[id]: !prevItems[id],
 		}));
 	};
+
 	const deleteSelectedItems = () => {
 		const remainingItems = items.filter((item) => !selectedItems[item.id]);
-		setItems(remainingItems); // Yangilangan ro'yxatni state'ga saqlash
-		localStorage.setItem("items", JSON.stringify(remainingItems)); // Yangilangan ro'yxatni localStorage'ga saqlash
-		setSelectedItems({}); // Tanlangan elementlarni tozalash
+		localStorage.setItem("items", JSON.stringify(remainingItems)); // O'chirilganidan keyin, yangilangan ro'yxatni local storage'ga saqlaymiz
+		setItems(remainingItems);
+		setSelectedItems({});
 	};
 
 	const isAllSelected =
@@ -67,12 +88,13 @@ const ItemList = () => {
 	const prevPage = () => {
 		setCurrentPage((prevPage) => prevPage - 1);
 	};
+
 	if (isLoading) {
-		return <div>Loading...</div>; // Simple loading indicator
+		return <div>Loading...</div>;
 	}
 
 	if (error) {
-		return <div>Error: {error}</div>; // Display error message
+		return <div>Error: {error}</div>;
 	}
 
 	return (
@@ -98,8 +120,9 @@ const ItemList = () => {
 							type="text"
 							className="w-[500px] outline-none px-3 py-3 rounded-xl"
 							placeholder="Search"
+							onChange={handleSearchChange}
 						/>
-						<button className="px-4 py-2.5 text-white border-[2px] border-solid border-white rounded-xl">
+						<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
 							Search
 						</button>
 					</div>
@@ -118,42 +141,48 @@ const ItemList = () => {
 							</button>
 						</div>
 						<div className="p-2">
-							<table className="w-full ">
-								<thead>
-									<tr className="bg-[#F1E8D7] text-left h-10 rounded-xl">
-										<th>
-											<input type="checkbox" checked={isAllSelected} onChange={toggleSelectAll} />
-										</th>
-										<th>Item ID</th>
-										<th>Item Name</th>
-										<th>Item category</th>
-										<th>Item price</th>
-										<th>Item quantity</th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									{currentItems.map((item) => (
-										<tr key={item.id} className="text-left">
-											<td>
-												<input
-													type="checkbox"
-													checked={!!selectedItems[item.id]}
-													onChange={() => toggleSelectItem(item.id)}
-												/>
-											</td>
-											<td>#{item.id}</td>
-											<td>{item.name}</td>
-											<td>{item.category}</td>
-											<td>{item.price}</td>
-											<td>{item.quantity}</td>
-											<td className="cursor-pointer">
-												<img src={menuIcon} alt="menu icon" />
-											</td>
+							{currentItems.length > 0 ? (
+								<table className="w-full ">
+									<thead>
+										<tr className="bg-[#F1E8D7] text-left h-10 rounded-xl">
+											<th>
+												<input type="checkbox" checked={isAllSelected} onChange={toggleSelectAll} />
+											</th>
+											<th>Item ID</th>
+											<th>Item Name</th>
+											<th>Item category</th>
+											<th>Item price</th>
+											<th>Item quantity</th>
+											<th></th>
 										</tr>
-									))}
-								</tbody>
-							</table>
+									</thead>
+									<tbody>
+										{currentItems.map((item) => (
+											<tr key={item.id} className="text-left">
+												<td>
+													<input
+														type="checkbox"
+														checked={!!selectedItems[item.id]}
+														onChange={() => toggleSelectItem(item.id)}
+													/>
+												</td>
+												<td>#{item.id}</td>
+												<td>{item.name}</td>
+												<td>{item.category}</td>
+												<td>{item.price}</td>
+												<td>{item.quantity}</td>
+												<td>
+													<img className="cursor-pointer" src={menuIcon} alt="menu icon" />
+												</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							) : searchTerm.length > 0 ? (
+								<div className="flex justify-center items-center">
+									<img src={notFound} alt="" />
+								</div>
+							) : null}
 						</div>
 						{/* Pagination controls */}
 						<div className="p-2">

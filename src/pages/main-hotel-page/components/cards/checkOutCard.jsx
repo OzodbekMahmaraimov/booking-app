@@ -10,6 +10,7 @@ const CheckOutCard = ({ change }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    change(3);
     // Here you would handle the submission of the data, maybe sending it to a server
   };
 
@@ -139,7 +140,7 @@ const CheckOutCard = ({ change }) => {
       <button
         type="submit"
         onClick={() => {
-          change(3);
+         
         }}
         className="w-7/12 px-4 py-2 bg-orange-500 text-white font-bold text-shadow shadow-2xl rounded hover:bg-orange-600"
       >
