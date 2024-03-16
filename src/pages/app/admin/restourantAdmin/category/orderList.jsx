@@ -45,9 +45,13 @@ const Order_LIst = () => {
 
     return (
         <div className="w-full">
-            <div className="flex  w-full bg-orange-400">
-                <ResAdminSidebar className="w-[25%]" />
-                <div className="w-[70%]">
+            <div className="flex  w-full bg-[#F46A06]">
+            <div className="w-[25%]">
+                <ResAdminSidebar />
+            </div>
+            <div className="w-[75%] p-2">
+
+                <div>
                     <div className="flex ml-4 w-full">
                         <img className="w-10 h-10 mt-20 ml-4" src={home} alt="" />
                         <img className="w-5 h-12 mt-20 ml-2" src={line} alt="" />
@@ -118,6 +122,7 @@ const Order_LIst = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

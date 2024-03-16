@@ -44,8 +44,29 @@ const ItemListNew = ({ closeModal }) => {
            <textarea id="des" rows="5" cols="30" placeholder="Item Description" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
            {/* Other form inputs... */}
          </div>
-         <div className="items-center px-4 py-3">
-           <button id="ok-btn" className="px-4 py-2 bg-orange-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300">
+         <div className="mt-3 bg-white">
+          <label htmlFor="category">
+            <p className="font-bold">
+              Item Category
+            </p>
+          </label>
+          <select id="category" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+            <option disabled selected>Select category</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div className="bg-white">
+          <label htmlFor="image">
+            <p className="font-bold">
+              Item Image
+            </p>
+          </label>
+          <input type="file" id="image" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"/>
+        </div>
+         <div className="items-center py-3">
+           <button id="ok-btn" className="px-4 py-2 bg-orange-500 text-white text-base font-medium rounded-md w-1/4 shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300">
              Save
            </button>
          </div>

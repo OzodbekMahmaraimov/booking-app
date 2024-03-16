@@ -10,8 +10,8 @@ import { NavLink } from "react-router-dom"; // Import NavLink
 
 const ResAdminSidebar = () => {
     // Define a function for generating NavLink className
-    const getNavLinkClass = ({ isActive }) => `mt-7 flex items-center gap-2 p-2 rounded-xl hover:bg-[#ccc] cursor-pointer select-none ${isActive ? 'bg-[#F46A06]' : ''}`;
-
+    const getNavLinkClass = ({ isActive }) =>
+    `mt-7 flex items-center gap-2 p-2 rounded-xl cursor-pointer select-none ${isActive ? 'bg-[#F46A06]' : 'hover:bg-[#ccc]'}`;
     return (
         <div className="p-5">
             <div className="w-[100%] bg-white h-max rounded-xl  px-4 py-3">
