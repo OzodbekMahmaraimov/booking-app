@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaPencilAlt, FaSave, FaEye } from 'react-icons/fa';
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
@@ -9,16 +9,18 @@ import { Api, byId } from '../components/api';
 
 const MainDashboardRoomForm = () => {
   const [elfrom, setelfrom] = useState(false)
+  const [roomdata, setroomdata] = useState({})
+
   useEffect(() => {
     getHotelManageData();
-
   }, [])
-  
+
   const getHotelManageData = async () => {
     try {
       const response = await axios.get('http://localhost:3000/hotel-manage');
-      const roomsData = response.data['manage-hotels-dashboard-rooms'];
+      const roomsData = response.data;
       console.log(roomsData);
+      setroomdata(roomsData);
       // Endi roomsData o'zgaruvchisida "manage-hotels-dashboard-rooms" yo'lidagi ma'lumotlar bor
       // Siz bu ma'lumotlar bilan kerakli amallarni bajara olasiz
     } catch (error) {
