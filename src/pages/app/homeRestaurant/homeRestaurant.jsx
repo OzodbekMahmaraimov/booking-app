@@ -29,7 +29,6 @@ const HomeRestaurant = () => {
       setModal(false)
     };
     if (e.key === "Escape") setModal(false);
-    console.log(e.target.className[2]);
   }
 
 
@@ -57,7 +56,7 @@ const HomeRestaurant = () => {
       }
 
 
-      {modal && <BookingModal setModal={setModal} setIsPay={setIsPay} />}
+      {modal && <BookingModal setModal={setModal} setIsPay={setIsPay} isModal={modal} />}
 
 
 
