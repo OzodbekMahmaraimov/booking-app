@@ -4,7 +4,7 @@ import MainAdminNav from "./mainAdminNav";
 import MainAdminManager from "./mainAdminManage";
 
 const MainAdminpage = () => {
-    
+
     return (
         <div className="p-5 flex     ">
             {/* top white piece */}
