@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaPencilAlt, FaSave, FaEye } from 'react-icons/fa';
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
@@ -11,7 +11,6 @@ const MainDashboardRoomForm = () => {
   const [elfrom, setelfrom] = useState(false)
   useEffect(() => {
     getHotelManageData();
-
   }, [])
   
   const getHotelManageData = async () => {
