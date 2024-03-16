@@ -24,9 +24,9 @@ const App = () => {
 				<Route path="/itemlist" Component={ItemList} />
 				<Route path="/customer" Component={Costumer} />
 			</Routes>
-			<MainOrder />
+			{/* <MainOrder />
 			<MainHotelDashboard />
-			<Hotelroutes/>
+			<Hotelroutes/> */}
 		</>
 	);
 };

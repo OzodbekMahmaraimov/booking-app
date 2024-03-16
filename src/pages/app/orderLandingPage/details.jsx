@@ -2,11 +2,6 @@ import { Link } from "react-router-dom"
 import {
   detailsBg,
   cofeDetails,
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5
 } from "../../../assets/landing-img"
 import DetailsInfo from "./components/details/details-info"
 import Services from "./components/details/services";
@@ -20,19 +15,14 @@ import { FaHome } from "react-icons/fa";
 import { FaBowlFood } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { FiLogIn } from "react-icons/fi";
+import Pagination from "./components/pagination";
+import InfoModal from "./components/info-modal";
 
 const data = [
   { id: 1, img: cofeDetails, shoppingCount: 0, name: 'Latte(Hot)', countName: 'QTY:', btn1: '2500 RWF', btn2: 'Add to order' },
 ]
 
-const imgData = [
-  { id: 1, img: gallery1 },
-  { id: 2, img: gallery2 },
-  { id: 3, img: gallery3 },
-  { id: 4, img: gallery4 },
-  { id: 5, img: gallery5 },
-]
-
+// ****************************** Navbar uchun obj ******************************
 const navdata = [
   { id: 1, icon: <FaHome color='black' />, name: 'Home' },
   { id: 2, icon: <FaBowlFood color='black' />, name: 'Create facility' },
@@ -45,6 +35,11 @@ const Details = () => {
   const [itemsFilterData, setItemsFilterData] = useState(null)
   const [itemsGallery, setItemsGallery] = useState(null)
   const [itemsCount, setItemsCount] = useState(0)
+  const [modalImage, setModalImage] = useState(false)
+  // ***************************** pagination ******************************************
+  const [currentPage, setCurrentPage] = useState(1);
+  const [usersPerPage] = useState(6)
+
   const goBack = () => window.history.back();
 
   useEffect(() => {
@@ -64,6 +59,13 @@ const Details = () => {
   useEffect(() => {
     setItemsCount(itemsFilterData && itemsFilterData.map(c => c.shoppingCount).reduce((a, b) => a + b))
   }, [itemsFilterData])
+
+  // ============================ pagination ====================================
+  const indexOfLastUser = currentPage * usersPerPage;
+  const indexOfFirstUser = indexOfLastUser - usersPerPage;
+  const currentUsers = itemsFilterData ? itemsFilterData.slice(indexOfFirstUser, indexOfLastUser) : null;
+  const totalPages = Math.ceil(itemsFilterData ? itemsFilterData.length / usersPerPage : 0);
+  const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
     <div className="details-main-font">
@@ -94,12 +96,13 @@ const Details = () => {
         <DetailsFilterMenu itemsCount={itemsCount} />
       </div>
       <div className="max-w-[1350px] mx-auto my-16 flex justify-start items-start flex-wrap">
-        {itemsFilterData ?
-          itemsFilterData.map(item => (
+        {currentUsers ?
+          currentUsers.map(item => (
             <div className="p-7 w-1/3">
               <Cards
                 item={item}
                 setItemsFilterData={setItemsFilterData}
+                setModalImage={setModalImage}
               />
             </div>
           )) : (
@@ -107,13 +110,24 @@ const Details = () => {
               <Cards
                 item={data}
                 setItemsFilterData={setItemsFilterData}
+                setModalImage={setModalImage}
               />
             </div>
           )}
       </div>
+      {currentUsers && (
+        <div className="mb-8">
+          <Pagination
+            paginate={paginate}
+            totalPages={totalPages}
+            currentPage={currentPage}
+          />
+        </div>
+      )}
       <div className="max-w-[1350px] mx-auto my-16">
         {itemsGallery && <Gallery imgData={itemsGallery} />}
       </div>
+      <InfoModal modalImage={modalImage} setModalImage={setModalImage} />
     </div>
   )
 }

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import homeIcon from "./../../../../../assets/images/Vector (1).png";
 import blackLine from "./../../../../../assets/images/Line 10.png";
 import menuIcon from "./../../../../../assets/images/svg.svg";
+import notFound from "./../../../../../assets/images/200w.gif";
+
 import ResAdminSidebar from "../components/sidebar";
 import axios from "axios";
 
@@ -20,19 +22,25 @@ const ItemList = () => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		axios
-			.get("http://localhost:3000/admin/")
-			.then((res) => {
-				const apiItems = res.data.restAdmin;
-				setItems(apiItems);
-				setIsLoading(false);
-			})
-			.catch((error) => {
-				setError(error.message || "An error occurred");
-				setIsLoading(false);
-			});
+		const localItems = localStorage.getItem("items");
+		if (localItems) {
+			setItems(JSON.parse(localItems));
+			setIsLoading(false);
+		} else {
+			axios
+				.get("http://localhost:3000/admin/")
+				.then((res) => {
+					const apiItems = res.data.restAdmin;
+					localStorage.setItem("items", JSON.stringify(apiItems)); // Local storage'ga saqlaymiz
+					setItems(apiItems);
+					setIsLoading(false);
+				})
+				.catch((error) => {
+					setError(error.message || "An error occurred");
+					setIsLoading(false);
+				});
+		}
 	}, []);
-
 	const filteredItems =
 		searchTerm.length > 0
 			? items.filter(
@@ -65,6 +73,7 @@ const ItemList = () => {
 
 	const deleteSelectedItems = () => {
 		const remainingItems = items.filter((item) => !selectedItems[item.id]);
+		localStorage.setItem("items", JSON.stringify(remainingItems)); // O'chirilganidan keyin, yangilangan ro'yxatni local storage'ga saqlaymiz
 		setItems(remainingItems);
 		setSelectedItems({});
 	};
@@ -170,7 +179,9 @@ const ItemList = () => {
 									</tbody>
 								</table>
 							) : searchTerm.length > 0 ? (
-								<p className="text-center p-5">Not Found</p>
+								<div className="flex justify-center items-center">
+									<img src={notFound} alt="" />
+								</div>
 							) : null}
 						</div>
 						{/* Pagination controls */}
