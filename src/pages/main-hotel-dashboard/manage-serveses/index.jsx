@@ -70,17 +70,17 @@ const HotelDashboardManageServises = () => {
 			roomData['Services-hotel-offers'] = newservesec;
 
 			console.log(roomData['Services-hotel-offers'] = newservesec);
-			if(newservesec.length > 0) {
+			if (newservesec.length > 0) {
 				axios.put('http://localhost:3000/hotel-manage', roomData)
-				.then((response) => {
-					console.log('Room added:', response.data);
-					Serviceshoteloffers();
-				})
-				.catch((error) => {
-					console.error('Error adding new room:', error);
-				});
-			}else{
-				alert('Please add atleast one service');
+					.then((response) => {
+						console.log('Room added:', response.data);
+						Serviceshoteloffers();
+					})
+					.catch((error) => {
+						console.error('Error adding new room:', error);
+					});
+			} else {
+				alert('please select one serveses again');
 			}
 		} else {
 			alert('Please select a hotel offer to delete.');
