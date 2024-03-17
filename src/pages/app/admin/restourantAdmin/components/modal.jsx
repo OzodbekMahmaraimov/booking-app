@@ -16,15 +16,11 @@ const ItemListNew = ({ closeModal, addItem }) => {
 
   const handleSave = () => {
     const formData = new FormData();
-    formData.append(newItem.name);
-    formData.append(newItem.quantity);
-    formData.append(newItem.price);
-    formData.append(newItem.description);
-    formData.append(newItem.category);
-    // Agar rasm yuklash kerak bo'lsa:
-    if (newItem.image) {
-      formData.append('image', newItem.image);
-    }
+    formData.append('name', newItem.name);
+    formData.append('quantity', Number(newItem.quantity));
+    formData.append('price', Number(newItem.price));
+    formData.append('description', newItem.description);
+    formData.append('category', newItem.category);
   
     addItem(formData); // Endi addItem funksiyasi FormData obyektini qabul qiladi.
     closeModal();
@@ -35,8 +31,8 @@ const ItemListNew = ({ closeModal, addItem }) => {
       <div className="relative top-20 mx-auto p-5 border w-2/6 shadow-lg rounded-md bg-white">
         <div className="mt-8">
           <input type="text" name="name" placeholder="Item Name" value={newItem.name} onChange={handleChange} className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
-          <input type="text" name="quantity" placeholder="Item Quantity" value={newItem.quantity} onChange={handleChange} className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
-          <input type="text" name="price" placeholder="Item Price" value={newItem.price} onChange={handleChange} className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
+          <input type="number" name="quantity" placeholder="Item Quantity" value={newItem.quantity} onChange={handleChange} className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
+          <input type="number" name="price" placeholder="Item Price" value={newItem.price} onChange={handleChange} className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
           <textarea name="description" placeholder="Item Description" value={newItem.description} onChange={handleChange} rows="4" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none"></textarea>
           <select name="category" value={newItem.category} onChange={handleChange} className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none">
             <option value="">Select Category</option>
