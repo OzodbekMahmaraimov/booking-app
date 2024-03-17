@@ -15,8 +15,8 @@ const HotelDashboardDescription = () => {
     function getHotelDescription() {
         axios.get(`${Api}hotel-manage/`)
             .then((res) => {
-                
                 setdescription(res.data["manage-hotels-description"])
+                console.log(description);
             }).catch((err) => {
                 console.error(err)
             })
@@ -48,7 +48,7 @@ const HotelDashboardDescription = () => {
                         <div className='p-5'>
                             <h1 className='text-xl'>Hotel description</h1>
                             <div className='mt-10'>
-                                <textarea name="" id="" defaultValue={description.description} className='border  rounded-lg bg-orange-200 border-orange-400 w-full h-40 p-5'></textarea>
+                                <textarea name="" id="" defaultValue={description['description']} className='border  rounded-lg bg-orange-200 border-orange-400 w-full h-40 p-5'></textarea>
                                 <div className='flex gap-3 justify-end mt-5'>
                                     {/* <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton>
                             <MainHotelDashboardButton width="w-32" height="h-10" icon={<i className="fa fa-user" />}>add service</MainHotelDashboardButton> */}
