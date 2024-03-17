@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Drawer } from 'antd';
-const InfoModal = ({ modalImage, setModalImage }) => {
+const InfoModal = ({ modalImage, setModalImage, detailsOfficanvas }) => {
     const [placement, setPlacement] = useState('right');
     return (
         <>{modalImage && (
