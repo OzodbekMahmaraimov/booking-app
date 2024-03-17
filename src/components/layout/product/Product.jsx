@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoCloseOutline } from "react-icons/io5";
 
-const Product = ({ pricePerItem, itemName, itemImage, quantity, setQuantity }) => {
+const Product = ({ pricePerItem, itemName, itemImage, quantity, setQuantity, deleteProduct }) => {
     const subtotal = quantity * pricePerItem;
 
     const incrementQuantity = () => {
@@ -18,12 +18,17 @@ const Product = ({ pricePerItem, itemName, itemImage, quantity, setQuantity }) =
         <div className="flex flex-col md:flex-row items-center justify-between bg-white p-4 border border-gray-200 rounded">
             <div className="flex items-center mb-4 md:mb-0">
                 <img
-                    src={itemImage} // Replace with the path to your image
+                    src={itemImage}
                     alt={itemName}
                     className="h-16 w-16 object-cover mr-4"
                 />
                 <div className="flex flex-col md:flex-row items-center gap-3 font-lexend">
-                    <button className='rounded-full p-1 text-center shadow-lg'><IoCloseOutline fontSize={30} color='#F46A06' /></button>
+                    <button
+                        onClick={deleteProduct}
+                        className='rounded-full p-1 text-center shadow-lg'
+                    >
+                        <IoCloseOutline fontSize={30} color='#F46A06' />
+                    </button>
                     <span className="text-xl">{itemName}</span>
                 </div>
             </div>
