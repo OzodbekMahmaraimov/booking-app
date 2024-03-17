@@ -4,19 +4,28 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ navdata }) => {
     const [navbar, setNavbar] = useState(false);
+    const [active, setActive] = useState({name: "Home"});
     const toggleNavbar = () => setNavbar(!navbar);
-
+    const activeHadler = name => setActive(navdata.find(n => n.name === name))
+    
     return (
         <section className='w-full fixed z-10 bg-white shadow-md'>
             <header className={`max-w-[1200px] mx-auto px-5 py-6 md:px-0 flex items-center justify-between`}>
                 <h1 className='text-4xl'><Link>HFfinder</Link></h1>
-                <nav className='text-[#F46A06] hidden md:block px-2 lg:px-0'>
+                <nav className='hidden md:block px-2 lg:px-0'>
                     <ul className='flex gap-8 lg:gap-12 font-semibold'>
                         {navdata.map(item => (
-                            <Link key={item.id}>
-                                <li className='flex items-center text-xl gap-2'>
+                            <Link
+                                key={item.id}
+                                onClick={() => activeHadler(item.name)}
+                                className={`${active.name === item.name
+                                    ? "text-slate-900"
+                                    : ""} text-[#F46A06] hover:text-slate-800 duration-300`}>
+                                <li className='flex items-center text-xl gap-2 relative group'>
                                     {item.icon}
                                     {item.name}
+                                    <span className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-gray-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-bottom-right`}></span>
+                                    {active.name === item.name ? <p className="h-0.5 bg-gray-500 w-full absolute -bottom-1"></p> : null}
                                 </li>
                             </Link>
                         ))}
