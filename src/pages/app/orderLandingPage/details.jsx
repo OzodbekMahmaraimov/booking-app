@@ -68,8 +68,6 @@ const Details = () => {
   const totalPages = Math.ceil(itemsFilterData ? itemsFilterData.length / usersPerPage : 0);
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
-  console.log(detailsOfficanvas);
-
   return (
     <div className="details-main-font">
       <Navbar navdata={navdata} />
