@@ -34,6 +34,7 @@ const Details = () => {
   const [items, setItems] = useState(null)
   const [itemsFilterData, setItemsFilterData] = useState(null)
   const [itemsGallery, setItemsGallery] = useState(null)
+  const [detailsOfficanvas, setdetailsOfficanvas] = useState(null)
   const [itemsCount, setItemsCount] = useState(0)
   const [modalImage, setModalImage] = useState(false)
   // ***************************** pagination ******************************************
@@ -66,6 +67,8 @@ const Details = () => {
   const currentUsers = itemsFilterData ? itemsFilterData.slice(indexOfFirstUser, indexOfLastUser) : null;
   const totalPages = Math.ceil(itemsFilterData ? itemsFilterData.length / usersPerPage : 0);
   const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  console.log(detailsOfficanvas);
 
   return (
     <div className="details-main-font">
@@ -103,6 +106,7 @@ const Details = () => {
                 item={item}
                 setItemsFilterData={setItemsFilterData}
                 setModalImage={setModalImage}
+                setdetailsOfficanvas={setdetailsOfficanvas}
               />
             </div>
           )) : (
@@ -111,6 +115,7 @@ const Details = () => {
                 item={data}
                 setItemsFilterData={setItemsFilterData}
                 setModalImage={setModalImage}
+                setdetailsOfficanvas={setdetailsOfficanvas}
               />
             </div>
           )}
@@ -127,7 +132,7 @@ const Details = () => {
       <div className="max-w-[1350px] mx-auto my-16">
         {itemsGallery && <Gallery imgData={itemsGallery} />}
       </div>
-      <InfoModal modalImage={modalImage} setModalImage={setModalImage} />
+      <InfoModal detailsOfficanvas={detailsOfficanvas} modalImage={modalImage} setModalImage={setModalImage} />
     </div>
   )
 }
