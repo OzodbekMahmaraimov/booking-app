@@ -25,8 +25,8 @@ const App = () => {
 				<Route path="/customer" Component={Costumer} />
 			</Routes>
 			{/* <MainOrder />
-			<MainHotelDashboard />
 			<Hotelroutes/> */}
+			<MainHotelDashboard />
 		</>
 	);
 };

@@ -37,9 +37,6 @@ export const MainDashboardManageRooms = () => {
 
     // ------------- *********** for geting rooms ************************* -------------- //
 
-
-
-
     useEffect(() => {
         getHotelManageData();
     }, []);
