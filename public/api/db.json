@@ -25,7 +25,7 @@
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -36,6 +36,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -48,10 +52,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 2,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -60,8 +64,12 @@
         ],
         "gallery": [
           {
-            "id": 2,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -74,10 +82,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 3,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -86,8 +94,12 @@
         ],
         "gallery": [
           {
-            "id": 3,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -100,10 +112,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 4,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -112,8 +124,12 @@
         ],
         "gallery": [
           {
-            "id": 4,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -126,10 +142,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 5,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -138,8 +154,12 @@
         ],
         "gallery": [
           {
-            "id": 5,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -152,10 +172,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 6,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -164,8 +184,12 @@
         ],
         "gallery": [
           {
-            "id": 6,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -178,10 +202,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 7,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -190,8 +214,12 @@
         ],
         "gallery": [
           {
-            "id": 7,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -204,10 +232,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 8,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -216,8 +244,12 @@
         ],
         "gallery": [
           {
-            "id": 8,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -230,10 +262,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 9,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -242,8 +274,12 @@
         ],
         "gallery": [
           {
-            "id": 9,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -256,10 +292,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 10,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -268,8 +304,12 @@
         ],
         "gallery": [
           {
-            "id": 10,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -282,10 +322,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 11,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -294,8 +334,12 @@
         ],
         "gallery": [
           {
-            "id": 11,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -308,10 +352,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 12,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -320,8 +364,12 @@
         ],
         "gallery": [
           {
-            "id": 12,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -334,10 +382,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 13,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -346,8 +394,12 @@
         ],
         "gallery": [
           {
-            "id": 13,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -360,10 +412,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 14,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -372,8 +424,12 @@
         ],
         "gallery": [
           {
-            "id": 14,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -386,10 +442,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 15,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -398,8 +454,12 @@
         ],
         "gallery": [
           {
-            "id": 15,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -412,10 +472,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 16,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -424,8 +484,12 @@
         ],
         "gallery": [
           {
-            "id": 16,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -438,10 +502,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 17,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -450,8 +514,12 @@
         ],
         "gallery": [
           {
-            "id": 17,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -464,10 +532,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 18,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -476,8 +544,12 @@
         ],
         "gallery": [
           {
-            "id": 18,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -490,10 +562,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 19,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -502,8 +574,12 @@
         ],
         "gallery": [
           {
-            "id": 19,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -516,10 +592,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 20,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -528,8 +604,12 @@
         ],
         "gallery": [
           {
-            "id": 20,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -542,10 +622,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 21,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -554,8 +634,12 @@
         ],
         "gallery": [
           {
-            "id": 21,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -568,10 +652,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 22,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -580,8 +664,12 @@
         ],
         "gallery": [
           {
-            "id": 22,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -594,10 +682,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 23,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -606,8 +694,12 @@
         ],
         "gallery": [
           {
-            "id": 23,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       },
@@ -620,10 +712,10 @@
         "description": "SOY ASIAN TABLE RESTAURANT IS A RESTAURANT LOCATED IN THE HEART OF KIMIHURURA IT WAS B ROUGHT BY JAPANESE TO BRING THE TASTE OF ASIAN FOOD IN AFRICA.",
         "detailsInfo": [
           {
-            "id": 24,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
             "shoppingCount": 0,
-			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
@@ -632,8 +724,12 @@
         ],
         "gallery": [
           {
-            "id": 24,
+            "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
           }
         ]
       }
