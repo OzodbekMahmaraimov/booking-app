@@ -37,14 +37,30 @@ const iconColor = (icon) => {
 const HotelDashboard = () => {
 
   const [allRooms, setAllRooms] = useState(0);
+  const [rooms, setRooms] = useState([]);
+  const [totalCash, setTotalCash] = useState(0);
+
+
   useEffect(() => {
     getAllRooms()
   }, [])
 
+  useEffect(() => {
+    const calculatedTotal = rooms.reduce((acc, item) => {
+      if (item['check-out'] > 0) {
+        return acc + item['Total-payment'];
+      }
+      return acc;
+    }, 0);
+
+    setTotalCash(calculatedTotal);
+  }, [rooms]);
+
   function getAllRooms() {
-    axios.get(`${Api}manage-hotels-dashboard-rooms `)
+    axios.get(`${Api}hotel-manage`)
       .then((res) => {
-        setAllRooms(res.data.length);
+        setRooms(res.data["manage-hotels-dashboard-rooms"])
+        setAllRooms(res.data["manage-hotels-dashboard-rooms"].length)
       }).catch((err) => {
         console.error(err);
       })
@@ -74,21 +90,21 @@ const HotelDashboard = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🏄🏿‍♂️</div>
+              <div className="mt-2 text-3xl font-semibold">2</div>
+              <div className="text-md text-gray-700">Room Types</div>
             </div>
 
             <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">2</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>👥</div>
+              <div className="mt-2 text-3xl font-semibold">1</div>
+              <div className="text-md text-gray-700">Reserations</div>
             </div>
 
             <div className="flex flex-col items-center justify-center  p-4">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🤿</div>
+              <div className="mt-2 text-3xl font-semibold">0</div>
+              <div className="text-md text-gray-700">Complains</div>
             </div>
 
           </div>
@@ -100,27 +116,28 @@ const HotelDashboard = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-5">
 
             <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🥂</div>
+              <div className="mt-2 text-3xl font-semibold">{rooms.filter(item => item['Room-Status'] === true).length}
+              </div>
+              <div className="text-md text-gray-700">Booked Rooms</div>
             </div>
 
             <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🥃</div>
+              <div className="mt-2 text-3xl font-semibold">{allRooms}</div>
+              <div className="text-md text-gray-700">Avialeble rooms</div>
             </div>
 
             <div className="flex flex-col items-center justify-center  p-4 border-r-2 border-gray-500">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🍾</div>
+              <div className="mt-2 text-3xl font-semibold">{rooms.filter(item => item['check-in'] === true).length}</div>
+              <div className="text-md text-gray-700">Total checked in</div>
             </div>
 
             <div className="flex flex-col items-center justify-center  p-4">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🍼</div>
+              <div className="mt-2 text-3xl font-semibold">{rooms.filter(item => item['check-out'] === true).length}</div>
+              <div className="text-md text-gray-700">pending payments</div>
             </div>
 
           </div>
@@ -129,14 +146,14 @@ const HotelDashboard = () => {
 
           <div className='grid grid-cols-2 py-5'>
             <div className="flex flex-col col-span-1 items-center justify-center p-4 border-r-2 border-gray-500">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🍻</div>
+              <div className="mt-2 text-3xl font-semibold">RWF {totalCash} / USD {totalCash / 10}</div>
+              <div className="text-md text-gray-700">TOTAL EARNINGS</div>
             </div>
             <div className="flex flex-col items-center justify-center  p-4">
-              <div className={`text-4xl `}>🛏️</div>
-              <div className="mt-2 text-3xl font-semibold">43</div>
-              <div className="text-md text-gray-700">Total Rooms</div>
+              <div className={`text-4xl `}>🍹</div>
+              <div className="mt-2 text-3xl font-semibold">RWF 0 / USD 0</div>
+              <div className="text-md text-gray-700">Pending payment</div>
             </div>
           </div>
 
