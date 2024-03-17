@@ -20,7 +20,6 @@ const HotelDashboardDescription = () => {
         axios.get(`${Api}hotel-manage/`)
             .then((res) => {
                 setdescription(res.data["manage-hotels-description"])
-                console.log(description);
             }).catch((err) => {
                 console.error(err)
             })
@@ -77,7 +76,7 @@ const HotelDashboardDescription = () => {
                 });
 
         } else {
-            console.error('Please fill in all fields.');
+            alert('Please fill in all fields.');
         }
     }
     ////// ------------ *********** change hotel description ***************** ------------------ //

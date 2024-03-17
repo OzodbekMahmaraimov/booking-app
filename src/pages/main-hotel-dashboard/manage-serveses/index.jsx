@@ -54,7 +54,7 @@ const HotelDashboardManageServises = () => {
 				});
 
 		} else {
-			console.error('Please fill in all fields.');
+			alert('Please fill in all fields.');
 		}
 	}
 

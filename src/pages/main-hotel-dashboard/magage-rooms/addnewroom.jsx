@@ -64,7 +64,7 @@ const MainDashboardRoomForm = () => {
           console.error('Error adding new room:', error);
         });
     } else {
-      console.error('Please fill in all fields.');
+      alert('Please fill in all fields.');
     }
   };
 

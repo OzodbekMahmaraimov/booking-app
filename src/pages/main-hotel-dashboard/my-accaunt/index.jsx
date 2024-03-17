@@ -72,7 +72,7 @@ const MainHotelMyAccount = () => {
                                 icon={<FaUser />}
                             />
 
-                            {/* Repeat for other input groups */}
+                            
                             <InputGroup
                                 id="managerPhone"
                                 type="tel"
