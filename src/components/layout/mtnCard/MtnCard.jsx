@@ -1,17 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // components
-import Product from '../product/Product'
+import Product from '../product/Product';
 // images
 import productImage from '../../../assets/images/product.jpg';
+import axios from 'axios';
 
 const MtnCard = ({ setModal }) => {
+    const [products, setProducts] = useState([]);
 
-    const [products, setProducts] = useState([
-        { id: 1, name: "Chicken wrap", price: 3000, quantity: 1 },
-        { id: 2, name: "Cappucino(hot)", price: 2500, quantity: 1 },
-        { id: 3, name: "Iced Latte", price: 2000, quantity: 1 },
-    ]);
+    useEffect(() => {
+        axios.get("http://localhost:3000/product")
+            .then((res) => {
+                // Ensure you're setting the products with the data from the response
+                setProducts(res.data); // Assuming the data is in res.data
+                console.log(res.data);
+            }).catch((err) => {
+                console.log(err);
+            });
+    }, []);
 
+    // Ensure total calculation handles case where products is null or empty
     const total = products.reduce((acc, product) => acc + (product.price * product.quantity), 0);
 
     const updateQuantity = (id, newQuantity) => {
@@ -20,6 +28,10 @@ const MtnCard = ({ setModal }) => {
                 product.id === id ? { ...product, quantity: newQuantity } : product
             )
         );
+    };
+
+    const deleteProduct = (productId) => {
+        setProducts(currentProducts => currentProducts.filter(product => product.id !== productId));
     };
 
     return (
@@ -37,8 +49,9 @@ const MtnCard = ({ setModal }) => {
                             key={product.id}
                             pricePerItem={product.price}
                             itemName={product.name}
-                            itemImage={productImage} // Make sure this is correctly defined
+                            itemImage={productImage}
                             quantity={product.quantity}
+                            deleteProduct={() => deleteProduct(product.id)}
                             setQuantity={(newQuantity) => updateQuantity(product.id, newQuantity)}
                         />
                     ))}
@@ -54,7 +67,7 @@ const MtnCard = ({ setModal }) => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default MtnCard
+export default MtnCard;

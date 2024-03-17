@@ -27,6 +27,7 @@ const HotelDashboardDescription = () => {
     }
     // ------------ *********** hotel description ***************** ------------------ //
 
+    ////// ------------ *********** change hotel description ***************** ------------------ //
 
     useEffect(() => {
         getHotelManageData();
@@ -41,7 +42,7 @@ const HotelDashboardDescription = () => {
         }
     };
 
-    const changebooked = () => {
+    const changehoteldescription = () => {
 
         const hoteldescription = byId('description').value;
         const hotelAddress = byId('hotelAddress').value;
@@ -79,6 +80,8 @@ const HotelDashboardDescription = () => {
             console.error('Please fill in all fields.');
         }
     }
+    ////// ------------ *********** change hotel description ***************** ------------------ //
+
 
     return (
         <section className='w-full h-max bg-orange-500 p-5 grid gap-5 grid-cols-4'>
@@ -167,7 +170,7 @@ const HotelDashboardDescription = () => {
                                 />
                             </div>
                         </div>
-                        <div onClick={changebooked}>
+                        <div onClick={changehoteldescription}>
                             <MainHotelDashboardButton width="w-max" height="h-10" icon={<i className="fa fa-user" />}>change information</MainHotelDashboardButton>
                         </div>
                     </div>

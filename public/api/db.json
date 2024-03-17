@@ -1361,5 +1361,25 @@
         "status": "..."
       }
     ]
-  }
+  },
+  "product": [
+    {
+      "id": 1,
+      "name": "Chicken wrap",
+      "price": 3000,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Cappucino(hot)",
+      "price": 2000,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "Iced Latte",
+      "price": 2500,
+      "quantity": 1
+    }
+  ]
 }
