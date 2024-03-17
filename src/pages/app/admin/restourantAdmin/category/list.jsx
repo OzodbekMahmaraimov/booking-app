@@ -17,13 +17,14 @@ const ItemList = () => {
 	const [items, setItems] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("");
 	const [showModal, setShowModal] = useState(false);
+	
 
 	const handleAddItem = () => {
-			setShowModal(true); // Modalni ko'rsatish
+		setShowModal(true); // Modalni ko'rsatish
 	};
 
 	const handleCloseModal = () => {
-			setShowModal(false); // Modalni yopish
+		setShowModal(false); // Modalni yopish
 	};
 
 	const handleSearchChange = (event) => {
@@ -32,32 +33,45 @@ const ItemList = () => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		const localItems = localStorage.getItem("items");
-		if (localItems) {
-			setItems(JSON.parse(localItems));
-			setIsLoading(false);
-		} else {
-			axios
-				.get("http://localhost:3000/admin/")
-				.then((res) => {
-					const apiItems = res.data.restAdmin;
-					localStorage.setItem("items", JSON.stringify(apiItems)); // Local storage'ga saqlaymiz
-					setItems(apiItems);
-					setIsLoading(false);
-				})
-				.catch((error) => {
-					setError(error.message || "An error occurred");
-					setIsLoading(false);
-				});
-		}
+		const fetchData = async () => {
+			try {
+				let apiItems = JSON.parse(localStorage.getItem("items"));
+				if (!apiItems) {
+					const response = await axios.get("http://localhost:3000/admin/");
+					apiItems = response.data;
+					localStorage.setItem("items", JSON.stringify(apiItems));
+				}
+				setItems(apiItems);
+			} catch (error) {
+				setError("An error occurred while fetching the items.");
+			} finally {
+				setIsLoading(false);
+			}
+		};
+		fetchData();
 	}, []);
+	const addItemToListAndServer = async (newItem) => {
+		try {
+			const response = await axios.post("http://localhost:3000/admin", newItem, {
+				headers: {
+					'Content-Type': 'multipart/form-data'
+				}
+			});
+			setItems(prevItems => [...prevItems, response.data]);
+			console.log(response.data);
+			localStorage.setItem("items", JSON.stringify([...items, response.data])); // Update local storage
+		} catch (error) {
+			console.error("Error adding item to server:", error);
+		}
+	};
+
 	const filteredItems =
 		searchTerm.length > 0
 			? items.filter(
-					(item) =>
-						item.name.toLowerCase().includes(searchTerm) ||
-						item.category.toLowerCase().includes(searchTerm)
-			  )
+				(item) =>
+					item.name.toLowerCase().includes(searchTerm) ||
+					item.category.toLowerCase().includes(searchTerm)
+			)
 			: items;
 
 	const lastPageIndex = currentPage * itemsPerPage;
@@ -143,7 +157,7 @@ const ItemList = () => {
 							<button onClick={handleAddItem} className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
 								Add new item
 							</button>
-							{showModal && <ItemListNew closeModal={handleCloseModal} />}
+							{showModal && <ItemListNew closeModal={handleCloseModal} addItem={addItemToListAndServer} />}
 							<button
 								onClick={deleteSelectedItems}
 								className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md"
