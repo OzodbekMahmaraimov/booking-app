@@ -35,11 +35,10 @@ const ItemList = () => {
 		setIsLoading(true);
 		const fetchData = async () => {
 			try {
-				let apiItems = JSON.parse(localStorage.getItem("items"));
+				let apiItems = "";
 				if (!apiItems) {
 					const response = await axios.get("http://localhost:3000/admin/");
 					apiItems = response.data;
-					localStorage.setItem("items", JSON.stringify(apiItems));
 				}
 				setItems(apiItems);
 			} catch (error) {
@@ -50,20 +49,8 @@ const ItemList = () => {
 		};
 		fetchData();
 	}, []);
-	const addItemToListAndServer = async (newItem) => {
-		try {
-			const response = await axios.post("http://localhost:3000/admin", newItem, {
-				headers: {
-					'Content-Type': 'multipart/form-data'
-				}
-			});
-			setItems(prevItems => [...prevItems, response.data]);
-			console.log(response.data);
-			localStorage.setItem("items", JSON.stringify([...items, response.data])); // Update local storage
-		} catch (error) {
-			console.error("Error adding item to server:", error);
-		}
-	};
+	
+	  
 
 	const filteredItems =
 		searchTerm.length > 0
@@ -95,12 +82,6 @@ const ItemList = () => {
 		}));
 	};
 
-	const deleteSelectedItems = () => {
-		const remainingItems = items.filter((item) => !selectedItems[item.id]);
-		localStorage.setItem("items", JSON.stringify(remainingItems)); // O'chirilganidan keyin, yangilangan ro'yxatni local storage'ga saqlaymiz
-		setItems(remainingItems);
-		setSelectedItems({});
-	};
 
 	const isAllSelected =
 		currentItems.length > 0 && currentItems.every((item) => selectedItems[item.id]);
@@ -157,9 +138,8 @@ const ItemList = () => {
 							<button onClick={handleAddItem} className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
 								Add new item
 							</button>
-							{showModal && <ItemListNew closeModal={handleCloseModal} addItem={addItemToListAndServer} />}
+							{showModal && <ItemListNew  closeModal={handleCloseModal} />}
 							<button
-								onClick={deleteSelectedItems}
 								className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md"
 							>
 								Delete selected items
