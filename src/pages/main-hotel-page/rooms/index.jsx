@@ -38,9 +38,9 @@ function HotelRooms() {
             buttonName={"Book now"}
             contentName={"Room Description"}
             description={item['Room-Description']}
-            priceRWF={`${item['Total-payment']}/rwf`}                                         
-            priceUSD={`${item['Total-payment'] / 100}/USD`}
-            rooms={`${item['Room-Count'] / 100} Rooms`}
+            priceRWF={`${item['Total-payment']}/USD`}                                         
+            priceUSD={`${item['Total-payment'] * 12560}/UZS`}
+            rooms={`${item['Room-Count']} Rooms`}
           />  
           ) :
           

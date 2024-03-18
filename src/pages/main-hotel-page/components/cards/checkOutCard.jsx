@@ -1,16 +1,31 @@
 import React, { useState } from "react";
 
 const CheckOutCard = ({ change }) => {
-  const [checkInDate, setCheckInDate] = useState("");
-  const [checkOutDate, setCheckOutDate] = useState("");
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
   const [rooms, setRooms] = useState(0);
   const [amenity, setAmenity] = useState("Fan");
+  const [startTime, setStartTime] = useState('');
+  const [endTime, setEndTime] = useState('');
+  const [daysDifference, setDaysDifference] = useState(null);
 
+  const calculateDifference = () => {
+    const startDate = new Date(startTime);
+    const endDate = new Date(endTime);
+
+    // Farqni millisekundlarda hisoblash
+    let differenceInMilliseconds = endDate - startDate;
+
+    // Farqni kunlarga aylantirish
+    const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);
+    setDaysDifference(differenceInDays);
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
     change(3);
+    calculateDifference()
+    console.log("daysDifference")
+    console.log(daysDifference)
     // Here you would handle the submission of the data, maybe sending it to a server
   };
 
@@ -30,8 +45,8 @@ const CheckOutCard = ({ change }) => {
         <input
           type="datetime-local"
           id="checkin-date"
-          value={checkInDate}
-          onChange={(e) => setCheckInDate(e.target.value)}
+          value={startTime}
+        onChange={e => setStartTime(e.target.value)}
           className="px-3 py-2 border rounded-xl shadow-xl border-gray-300"
         />
       </div>
@@ -45,8 +60,8 @@ const CheckOutCard = ({ change }) => {
         <input
           type="datetime-local"
           id="checkout-date"
-          value={checkOutDate}
-          onChange={(e) => setCheckOutDate(e.target.value)}
+          value={endTime}
+        onChange={e => setEndTime(e.target.value)}
           className="px-3 py-2 border rounded-xl shadow-xl border-gray-300"
         />
       </div>
