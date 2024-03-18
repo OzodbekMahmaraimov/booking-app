@@ -22,7 +22,7 @@ function HotelMain() {
         <HotelServices />
       </section>
       {/* Rooms page */}
-      <section className="px-10">
+      <section className="md:px-10">
         <HotelRooms />
       </section>
       {/* Gallary page */}

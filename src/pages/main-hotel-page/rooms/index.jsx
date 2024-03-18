@@ -27,7 +27,7 @@ function HotelRooms() {
     })
   }
   return (
-    <div className="room_page_main w-full p-20 mt-20 flex flex-col gap-10">
+    <div className="room_page_main w-full md:p-20 mt-20 flex flex-col gap-10">
       {/* <CheckOutCard/> */}
       {rooms === 1 ? (
         roomsData ? roomsData.map((item, i) =>
