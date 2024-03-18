@@ -12,7 +12,7 @@ const RoomCard = ({
   priceUSD,
   rooms,
   img,
-  setRooms
+  setRooms,
 }) => {
   const [modal, setModal] = useState(false)
   

@@ -1012,6 +1012,7 @@
         "check-in": true,
         "check-out": true,
         "Total-payment": 2200,
+        "Room-Count": 4,
         "Pending payments": false
       },
       {
@@ -1024,6 +1025,7 @@
         "check-in": true,
         "check-out": true,
         "Total-payment": 2200,
+        "Room-Count": 4,
         "Pending payments": false
       }
     ],
