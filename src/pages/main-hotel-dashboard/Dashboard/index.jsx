@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Api } from '../components/api';
+import { apiUrl } from '../../../Api';
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
 
@@ -57,7 +57,7 @@ const HotelDashboard = () => {
   }, [rooms]);
 
   function getAllRooms() {
-    axios.get(`${Api}hotel-manage`)
+    axios.get(`${apiUrl}hotel-manage`)
       .then((res) => {
         setRooms(res.data["manage-hotels-dashboard-rooms"])
         setAllRooms(res.data["manage-hotels-dashboard-rooms"].length)

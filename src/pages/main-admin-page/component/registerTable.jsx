@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Api } from '../../main-hotel-dashboard/components/api'
+import { apiUrl } from '../../../Api'
 
 const RegisterTable = () => {
     const [columns, setColumns] = useState([])
@@ -9,7 +9,7 @@ const RegisterTable = () => {
         app()
     })
     const app = () => {
-        axios.get(`${Api}admin`)
+        axios.get(`${apiUrl}admin`)
             .then(res => {
                 // console.log(res.data.mainadmin.category.managers);
                 // setColumns(Object.keys(res.data.mainadmin.category.managers.coffeShopManagers[0]))

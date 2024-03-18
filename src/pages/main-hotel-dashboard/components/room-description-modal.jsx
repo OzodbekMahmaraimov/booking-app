@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { apiUrl } from '../../../Api';
 
 
 const RoomBookingModal = ({ isOpen, isclose, id }) => {
@@ -7,7 +8,7 @@ const RoomBookingModal = ({ isOpen, isclose, id }) => {
     const [rooms, setRooms] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/hotel-manage').then(res => {
+        axios.get(apiUrl + 'hotel-manage').then(res => {
             const room = res.data['manage-hotels-dashboard-rooms'].find(room => room.id === id);
             setRooms(room)
 

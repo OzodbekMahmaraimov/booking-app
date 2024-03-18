@@ -5,7 +5,6 @@ import HotelDashboardManageServises from './manage-serveses';
 import HotelDashboardDescription from './hotel-description';
 import { MainDashboardManageRooms } from './magage-rooms';
 import MainDashboardRoomForm from './magage-rooms/addnewroom';
-import TableComponent from './hotelmanager-dashboard';
 import { Route, Routes } from 'react-router-dom';
 
 export const MainHotelDashboard = () => {

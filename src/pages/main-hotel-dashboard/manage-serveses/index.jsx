@@ -4,6 +4,7 @@ import { MainDashboardNavigation } from "../components/navigation";
 import { byId } from "../components/api";
 import axios from "axios";
 import MainHotelDashboardButton from "../components/button";
+import { apiUrl } from "../../../Api";
 // import MainHotelDashboardButton from '../components/button';
 
 const HotelDashboardManageServises = () => {
@@ -18,7 +19,7 @@ const HotelDashboardManageServises = () => {
 	}, [])
 
 	function Serviceshoteloffers() {
-		axios.get('http://localhost:3000/hotel-manage/')
+		axios.get(apiUrl + 'hotel-manage/')
 			.then((res) => {
 				setRoomData(res.data);
 				setallservises(res.data['Services-hotel-offers']);
@@ -44,7 +45,7 @@ const HotelDashboardManageServises = () => {
 			}
 			allservises.push(object);
 
-			axios.put('http://localhost:3000/hotel-manage', roomData)
+			axios.put(apiUrl + 'hotel-manage', roomData)
 				.then((response) => {
 					console.log('Room added:', response.data);
 					Serviceshoteloffers();
@@ -71,7 +72,7 @@ const HotelDashboardManageServises = () => {
 
 			console.log(roomData['Services-hotel-offers'] = newservesec);
 			if (newservesec.length > 0) {
-				axios.put('http://localhost:3000/hotel-manage', roomData)
+				axios.put(apiUrl + 'hotel-manage', roomData)
 					.then((response) => {
 						console.log('Room added:', response.data);
 						Serviceshoteloffers();

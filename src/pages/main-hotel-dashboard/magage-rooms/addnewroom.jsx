@@ -5,7 +5,8 @@ import { MainDashboardNavigation } from '../components/navigation';
 import MainHotelDashboardButton from '../components/button';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Api, byId } from '../components/api';
+import { apiUrl } from '../../../Api';
+import {  byId } from '../components/api';
 
 const MainDashboardRoomForm = () => {
   const [roomData, setRoomData] = useState({});
@@ -18,7 +19,7 @@ const MainDashboardRoomForm = () => {
 
   const getHotelManageData = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/hotel-manage');
+      const response = await axios.get(apiUrl + 'hotel-manage');
       setRoomData(response.data);
       setAllRooms(response.data["manage-hotels-dashboard-rooms"]);
       setRoomsLength(response.data["manage-hotels-dashboard-rooms"].length);
@@ -55,7 +56,7 @@ const MainDashboardRoomForm = () => {
       }
       roomData["manage-hotels-dashboard-rooms"].push(object);
 
-      axios.put('http://localhost:3000/hotel-manage', roomData)
+      axios.put(apiUrl + 'hotel-manage', roomData)
         .then((response) => {
           console.log('Room added:', response.data);
           getHotelManageData(); 

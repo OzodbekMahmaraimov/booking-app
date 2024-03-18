@@ -6,8 +6,7 @@ import { MainDashboardNavigation } from '../components/navigation';
 import MainHotelDashboardButton from '../components/button';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Api } from '../components/api';
-import { logDOM } from '@testing-library/react';
+import { apiUrl } from '../../../Api';
 // import MainHotelDashboardButton from '../components/button';
 
 export const MainDashboardManageRooms = () => {
@@ -26,7 +25,7 @@ export const MainDashboardManageRooms = () => {
 
     const getRooms = async () => {
         try {
-            const res = await axios.get(`${Api}hotel-manage`)
+            const res = await axios.get(`${apiUrl}hotel-manage`)
             setRoomDatas(res.data['manage-hotels-dashboard-rooms']);
 
         } catch (error) {
@@ -43,7 +42,7 @@ export const MainDashboardManageRooms = () => {
 
     const getHotelManageData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/hotel-manage');
+            const response = await axios.get(apiUrl +'hotel-manage');
             setRoomData(response.data);
             setAllRooms(response.data["manage-hotels-dashboard-rooms"]);
             setRoomsLength(response.data["manage-hotels-dashboard-rooms"].length);
@@ -60,7 +59,7 @@ export const MainDashboardManageRooms = () => {
 
 
 
-        axios.put('http://localhost:3000/hotel-manage', roomData)
+        axios.put( apiUrl + 'hotel-manage', roomData)
             .then((response) => {
                 console.log('Room added:', response.data);
             })

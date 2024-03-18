@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
 import axios from 'axios';
-import { Api, byId } from '../components/api';
+import { apiUrl } from '../../../Api';
+import { byId } from '../components/api';
 import MainHotelDashboardButton from '../components/button';
 // import MainHotelDashboardButton from '../components/';
 
@@ -17,7 +18,7 @@ const HotelDashboardDescription = () => {
     }, [])
 
     function getHotelDescription() {
-        axios.get(`${Api}hotel-manage/`)
+        axios.get(`${apiUrl}hotel-manage/`)
             .then((res) => {
                 setdescription(res.data["manage-hotels-description"])
             }).catch((err) => {
@@ -34,7 +35,7 @@ const HotelDashboardDescription = () => {
 
     const getHotelManageData = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/hotel-manage');
+            const response = await axios.get(apiUrl + 'hotel-manage');
             setRoomData(response.data);
         } catch (error) {
             console.error('Error fetching hotel manage data:', error);
@@ -66,7 +67,7 @@ const HotelDashboardDescription = () => {
             }
             roomData["manage-hotels-description"] = object;
 
-            axios.put('http://localhost:3000/hotel-manage', roomData)
+            axios.put(apiUrl + 'hotel-manage', roomData)
                 .then((response) => {
                     console.log('Room added:', response.data);
                     getHotelManageData();

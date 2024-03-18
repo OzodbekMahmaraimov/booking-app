@@ -42,7 +42,6 @@ const MainHotelMyAccount = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
-        // Submit form data
     };
 
     return (
