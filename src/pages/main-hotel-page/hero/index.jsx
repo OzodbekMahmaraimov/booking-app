@@ -8,7 +8,7 @@ function HotelHero() {
   return (
     <div className="w-full h-full">
       <div className="hotel_hero_bg w-full h-screen bg_setting flex items-end pb-32 sm:ps-16 md:ps-32">
-        <h1 className="text-white text-lg sm:text-4xl font-bold">
+        <h1 className="text-white text-xl sm:text-4xl font-bold">
           Average price 170000Rwf / 170$
         </h1>
       </div>
@@ -21,7 +21,7 @@ function HotelHero() {
           }
         />
       </div>
-      <div className="w-[80%] flex gap-3 hotel_hero_back mt-10 lg:mt-64 justify-end items-center ">
+      <div className="w-[80%] flex gap-3 hotel_hero_back mt-10 lg:mt-72 justify-end items-center ">
         <FaLeftLong size='3rem' />
         <Link to="/" className="text-2xl font-bold text-yellow-600 text-shadow">Back to Hotels</Link>
       </div>

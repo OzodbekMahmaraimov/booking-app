@@ -60,7 +60,7 @@
     bottom: -16rem;
 }
 
-@media (max-width: "1479px") {
+@media (max-width: 1479px) {
     .card-setting {
         bottom: -20rem;
     }
