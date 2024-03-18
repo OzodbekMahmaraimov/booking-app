@@ -4,7 +4,7 @@ import { mtn, visa } from "../../../../assets/hotel-page";
 import CreditCardForm from "./visa";
 import BookingModal from "../modals/BookingModal";
 
-const PaymentForm = () => {
+const PaymentForm = ({change}) => {
   const [paymentMethod, setPaymentMethod] = useState("mtn");
   const [mobileNumber, setMobileNumber] = useState("");
   const [paymentModal, setPaymentModal] = useState(false);
@@ -118,7 +118,7 @@ const PaymentForm = () => {
           Pay now
         </button>
       </div>
-      <BookingModal setModal={setPaymentModal} isModal={paymentModal}/>
+      <BookingModal change={change} setModal={setPaymentModal} isModal={paymentModal}/>
     </form>
   );
 };

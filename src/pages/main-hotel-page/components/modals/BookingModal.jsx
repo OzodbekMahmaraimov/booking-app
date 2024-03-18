@@ -2,7 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import thanks1 from '../../../../assets/images/thanks1.svg';
 import thanks2 from '../../../../assets/images/thanks2.svg';
 
-const BookingModal = ({ setModal, isModal }) => {
+const BookingModal = ({ setModal, isModal, change }) => {
   if (!isModal) return null;
 
   return (
@@ -17,6 +17,7 @@ const BookingModal = ({ setModal, isModal }) => {
           already booked</h4>
         <button onClick={() => {
           setModal(false);
+          change(1)
         }}
           className='bg-[#F46A06] text-white text-lg py-4 px-10 rounded-[1rem] duration-300 active:scale-90'>Print your ticket</button>
       </div>
