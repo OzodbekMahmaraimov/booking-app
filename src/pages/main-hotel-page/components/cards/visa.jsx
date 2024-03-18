@@ -49,7 +49,7 @@ const CreditCardForm = () => {
           value={cardInfo.cardName}
         />
       </div>
-      <div className="flex justify-between mt-4">
+      <div className="flex flex-col sm:flex-row justify-between mt-4">
         <div>
           <label htmlFor="expiryDate" className="text-sm">Expiry Date</label>
           <input
