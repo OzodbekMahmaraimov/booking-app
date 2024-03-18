@@ -17,7 +17,7 @@ const ItemList = () => {
 	const [items, setItems] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("");
 	const [showModal, setShowModal] = useState(false);
-	
+
 
 	const handleAddItem = () => {
 		setShowModal(true); // Modalni ko'rsatish
@@ -35,12 +35,16 @@ const ItemList = () => {
 		setIsLoading(true);
 		const fetchData = async () => {
 			try {
-				let apiItems = "";
-				if (!apiItems) {
-					const response = await axios.get("http://localhost:3000/admin/");
-					apiItems = response.data;
-				}
-				setItems(apiItems);
+				const response = await axios.get("http://localhost:3000/admin/");
+				const apiItems = response.data;
+	
+				// localStorage'dan o'chirilgan elementlarni o'qish
+				const deletedItemIds = JSON.parse(localStorage.getItem('deletedItems') || '[]');
+				
+				// Faqat o'chirilmagan elementlarni filtrlash
+				const filteredItems = apiItems.filter(item => !deletedItemIds.includes(item.id));
+				
+				setItems(filteredItems); // Yangilangan ro'yxatni saqlash
 			} catch (error) {
 				setError("An error occurred while fetching the items.");
 			} finally {
@@ -50,7 +54,8 @@ const ItemList = () => {
 		fetchData();
 	}, []);
 	
-	  
+
+
 
 	const filteredItems =
 		searchTerm.length > 0
@@ -81,6 +86,23 @@ const ItemList = () => {
 			[id]: !prevItems[id],
 		}));
 	};
+
+	const handleDeleteSelectedItems = () => {
+		const remainingItems = items.filter(item => !selectedItems[item.id]);
+		setItems(remainingItems); // Yangilangan ro'yxatni saqlash
+	
+		// O'chirilgan elementlarni aniqlash
+		const deletedItems = items.filter(item => selectedItems[item.id]);
+	
+		// O'chirilgan elementlarni localStorage'ga saqlash
+		const existingDeletedItems = JSON.parse(localStorage.getItem('deletedItems') || '[]');
+		const updatedDeletedItems = [...existingDeletedItems, ...deletedItems.map(item => item.id)];
+		localStorage.setItem('deletedItems', JSON.stringify(updatedDeletedItems));
+	
+		setSelectedItems({}); // Tanlangan elementlarni tozalash
+	};
+	
+
 
 
 	const isAllSelected =
@@ -138,8 +160,10 @@ const ItemList = () => {
 							<button onClick={handleAddItem} className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
 								Add new item
 							</button>
-							{showModal && <ItemListNew  closeModal={handleCloseModal} />}
+							{showModal && <ItemListNew closeModal={handleCloseModal} />}
 							<button
+								onClick={handleDeleteSelectedItems}
+
 								className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md"
 							>
 								Delete selected items

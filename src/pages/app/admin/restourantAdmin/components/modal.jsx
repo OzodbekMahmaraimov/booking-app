@@ -5,12 +5,18 @@ const ItemListNew = ({ closeModal, addItem }) => {
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal">
-      <div className="relative top-20 mx-auto p-5 border w-2/6 shadow-lg rounded-md bg-white">
+      <div className="relative top-10 mx-auto p-5 border w-2/6 shadow-lg rounded-md bg-white">
         <div className="mt-8">
+          <label htmlFor="name">Item name</label>
           <input type="text" name="name" placeholder="Item Name" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
+          <label htmlFor="quanlity">Item quanlity</label>
           <input type="number" name="quantity" placeholder="Item Quantity" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
+          <label htmlFor="price">Item price</label>
           <input type="number" name="price" placeholder="Item Price" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none" />
-          {/* <textarea name="description" placeholder="Item Description" value={newItem.description} onChange={handleChange} rows="4" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none"></textarea> */}
+          <label htmlFor="description">Item description</label>
+          
+          <textarea name="description" placeholder="Item Description"  rows="4" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none"></textarea>
+          <label htmlFor="category">Item category</label>
           <select name="category" className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none">
             <option value="">Select Category</option>
             <option value="books">Coffee</option>

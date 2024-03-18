@@ -57,17 +57,24 @@ const Right = () => {
 							<img src={blackLine} alt="" />
 						</div>
 						<div>
-							<p className="text-black cursor-pointer text-xl">Home</p>
+							<p className="text-black cursor-pointer text-xl">Restaurant Manager Dashboard</p>
 						</div>
 					</div>
+					<div className="flex  mt-5">
 					<div className="flex items-center gap-2">
-					<SearchInput/>
-						<button className="px-4 py-2.5 text-white border-[2px] border-solid border-white rounded-xl">
+						<input
+							type="text"
+							className="w-[500px] outline-none px-3 py-3 rounded-xl"
+							placeholder="Search"
+							// onChange={handleSearchChange}
+						/>
+						<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
 							Search
 						</button>
 					</div>
 				</div>
-				<div className="bg-white p-5 container  rounded-xl">
+				</div>
+				<div className="bg-white m-2 p-5 container rounded-xl">
 					<div className="flex items-center gap-3 justify-center mt-5 mb-5">
 						<div className="w-[370px] h-[2px] bg-[#ccc] z-10"></div>
 						<div>
@@ -169,7 +176,7 @@ const Right = () => {
 							/>
 						</div>
 					</div>
-					<div className="flex items-center gap-3 mt-24 justify-center mb-20">
+					<div className="flex items-center gap-3 mt-10 mb-5 justify-center ">
 						<div className="w-[370px] h-[2px] bg-[#ccc] z-10"></div>
 						<div>
 							<button className="bg-orange-400 text-white text-xl p-2 cursor-pointer rounded-xl">

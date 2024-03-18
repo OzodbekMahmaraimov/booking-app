@@ -10,6 +10,13 @@ import MainOrder from "../pages/app/orderLandingPage/routes";
 import { MainHotelDashboard } from "../pages/main-hotel-dashboard";
 import HomeRestaurant from "./../pages/app/homeRestaurant/homeRestaurant";
 import Hotelroutes from "../pages/main-hotel-page/routes";
+import AdminPayment from "../pages/app/admin/mainAdmin/payment";
+import MainAdmin from "../pages/app/admin/mainAdmin/payment/main";
+import ProfileMain from "../pages/app/profile/editProfile/profileMain";
+import ResPayMain from "../pages/app/homeRestaurant/restourantPayment/payMain";
+import { ResourantProfile } from "../pages/app/admin/retourantAdmin/Profile";
+import { ResProfileAnally } from "../pages/app/restourant/profile/analthy";
+import RestourantAdmin from "../pages/app/admin/restourantAdmin/routes/routes";
 
 const App = () => {
 	return (
@@ -20,10 +27,8 @@ const App = () => {
 				<Route path="/homerestourant" Component={HomeRestaurant} />
 				<Route path="/loginSignUp" Component={Login} />
 				<Route path="/signUp" Component={SignUp} />
-				<Route path="/orderlist" Component={OrderList} />
-				<Route path="/itemlist" Component={ItemList} />
-				<Route path="/customer" Component={Costumer} />
 			</Routes>
+			<RestourantAdmin/>
 			<MainOrder />
 			<Hotelroutes/>
 			<MainHotelDashboard />
