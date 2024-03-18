@@ -31,7 +31,7 @@ const RoomCard = ({
         </button>
       </div>
       {/* card body */}
-      <div className="w-full px-10">
+      <div className="w-full sm:px-10">
         <div className="flex flex-col lg:flex-row room_card_body overflow-hidden">
           {/* card body img */}
           <LazyLoadImage className="w-full lg:w-5/12 object-cover" src={img} alt="" />
@@ -44,8 +44,8 @@ const RoomCard = ({
               </p>
             </div>
             <div className="room_card_body_content_div p-7">
-              <span className="flex justify-between p-3 flex-col sm:flex-row">
-                <h3 className="text-xl font-semibold">Room price</h3>
+              <span className="flex gap-3 justify-between p-3 flex-col sm:flex-row">
+                <h3 className="text-xl text-center font-semibold">Room price</h3>
                 <span>
                   <p className="text-lg text-center">
                     <b>{priceRWF}</b>
@@ -53,8 +53,8 @@ const RoomCard = ({
                   <p className="text-lg text-center">{priceUSD}</p>
                 </span>
               </span>
-              <span className="flex justify-between p-3 flex-col sm:flex-row">
-                <h3 className="text-xl font-semibold">Room availability</h3>
+              <span className="flex gap-3 justify-between p-3 flex-col sm:flex-row">
+                <h3 className="text-xl text-center font-semibold">Room availability</h3>
                 <p className="text-lg text-center">{rooms}</p>
               </span>
             </div>

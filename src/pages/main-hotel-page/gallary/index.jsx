@@ -15,7 +15,7 @@ function HotelGallary() {
         <div className="hotel_service_border"></div>
       </div>
       {/* Gallary cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 px-20 justify-items-center gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 sm:px-20 justify-items-center gap-10">
         <ImgCard img={landingBg} width={"11/12"} />
         <ImgCard img={landingBg} width={"11/12"} />
         <ImgCard img={landingBg} width={"11/12"} />

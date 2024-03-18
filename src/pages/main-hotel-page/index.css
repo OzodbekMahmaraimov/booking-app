@@ -100,6 +100,12 @@
     border-radius: 2rem;
 }
 
+@media (max-width: 768px) {
+    .room_page_main {
+        border: none;
+    }
+}
+
 /* rooms card */
 
 .room_card_main {
