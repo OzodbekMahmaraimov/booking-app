@@ -36,7 +36,7 @@ const RoomCard = ({
           {/* card body img */}
           <LazyLoadImage className="w-5/12 object-cover" src={img} alt="" />
           {/* card body content */}
-          <div className="p-5 bg-white room_card_body_content ">
+          <div className="w-full p-5 bg-white room_card_body_content ">
             <h2 className="text-2xl font-bold">{contentName}</h2>
             <div className="flex justify-center w-full  ">
               <p className="w-9/12 text-lg py-3 tracking-wider">
