@@ -29,7 +29,6 @@
 /* about card */
 .hotel_about_card {
   padding: 2rem 3rem 5rem 3rem;
-  width: 60%;
   background-color: #f1e8d7;
   border-radius: 1.5rem;
 
@@ -55,7 +54,16 @@
 }
 .hotel_hero_back {
     color: black;
-    margin-top: 20rem;
+}
+
+.card-setting {
+    bottom: -16rem;
+}
+
+@media (max-width: "1479px") {
+    .card-setting {
+        bottom: -20rem;
+    }
 }
 /* Hero page end */
 

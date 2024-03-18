@@ -23,7 +23,7 @@ function HotelServices() {
         <div className="hotel_service_border"></div>
       </div>
       {/* Service cards */}
-      <div className="grid grid-cols-2 gap-x-32 gap-y-14">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-14">
         <ServiceCard img={parkingImg} text="Free car parking" />
         <ServiceCard img={swimmingImg} text="Swimming Pool" />
         <ServiceCard img={workingImg} text="Fitness center" />
