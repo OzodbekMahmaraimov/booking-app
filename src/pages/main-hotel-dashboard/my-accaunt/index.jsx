@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaUser, FaPhone, FaEnvelope, FaImage, FaLock, FaUtensils, FaEdit } from 'react-icons/fa';
+import { FaUser, FaPhone, FaEdit } from 'react-icons/fa';
 import MaindashboardSidebar from '../components/sitebar';
 import { MainDashboardNavigation } from '../components/navigation';
 
