@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import pencil from "../../../../assets/images/Component 42.png";
-import vector from "../../../../assets/images/Vector.png";
+import vector from "../../../../assets/images/pay-img.png";
 import late from "./../../../../assets/images/Latte 6 (1).png";
 
 const RestaurantPayment = () => {

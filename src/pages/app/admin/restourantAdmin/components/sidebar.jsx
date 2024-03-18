@@ -11,7 +11,8 @@ import { NavLink } from "react-router-dom"; // Import NavLink
 const ResAdminSidebar = () => {
     // Define a function for generating NavLink className
     const getNavLinkClass = ({ isActive }) =>
-    `mt-7 flex items-center gap-2 p-2 rounded-xl cursor-pointer select-none ${isActive ? 'bg-[#F46A06]' : 'hover:bg-[#ccc]'}`;
+        `mt-7 h-15 flex items-center gap-2 p-2 rounded-xl cursor-pointer select-none ${isActive ? 'bg-[#F46A06]' : 'hover:bg-[#ccc]'}`;
+    const imageWidth = "w-8"
     return (
         <div className="p-5">
             <div className="w-[100%] bg-white h-max rounded-xl  px-4 py-3">
@@ -31,26 +32,26 @@ const ResAdminSidebar = () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-start">
-                    <NavLink to="/itemlist" className={getNavLinkClass}>
-                        <img src={menuIcon1} alt="" />
+                    <NavLink to="/restourant-itemlist" className={getNavLinkClass}>
+                        <img className={imageWidth} src={menuIcon1} alt="" />
                         <p className="text-xl">Item List</p>
                     </NavLink>
-                    <NavLink to="/orderlist" className={getNavLinkClass}>
-                        <img src={menuIcon2} alt="" />
+                    <NavLink to="/restourant-orderlist" className={getNavLinkClass}>
+                        <img className={imageWidth} src={menuIcon2} alt="" />
                         <p className="text-xl">Order List</p>
                     </NavLink>
-                    <NavLink to="/customer" className={getNavLinkClass}>
-                        <img src={customers} alt="" />
+                    <NavLink to="/restourant-customer" className={getNavLinkClass}>
+                        <img className={imageWidth} src={customers} alt="" />
                         <p className="text-xl">Customer</p>
                     </NavLink>
                     {/* Assuming the following routes are correct for these sections */}
-                    <NavLink to="/manage-payments" className={getNavLinkClass}>
-                        <img src={anally} alt="" />
-                        <p className="text-xl">Manage Payments</p>
+                    <NavLink to="/restourant-analytics" className={getNavLinkClass}>
+                        <img className="w-6" src={anally} alt="" />
+                        <p className="text-xl">Analytics</p>
                     </NavLink>
-                    <NavLink to="/transportation-summary" className={getNavLinkClass}>
-                        <img src={vector} alt="" />
-                        <p className="text-xl">Transportation Summary</p>
+                    <NavLink to="/restourant-profile" className={getNavLinkClass}>
+                        <img className={imageWidth} src={vector} alt="" />
+                        <p className="text-xl">My account</p>
                     </NavLink>
                     <div className="mt-5 flex justify-center w-full">
                         <button className="bg-[#F46A06] py-3 px-5 text-xl text-white rounded-xl">Logout</button>

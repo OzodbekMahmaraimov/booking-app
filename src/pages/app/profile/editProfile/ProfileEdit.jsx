@@ -1,6 +1,6 @@
 import React from "react";
 import pencil from "../../../../assets/images/Component 42.png";
-import userImg from "../../../../assets/images/Breezeicons-actions-22-im-user.svg.png";
+import userImg from "../../../../assets/images/Component 5.png";
 
 const ProfileEdit = () => {
 	return (
@@ -11,7 +11,7 @@ const ProfileEdit = () => {
 			</div>
 			<div className="flex flex-col items-center mt-40">
 				<div className="w-40 h-40 rounded-full border-2 border-black absolute top-36">
-					<img src={userImg} alt="photo" />
+					<img src={userImg} alt="photo" className="w-full" />
 				</div>
 				<div className="border-2 w-11/12 border-black flex items-center flex-col mb-5">
 					<p className="text-3xl text-slate-500 mt-20 mb-5">Orders and Payments</p>
@@ -21,7 +21,7 @@ const ProfileEdit = () => {
 							<input
 								style={{ outline: "none", borderRadius: "10px" }}
 								type="text"
-								className="w-3/5 h-10 active:border-none"
+								className="p-1 w-3/5 h-10 active:border-none"
 							/>
 							<img className="w-8" src={pencil} alt="" />
 						</div>
@@ -30,18 +30,16 @@ const ProfileEdit = () => {
 							<input
 								style={{ outline: "none", borderRadius: "10px" }}
 								type="text"
-								className="w-3/5 h-10 active:border-none"
+								className="p-1 w-3/5 h-10 active:border-none"
 							/>
 							<img className="w-8" src={pencil} alt="" />
 						</div>
 						<div className="bg-[#F1E8D7] w-11/12 h-20 flex justify-between p-5 items-center mb-5 rounded-md">
 							<p className="text-3xl">User email address</p>
 							<input
-
-
 								style={{ outline: "none", borderRadius: "10px" }}
 								type="text"
-								className="w-3/5 h-10 active:border-none"
+								className="p-1 w-3/5 h-10 active:border-none"
 							/>
 						</div>
 						<div className="bg-[#F1E8D7] w-11/12 h-20 flex justify-between p-5 items-center mb-10 rounded-md">

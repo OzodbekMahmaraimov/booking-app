@@ -1,5 +1,5 @@
 // styles
-import { styles } from '../../../util/style'
+import { styles } from '../../../../util/style'
 
 // icons
 import { FaHome } from "react-icons/fa";

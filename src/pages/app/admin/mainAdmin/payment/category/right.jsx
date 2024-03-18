@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Table, Button, Modal } from "antd";
 import axios from "axios";
-import homeImg from "../../../../../../assets/img/Vector (1).png";
-import LineImg from "../../../../../../assets/img/Line 10.png";
+import homeIcon from "../../../../../../assets/img/Vector (1).png";
+import blackLine from "../../../../../../assets/img/Line 10.png";
 import "../../../../../../assets/css/style.css";
 
 const http = "http://localhost:3001/admin";
@@ -117,80 +117,70 @@ const Right = () => {
       ),
     },
   ];
-		return (
-			<div className="px-4 w-full">
-					<div>
-							<div className="flex items-center justify-between py-3 px-4">
-									<div className="flex items-center gap-3">
-											<img src={homeImg} alt="" />
-											<img src={LineImg} alt="" />
-											<p>Home</p>
-									</div>
-									<div className="flex items-center gap-3">
-											<input
-													type="text"
-													placeholder="Search..."
-													value={searchInput}
-													className="outline-none"
-													onChange={handleSearchInputChange}
-													onKeyPress={handleKeyPress} // Added onKeyPress event handler
-													style={{
-															padding: "0.5rem",
-															border: "1px solid #ccc",
-															borderRadius: "5px",
-															marginRight: "1rem",
-													}}
-											/>
-											<button
-													onClick={handleSearch}
-													className="border-[1px] border-white border-solid select-none"
-													style={{
-															padding: "0.5rem 1rem",
-															backgroundColor: "#F46A06",
-															color: "#fff",
-															borderRadius: "5px",
-															cursor: "pointer",
-													}}
-											>
-													Search
-											</button>
-									</div>
-							</div>
-							<div className="bg-white p-5 rounded-xl">
-									<div
-											className="rounded-md"
-											style={{
-													borderCollapse: "collapse",
-													borderSpacing: 0,
-													overflowX: "auto",
-											}}
-									>
-											<div
-													className="bg-[#d7cfcf] w-full rounded-xl section border border-gray-300"
-													style={{
-															maxHeight: "500px",
-															overflowY: "auto",
-															borderRight: "none",
-													}}
-											>
-													<Table dataSource={data} columns={columns} pagination={false} />
-											</div>
-									</div>
-									<div>
-											<Button
-													type="primary"
-													loading={loading}
-													onClick={handlePrintList}
-													className="rounded-md mt-3"
-													style={{ backgroundColor: "#FFA500", color: "#fff" }}
-											>
-													Print List
-											</Button>
-									</div>
-							</div>
+  return (
+    <div className="px-4 w-full">
+      <div>
+      <div className="flex items-center justify-between py-3 px-4">
+					<div className="flex items-center gap-1">
+						<div>
+							<img src={homeIcon} alt="" />
+						</div>
+						<div>
+							<img src={blackLine} alt="" />
+						</div>
+						<div>
+							<p className="text-black cursor-pointer text-xl">Restaurant Manager Dashboard</p>
+						</div>
 					</div>
-			</div>
-	);
+					<div className="flex  mt-5">
+					<div className="flex items-center gap-2">
+						<input
+							type="text"
+							className="w-[500px] outline-none px-3 py-3 rounded-xl"
+							placeholder="Search"
+							// onChange={handleSearchChange}
+						/>
+						<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
+							Search
+						</button>
+					</div>
+				</div>
+				</div>
+        <div className="bg-white p-5 rounded-xl">
+          <div
+            className="rounded-md"
+            style={{
+              borderCollapse: "collapse",
+              borderSpacing: 0,
+              overflowX: "auto",
+            }}
+          >
+            <div
+              className="bg-[#d7cfcf] w-full rounded-xl section border border-gray-300"
+              style={{
+                maxHeight: "500px",
+                overflowY: "auto",
+                borderRight: "none",
+              }}
+            >
+              <Table dataSource={data} columns={columns} pagination={false} />
+            </div>
+          </div>
+          <div>
+            <Button
+              type="primary"
+              loading={loading}
+              onClick={handlePrintList}
+              className="rounded-md mt-3"
+              style={{ backgroundColor: "#FFA500", color: "#fff" }}
+            >
+              Print List
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Right;

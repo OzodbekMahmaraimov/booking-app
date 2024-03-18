@@ -1,1 +1,1 @@
-export { default as HotelProfile } from "./main";
+export { default as ResourantProfile } from "./main";
