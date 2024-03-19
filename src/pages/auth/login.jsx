@@ -1,22 +1,74 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { vector } from '../../assets/loginsignUp/const'
 import { database } from './firebaseConfig'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { Link, useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import { apiUrl } from '../../Api'
+import { byId } from '../main-hotel-dashboard/components/api'
 const Login = () => {
   const [emailVal, setEmailVal] = useState(null)
-  const history=useNavigate()
+  const [data, setdata] = useState({})
+  const [managers, setManagers] = useState([])
+  const navigate = useNavigate()
+  const [admin, setAdmin] = useState(false)
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const  email = document.getElementById('Email').value
-    const  password = document.getElementById('password').value
 
-    createUserWithEmailAndPassword(database,email,password).then(res=>{
-      console.log(res);
-      history('/homerestourant')
-      alert("Succesfully")
-    })
+
+
+
+  useEffect(() => {
+    getAllData()
+  }, [])
+
+  async function getAllData() {
+    try {
+      const res = await axios.get(apiUrl + 'mainadmin');
+      // Ma'lumotlarni saqlash
+      setdata(res.data);
+
+      // Oldingi `managers` ro'yxatini yangilangan ma'lumotlar bilan kengaytirish
+      const hotelManagers = [...res.data.category.managers.hotelManagers];
+      const restorantManagers = [...res.data.category.managers.restorantManagers]
+      const superadmin = [...res.data.category.managers.superadmin]
+      setManagers([...hotelManagers, ...restorantManagers, ...superadmin]);
+
+      console.log(managers);
+    } catch (error) {
+      console.error("So'rovda xato:", error);
+    }
+  }
+
+
+  function login() {
+    let email = byId("Email").value
+    let password = byId("password").value
+
+    if (email && password) {
+      managers.map((item) => {
+        if (item.email == email && item.parol == password) {
+          switch (item.role) {
+            case "hotel_manager":
+              navigate('/MainDashboard')
+              break;
+            case 'restorant_manager':
+              navigate('/restourant-itemlist')
+              break
+            case 'super_admin':
+              setAdmin(true)
+              break
+            default:
+              break;
+          }
+        } else {
+          alert("code yoki parol notugri")
+        }
+      });
+
+      // const pathnames = location.pathname = 
+    } else {
+      alert("pleace fil all inputs")
+    }
   }
 
   return (
@@ -42,16 +94,33 @@ const Login = () => {
         </div>
         <div className=' w-[25%] mb-3'>
           <button
-            onClick={handleSubmit}
+            onClick={login}
             className='bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>Login</button>
         </div>
-        <div className='w-[25%] mb-[6.1rem]'>
-          <p>Don't have an account?
-            <Link to='/signUp' className='font-font-semibold text-xs ml-5 text-[#F46A06]'>
-              Register Now
-            </Link>
-          </p>
-        </div>
+        {admin &&
+          <div className=' w-[25%] mb-3'>
+            <p>qaysi dashboardga borishni tanlang</p>
+            <div className='px-3 mt-4 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>
+              <Link to="/MainDashboard">
+                hotel dashboard
+              </Link>
+              
+            </div>
+            <div className='px-3 mt-3 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>
+              
+              <Link to="/restourant-itemlist">
+                restorant dashboard
+              </Link>
+            </div>
+          </div>}
+        {!admin &&
+          <div className='w-[25%] mb-[6.1rem]'>
+            <p>Don't have an account?
+              <Link to='/signUp' className='font-font-semibold text-xs ml-5 text-[#F46A06]'>
+                Register Now
+              </Link>
+            </p>
+          </div>}
         <img src={vector} className='w-full' alt="Image" />
       </div>
     </>

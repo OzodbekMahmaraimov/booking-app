@@ -950,8 +950,8 @@
             "fistname": "kimdir",
             "lastname": "nimadir",
             "phone ": 12134124,
-            "email": "nimadir@gmail.com",
-            "parol": "1234",
+            "email": "hotel@gmail.com",
+            "parol": "333",
             "role": "hotel_manager"
           }
         ],
@@ -961,20 +961,20 @@
             "fistname": "kimdir",
             "lastname": "nimadir",
             "phone ": 12134124,
-            "email": "nimadir@gmail.com",
-            "parol": "1234",
+            "email": "rest@gmail.com",
+            "parol": "222",
             "role": "restorant_manager"
           }
         ],
-        "coffeShopManagers": [
+        "superadmin": [
           {
             "id": 1,
-            "fistname": "kimdir",
-            "lastname": "nimadir",
-            "phone ": 12134124,
-            "email": "nimadir@gmail.com",
-            "parol": "12345",
-            "role": "coffe_shop_manager"
+            "fistname": "super admin",
+            "lastname": "garang",
+            "phone ": 1112321,
+            "email": "admin@gmail.com",
+            "parol": "111",
+            "role": "super_admin"
           }
         ]
       }
