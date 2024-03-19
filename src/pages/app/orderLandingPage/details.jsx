@@ -93,6 +93,7 @@ const Details = () => {
       <div className="max-w-[1400px] mx-auto">
         <Services />
       </div>
+      {/* start */}
       <div className="max-w-[1100px] mx-auto mt-16">
         <DetailsFilterMenu itemsCount={itemsCount} />
       </div>
@@ -127,6 +128,7 @@ const Details = () => {
           />
         </div>
       )}
+      {/* end */}
       <div className="max-w-[1350px] mx-auto my-16">
         {itemsGallery && <Gallery imgData={itemsGallery} />}
       </div>
