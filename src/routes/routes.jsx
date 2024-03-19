@@ -17,20 +17,22 @@ import ResPayMain from "../pages/app/homeRestaurant/restourantPayment/payMain";
 import { ResourantProfile } from "../pages/app/admin/retourantAdmin/Profile";
 import { ResProfileAnally } from "../pages/app/restourant/profile/analthy";
 import RestourantAdmin from "../pages/app/admin/restourantAdmin/routes/routes";
+import OrderLanding from "../pages/app/orderLandingPage";
 
 const App = () => {
 	return (
 		<>
 			<Routes>
-				<Route path="/" Component={Main} />
+				<Route path="/" Component={OrderLanding} />
 				<Route path="/MainDashboardIndex" Component={IndexMain} />
 				<Route path="/homerestourant" Component={HomeRestaurant} />
 				<Route path="/loginSignUp" Component={Login} />
 				<Route path="/signUp" Component={SignUp} />
 			</Routes>
-			<RestourantAdmin/>
+
+			<RestourantAdmin />
 			<MainOrder />
-			<Hotelroutes/>
+			<Hotelroutes />
 			<MainHotelDashboard />
 		</>
 	);

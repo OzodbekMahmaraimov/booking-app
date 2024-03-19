@@ -8,6 +8,7 @@ import { IoCall } from "react-icons/io5";
 import { FiLogIn } from "react-icons/fi";
 import { FaList } from "react-icons/fa6";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -21,16 +22,16 @@ const Navbar = () => {
         {/* header */}
         <header className={`${styles.container} px-5 py-8 md:px-0 flex items-center justify-between`}>
           {/* logo */}
-          <h1 className='text-4xl cursor-pointer'>HFfinder</h1>
+          <Link to="/" className='text-4xl cursor-pointer'>HFfinder</Link>
           {/* / logo */}
 
           {/* navbar */}
           <nav className='text-[#F46A06] hidden md:block px-2 lg:px-0'>
             <ul className='flex gap-8 lg:gap-12 font-semibold'>
-              <li className='flex items-center text-xl gap-2 cursor-pointer'>
+              <Link to="/" className='flex items-center text-xl gap-2 cursor-pointer'>
                 <FaHome color='black' />
                 Home
-              </li>
+              </Link>
               <li className='flex items-center text-xl gap-2 cursor-pointer'>
                 <FaBowlFood color='black' />
                 Create facility

@@ -4,18 +4,19 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ navdata }) => {
     const [navbar, setNavbar] = useState(false);
-    const [active, setActive] = useState({name: "Home"});
+    const [active, setActive] = useState({ name: "Home" });
     const toggleNavbar = () => setNavbar(!navbar);
     const activeHadler = name => setActive(navdata.find(n => n.name === name))
-    
+
     return (
         <section className='w-full fixed z-10 bg-white shadow-md'>
             <header className={`max-w-[1200px] mx-auto px-5 py-6 md:px-0 flex items-center justify-between`}>
-                <h1 className='text-4xl'><Link>HFfinder</Link></h1>
+                <h1 className='text-4xl'><Link to="/">HFfinder</Link></h1>
                 <nav className='hidden md:block px-2 lg:px-0'>
                     <ul className='flex gap-8 lg:gap-12 font-semibold'>
                         {navdata.map(item => (
                             <Link
+                                to={item.to}
                                 key={item.id}
                                 onClick={() => activeHadler(item.name)}
                                 className={`${active.name === item.name

@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HotelMain from '.'
 
-function Hotelroutes() {
+function  Hotelroutes() {
   return (
     <div>
         <Routes>
