@@ -7,67 +7,51 @@ import axios from 'axios'
 import { apiUrl } from '../../Api'
 import { byId } from '../main-hotel-dashboard/components/api'
 const Login = () => {
-  const [emailVal, setEmailVal] = useState(null)
-  const [data, setdata] = useState({})
-  const [managers, setManagers] = useState([])
-  const navigate = useNavigate()
-  const [admin, setAdmin] = useState(false)
-
-
-
-
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+  const [managers, setManagers] = useState([]);
+  const navigate = useNavigate();
+  const [admin, setAdmin] = useState(false);
 
   useEffect(() => {
-    getAllData()
-  }, [])
+    getAllData();
+  }, []);
 
   async function getAllData() {
     try {
       const res = await axios.get(apiUrl + 'mainadmin');
-      // Ma'lumotlarni saqlash
-      setdata(res.data); 
-
-      // Oldingi `managers` ro'yxatini yangilangan ma'lumotlar bilan kengaytirish
-      const hotelManagers = [...res.data.category.managers.hotelManagers];
-      const restorantManagers = [...res.data.category.managers.restorantManagers]
-      const superadmin = [...res.data.category.managers.superadmin]
-      setManagers([...hotelManagers, ...restorantManagers, ...superadmin]);
-
-      console.log(managers);
+      const managers = [...res.data.category.managers.hotelManagers, ...res.data.category.managers.restorantManagers, ...res.data.category.managers.superadmin];
+      setManagers(managers);
     } catch (error) {
       console.error("So'rovda xato:", error);
     }
   }
 
-
   function login() {
-    let email = byId("Email").value
-    let password = byId("password").value
 
-    if (email && password) {
-      managers.map((item) => {
-        if (item.email == email && item.parol == password) {
-          switch (item.role) {
-            case "hotel_manager":
-              navigate('/MainDashboard')
-              break;
-            case 'restorant_manager':
-              navigate('/restourant-itemlist')
-              break
-            case 'super_admin':
-              setAdmin(true)
-              break
-            default:
-              break;
-          }
-        } else {
-          alert("code yoki parol notugri")
-        }
-      });
+    const email = byId("Email").value
+    const password = byId("password").value
 
-      // const pathnames = location.pathname = 
+    let user = managers.find(manager => manager.email === email && manager.parol === password);
+
+    if (user) {
+      switch (user.role) {
+        case "hotel_manager":
+          navigate('/MainDashboard');
+          break;
+        case 'restorant_manager':
+          navigate('/restourant-itemlist');
+          break;
+        case 'super_admin':
+          setAdmin(true);
+          
+          break;
+        default:
+          alert("Noto'g'ri foydalanuvchi roli");
+          break;
+      }
     } else {
-      alert("pleace fil all inputs")
+      alert("Email yoki parol noto'g'ri");
     }
   }
 
@@ -104,10 +88,10 @@ const Login = () => {
               <Link to="/MainDashboard">
                 hotel dashboard
               </Link>
-              
+
             </div>
             <div className='px-3 mt-3 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>
-              
+
               <Link to="/restourant-itemlist">
                 restorant dashboard
               </Link>
