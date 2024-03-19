@@ -40,7 +40,7 @@ const Navbar = ({ navdata }) => {
             <nav className={`text-[#F46A06] duration-200 ${navbar ? "h-[230px]" : "h-0"} overflow-hidden block md:hidden px-2 lg:px-0`}>
                 <ul className='flex text-center flex-col gap-8 lg:gap-12 font-semibold'>
                     {navdata.map(item => (
-                        <li className='flex items-center text-xl gap-2'>
+                        <li key={item.id} className='flex items-center text-xl gap-2'>
                             {item.icon}
                             {item.name}
                         </li>

@@ -4,7 +4,6 @@ const Cards = ({ item, setItemsFilterData, setModalImage, setdetailsOfficanvas }
     const incHandler = (id) => {
         setItemsFilterData(items => items.map(item => {
             if (item.id === id) {
-                console.log(item.id);
                 return { ...item, shoppingCount: item.shoppingCount + 1 }; // Increase the count
             }
             return item;

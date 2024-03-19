@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import ShoppingBasket from "./shopping-basket"
 
-const FilterMenu = ({ filterHandler, activeClassAll, activeClassHotels, activeClassRestaurants, activeClassCoffee }) => {
+const FilterMenu = ({ filterHandler }) => {
     const [active, setActive] = useState({ id: 1 })
 
     const data = [
@@ -23,6 +23,7 @@ const FilterMenu = ({ filterHandler, activeClassAll, activeClassHotels, activeCl
             </span>
             {data.map(item => (
                 <Link
+                key={item.id}
                     onClick={() => {
                         activeHandler(item.id)
                         filterHandler(item.categoryName)
