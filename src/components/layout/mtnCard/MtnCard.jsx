@@ -9,7 +9,7 @@ const MtnCard = ({ setModal }) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/product")
+        axios.get("http://localhost:3000/admin")
             .then((res) => {
                 // Ensure you're setting the products with the data from the response
                 setProducts(res.data); // Assuming the data is in res.data
