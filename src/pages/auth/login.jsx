@@ -25,7 +25,7 @@ const Login = () => {
     try {
       const res = await axios.get(apiUrl + 'mainadmin');
       // Ma'lumotlarni saqlash
-      setdata(res.data);
+      setdata(res.data); 
 
       // Oldingi `managers` ro'yxatini yangilangan ma'lumotlar bilan kengaytirish
       const hotelManagers = [...res.data.category.managers.hotelManagers];
