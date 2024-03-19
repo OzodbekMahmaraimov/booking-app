@@ -105,7 +105,7 @@ const Login = () => {
               </Link>
             </p>
           </div>}
-        <img src={vector} className='w-full' alt="Image" />
+        <img src={vector} className='w-full absolute bottom-0'  alt="Image" />
       </div>
     </>
 
