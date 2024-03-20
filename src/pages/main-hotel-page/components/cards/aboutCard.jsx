@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { aboutCardImg } from "../../../../assets/hotel-page";
 import { FaStar } from "react-icons/fa6";
 import "../../index.css";
 
-function AboutCard({ name, bodyName, description, clas }) {
+function AboutCard({ name, bodyName, description, clas, stars }) {
+  const [star, setStars] = useState([
+  {0: <li className="card-star"><FaStar color="#F46A06" /></li>},
+  ])
+
+  useEffect(() => {
+    const initialStars = [];
+    for (let i = 0; i < stars; i++) {
+      initialStars.push(
+        {0: <li className="card-star"><FaStar color="#F46A06" /></li>},
+      );
+    }
+
+    setStars(initialStars);
+  }, [])
+  console.log(star);
   return (
     <div className={`hotel_about_card w-full md:w-[60%] ${clas} flex flex-col items-center justify-center`}>
       {/* card-header */}
@@ -15,21 +30,9 @@ function AboutCard({ name, bodyName, description, clas }) {
         {/* stars */}
         <div className="flex items-center gap-3">
           <ul id="card-stars" className="flex gap-2">
-            <li className="card-star">
-              <FaStar color="#F46A06" />
-            </li>
-            <li className="card-star">
-              <FaStar color="#F46A06" />
-            </li>
-            <li className="card-star">
-              <FaStar color="#F46A06" />
-            </li>
-            <li className="card-star">
-              <FaStar color="#F46A06" />
-            </li>
-            <li className="card-star">
-              <FaStar color="#F46A06" />
-            </li>
+            { star.map((item, i) => 
+              item[0]
+            )}
           </ul>
           <p>Stars</p>
         </div>

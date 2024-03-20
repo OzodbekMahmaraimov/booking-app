@@ -3,7 +3,6 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 // style
 import './home.css'
 // components
-import Navbar from '../../../components/layout/navbar/Navbar';
 import Home from '../../../components/layout/home/home';
 import Alert from '../../../components/layout/alert/Alert';
 import Service from '../../../components/layout/service/Service';
@@ -17,6 +16,18 @@ import VisaCard from '../../../components/layout/visaCard/VisaCard';
 import Details from '../../../components/layout/details/Details';
 import BookingModal from '../../../components/layout/modal/BookingModal';
 import InfoModal from '../../../components/layout/modal/InfoModal';
+import Navbar from '../orderLandingPage/navbar';
+import { FaHome } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+import { FiLogIn } from "react-icons/fi";
+
+const navdata = [
+  { id: 1, icon: <FaHome color='black' />, name: 'Home', to: "/" },
+  { id: 4, icon: <FiLogIn color='black' />, name: 'Restaurant', to: "/homerestourant" },
+  { id: 5, icon: <FiLogIn color='black' />, name: 'hotel', to: "/hotel" },
+  { id: 3, icon: <IoCall color='black' />, name: 'ContactUs', to: "" },
+  { id: 7, icon: <FiLogIn color='black' />, name: 'Login', to: "loginSignUp" }
+]
 
 
 const HomeRestaurant = () => {
@@ -37,7 +48,8 @@ const HomeRestaurant = () => {
 
   return (
     <div onClick={closeModal} onKeyDown={closeModal} className='home-restaurant'>
-      <Navbar />
+           <Navbar navdata={navdata} />
+
       <Home />
       <Alert />
       <Service />

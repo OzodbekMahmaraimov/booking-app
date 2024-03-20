@@ -8,7 +8,7 @@ const RoomCard = ({
   buttonName,
   contentName,
   description,
-  priceRWF,
+  priceUZS,
   priceUSD,
   rooms,
   img,
@@ -48,9 +48,9 @@ const RoomCard = ({
                 <h3 className="text-xl text-center font-semibold">Room price</h3>
                 <span>
                   <p className="text-lg text-center">
-                    <b>{priceRWF}</b>
+                    <b>{priceUSD}</b>
                   </p>
-                  <p className="text-lg text-center">{priceUSD}</p>
+                  <p className="text-lg text-center">{priceUZS}</p>
                 </span>
               </span>
               <span className="flex gap-3 justify-between p-3 flex-col sm:flex-row">

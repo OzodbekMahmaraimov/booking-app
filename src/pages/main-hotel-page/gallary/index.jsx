@@ -1,6 +1,6 @@
 import React from "react";
 import ImgCard from "../components/cards/imgCard";
-import { landingBg } from "../../../assets/hotel-page";
+import { hotel1, hotel2, hotel3, hotel4, landingBg } from "../../../assets/hotel-page";
 
 function HotelGallary() {
   return (
@@ -16,10 +16,10 @@ function HotelGallary() {
       </div>
       {/* Gallary cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 sm:px-20 justify-items-center gap-10">
-        <ImgCard img={landingBg} width={"11/12"} />
-        <ImgCard img={landingBg} width={"11/12"} />
-        <ImgCard img={landingBg} width={"11/12"} />
-        <ImgCard img={landingBg} width={"11/12"} />
+        <ImgCard img={hotel1} width={"11/12"} />
+        <ImgCard img={hotel2} width={"11/12"} />
+        <ImgCard img={hotel3} width={"11/12"} />
+        <ImgCard img={hotel4} width={"11/12"} />
       </div>
     </div>
   );
