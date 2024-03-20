@@ -1286,6 +1286,54 @@
       "name": "BWOK RESTAURANT",
       "order": 0,
       "category": "Pending payment"
+    },
+    {
+      "id": 1,
+      "name": "Galaxy Hotel",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 2,
+      "name": "BWOK RESTAURANT",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": -1,
+      "name": "Galaxy Hotel",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": -1,
+      "name": "BWOK RESTAURANT",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": 1,
+      "name": "BWOK RESTAURANT",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": 0,
+      "name": "Galaxy Hotel",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 2,
+      "name": "Mille colline hotel",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": 23,
+      "name": "Pishon Caffee",
+      "order": 0,
+      "category": "Complete payment"
     }
   ]
 }
