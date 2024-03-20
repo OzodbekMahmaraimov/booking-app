@@ -621,140 +621,160 @@
       "name": "Espresso",
       "category": "Coffee",
       "price": 2000,
-      "quantity": 30
+      "quantity": 30,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "2",
       "name": "Latte",
       "category": "Coffee",
       "price": 3000,
-      "quantity": 25
+      "quantity": 25,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "3",
       "name": "Americano",
       "category": "Coffee",
       "price": 2500,
-      "quantity": 20
+      "quantity": 20,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "4",
       "name": "Mocha",
       "category": "Coffee",
       "price": 3500,
-      "quantity": 15
+      "quantity": 15,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "5",
       "name": "Tea",
       "category": "Beverage",
       "price": 1500,
-      "quantity": 40
+      "quantity": 40,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "6",
       "name": "Green Tea",
       "category": "Beverage",
       "price": 1800,
-      "quantity": 35
+      "quantity": 35,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "7",
       "name": "Hot Chocolate",
       "category": "Beverage",
       "price": 3200,
-      "quantity": 20
+      "quantity": 20,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "8",
       "name": "Frappe",
       "category": "Coffee",
       "price": 3600,
-      "quantity": 25
+      "quantity": 25,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "9",
       "name": "Caramel Macchiato",
       "category": "Coffee",
       "price": 4000,
-      "quantity": 20
+      "quantity": 20,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "10",
       "name": "Flat White",
       "category": "Coffee",
       "price": 2800,
-      "quantity": 22
+      "quantity": 22,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "11",
       "name": "Iced Tea",
       "category": "Beverage",
       "price": 2000,
-      "quantity": 30
+      "quantity": 30,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "12",
       "name": "Iced Coffee",
       "category": "Coffee",
       "price": 2600,
-      "quantity": 18
+      "quantity": 18,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "13",
       "name": "Vanilla Latte",
       "category": "Coffee",
       "price": 3700,
-      "quantity": 12
+      "quantity": 12,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "14",
       "name": "Cappuccino",
       "category": "Coffee",
       "price": 3100,
-      "quantity": 30
+      "quantity": 30,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "15",
       "name": "Chai Latte",
       "category": "Beverage",
       "price": 3400,
-      "quantity": 16
+      "quantity": 16,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "16",
       "name": "Iced Latte",
       "category": "Coffee",
       "price": 2900,
-      "quantity": 14
+      "quantity": 14,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "17",
       "name": "Black Coffee",
       "category": "Coffee",
       "price": 2100,
-      "quantity": 30
+      "quantity": 30,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "18",
       "name": "Iced Mocha",
       "category": "Coffee",
       "price": 3800,
-      "quantity": 10
+      "quantity": 10,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "19",
       "name": "Herbal Tea",
       "category": "Beverage",
       "price": 1700,
-      "quantity": 20
+      "quantity": 20,
+      "description": "Judaham zor narsa"
     },
     {
       "id": "20",
       "name": "Matcha Latte",
       "category": "Beverage",
       "price": 4200,
-      "quantity": 18
+      "quantity": 18,
+      "description": "Judaham zor narsa"
     }
   ],
   "mainadmin": {
@@ -1029,14 +1049,16 @@
         "Pending payments": false
       }
     ],
-    "manage-hotels-description": {
-      "id": 1,
-      "description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
-      "hotel-adress": "KIyovu -kigali",
-      "hotel-stars": 4,
-      "hotel-img": "/image.png",
-      "hotel-priice": 17000
-    },
+    "manage-hotels-description": [
+      {
+        "id": 1,
+        "description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
+        "hotel-adress": "KIyovu -kigali",
+        "hotel-stars": 4,
+        "hotel-img": "/image.png",
+        "hotel-priice": 17000
+      }
+    ],
     "Services-hotel-offers": [
       {
         "id": 1,
