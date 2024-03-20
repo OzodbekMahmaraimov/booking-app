@@ -96,9 +96,12 @@ const ItemListNew = ({ closeModal, addItem }) => {
             value={item.category}
             onChange={handleChange}
           >
-            <option value="">Select Category</option>
-            <option value="coffee">Coffee</option>
-            <option value="tea">Tea</option>
+            <option selected disabled>Select Category</option>
+            <option value="Coffee drinks">Coffee drinks</option>
+            <option value="Main dishes">Main dishes</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Soft drinks">Soft drinks</option>
+            <option value="Alcoholic drinks">Alcoholic drinks</option>
           </select>
           <button
             onClick={handleSave}
