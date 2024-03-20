@@ -70,4 +70,4 @@ const HomeRestaurant = () => {
   )
 }
 
-export default HomeRestaurant
+export default HomeRestaurant;
