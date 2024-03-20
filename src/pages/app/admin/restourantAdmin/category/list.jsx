@@ -21,10 +21,9 @@ const ItemList = () => {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [showModal, setShowModal] = useState(false);
 	const [selectedItems, setSelectedItem] = useState(0);
-	const [item, setItem] = useState([]);
 	const [itemid, setItemid] = useState(0);
 
-
+	// ---- ****** modal ******* ------ //
 	const handleAddItem = () => {
 		setShowModal(true); // Modalni ko'rsatish
 	};
@@ -32,6 +31,8 @@ const ItemList = () => {
 	const handleCloseModal = () => {
 		setShowModal(false); // Modalni yopish
 	};
+	// ---- ****** modal ******* ------ //
+
 
 
 
@@ -53,6 +54,8 @@ const ItemList = () => {
 			setIsLoading(false);
 		}
 	};
+	// ----- ******* get data ******* ----- //
+
 
 	// ------ ******** delet items ******* ------ //
 	const handleDeleteSelectedItems = () => {
@@ -71,6 +74,7 @@ const ItemList = () => {
 	};
 	// ------ ******** delet items ******* ------ //
 
+
 	// ------ ******** select items ******* ------ //
 	const toggleSelectItem = (id) => {
 		if (selectedItems === id) {
@@ -80,11 +84,6 @@ const ItemList = () => {
 		}
 	};
 	// ------ ******** select items ******* ------ //
-
-
-
-
-
 
 
 	// ------ ****** pagination ****** -------- //
@@ -105,6 +104,7 @@ const ItemList = () => {
 	}
 	// ------ ****** pagination ****** -------- //
 
+
 	// ------- ******* addItem ******* ------- //
 
 	const addItem = (data) => {
@@ -117,7 +117,7 @@ const ItemList = () => {
 				console.error('Xatolik yuz berdi:', error);
 			});
 	};
-
+	// ------- ******* addItem ******* ------- //
 
 	return (
 		<div className="flex bg-[#F46A06] h-max">
