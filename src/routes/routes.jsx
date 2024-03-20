@@ -11,8 +11,6 @@ import { MainHotelDashboard } from "../pages/main-hotel-dashboard";
 import HomeRestaurant from "./../pages/app/homeRestaurant/homeRestaurant";
 import Hotelroutes from "../pages/main-hotel-page/routes";
 import AdminPayment from "../pages/app/admin/mainAdmin/payment";
-import MainAdmin from "../pages/app/admin/mainAdmin/payment/main";
-import ProfileMain from "../pages/app/profile/editProfile/profileMain";
 import ResPayMain from "../pages/app/homeRestaurant/restourantPayment/payMain";
 import { ResourantProfile } from "../pages/app/admin/retourantAdmin/Profile";
 import { ResProfileAnally } from "../pages/app/restourant/profile/analthy";
@@ -29,7 +27,6 @@ const App = () => {
 				<Route path="/MainDashboardIndex" Component={IndexMain} />
 				<Route path="/homerestourant" Component={HomeRestaurant} />
 				<Route path="/loginSignUp" Component={Login} />
-				<Route path="/admin" Component={MainAdminpage} />
 				<Route path="/signUp" Component={SignUp} />
 			</Routes>
 

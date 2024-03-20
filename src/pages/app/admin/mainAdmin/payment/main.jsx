@@ -1,5 +1,5 @@
 import React from "react";
-import { Right, Left } from "./category";
+import { Right } from "./category";
 import ResAdminSidebar from "../../restourantAdmin/components/sidebar";
 
 const MainAdmin = () => {

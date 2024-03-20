@@ -1,10 +1,11 @@
-import React, { useState, useRef } from "react";
-import { Upload, Button } from "antd";
+import React, { useState, useRef, useEffect } from "react";
+import { Upload, Button, message } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import homeIcon from "../../../../../../assets/img/Vector (2).png";
 import blackLine from "../../../../../../assets/img/Line 10.png";
 import pencil from "../../../../../../assets/img/Vector (6).png";
 import { SearchInput } from ".";
+import axios from "axios";
 
 const Right = () => {
 	const [name, setName] = useState("");
@@ -15,8 +16,22 @@ const Right = () => {
 	const inputRefName = useRef(null);
 	const inputRefPhoneNumber = useRef(null);
 	const inputRefEmail = useRef(null);
+  const [response,setResponse] = useState('')
 
-	const handleImageChange = (info) => {
+  useEffect(() => {
+    fetchData();
+}, []);
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/mainAdmin/");
+      setResponse(response.data.managers.restaurantManagers); // Log the response data structure to see how to access the desired data
+
+    } catch (error) {
+      message.error("Ma'lumot topilmadi");
+        console.error("Malumot kelishida hatolik bor:", error);
+    }
+};
+const handleImageChange = (info) => {
 		if (info.file.status === "done") {
 			setSelectedImage(info.file.originFileObj);
 		}
@@ -91,7 +106,7 @@ const Right = () => {
 								value={name}
 								onChange={(e) => setName(e.target.value)}
 								className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-								placeholder="Name"
+                placeholder={`${response.firstName}`}
 							/>
 							<img
 								className="w-8 cursor-pointer"
@@ -109,7 +124,7 @@ const Right = () => {
 								value={phoneNumber}
 								onChange={(e) => setPhoneNumber(e.target.value)}
 								className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-								placeholder="Phone"
+								placeholder={`${response.phone}`}
 							/>
 							<img
 								className="w-8 cursor-pointer"
@@ -129,7 +144,7 @@ const Right = () => {
 								className={`w-[500px] px-3 py-3 rounded-xl border ${
 									validEmail ? "border-green-500" : "border-red-500"
 								}`}
-								placeholder="Email"
+								placeholder={`${response.email}`}
 							/>
 
 							<img
@@ -139,7 +154,7 @@ const Right = () => {
 								onClick={handlePencilClickEmail}
 							/>
 						</div>
-						<div className="flex bg-[#F1E8D7] rounded-xl p-2 gap-32 items-center container relative">
+						<div className="flex bg-[#F1E8D7] rounded-xl p-2 py-4 gap-32 items-center container relative">
 							<p className="text-xl">Manager profile picture</p>
 							<Upload onChange={handleImageChange}>
 								<Button className="w-[500px]" icon={<UploadOutlined />}>
@@ -152,7 +167,7 @@ const Right = () => {
 							<input
 								type="password"
 								className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-								placeholder="Manager Name"
+                placeholder={`${response.password}`}
 							/>
 							<img
 								className="w-8 cursor-pointer"
@@ -166,7 +181,7 @@ const Right = () => {
 							<input
 								type="password"
 								className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-								placeholder="Manager Name"
+                placeholder={`${response.resName}`}
 							/>
 							<img
 								className="w-8 cursor-pointer"
@@ -179,7 +194,7 @@ const Right = () => {
 					<div className="flex items-center gap-3 mt-10 mb-5 justify-center ">
 						<div className="w-[370px] h-[2px] bg-[#ccc] z-10"></div>
 						<div>
-							<button className="bg-orange-400 text-white text-xl p-2 cursor-pointer rounded-xl">
+							<button onClick={message.success("Update profile")} className="bg-orange-400 text-white text-xl p-2 cursor-pointer rounded-xl">
 								Update your account
 							</button>
 						</div>

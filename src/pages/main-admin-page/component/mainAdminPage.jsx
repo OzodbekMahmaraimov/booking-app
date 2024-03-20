@@ -2,9 +2,10 @@ import React from "react";
 import { Vector5, analytic, logo, menuIcon1, menuIcon2 } from "../../../assets/loginsignUp/const";
 import MainAdminNav from "./mainAdminNav";
 import MainAdminManager from "./mainAdminManage";
+import { useNavigate } from 'react-router-dom';
 
 const MainAdminpage = () => {
-
+const navigate = useNavigate()
     return (
         <div className="p-5 flex     ">
             {/* top white piece */}
@@ -42,7 +43,7 @@ const MainAdminpage = () => {
                         <img src={menuIcon2} alt="image" />
                         <p className="text-xl">Order List</p>
                     </div>
-                    <div className="flex mt-7 items-center  gap-2 p-2 rounded-xl hover:bg-[#ccc] hover:cursor-pointer select-none">
+                    <div onClick={()=>navigate("/admin/payment")} className="flex mt-7 items-center  gap-2 p-2 rounded-xl hover:bg-[#ccc] hover:cursor-pointer select-none">
                         <img src={analytic} alt="image" />
                         <p className="text-xl">Manage Payments</p>
                     </div>
