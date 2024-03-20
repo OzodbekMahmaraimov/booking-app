@@ -38,7 +38,7 @@ const ItemList = () => {
 	// ----- ******* get data ******* ----- //
 	const fetchData = async () => {
 		try {
-			const response = await axios.get(apiUrl + "admin/");
+			const response = await axios.get(apiUrl + "itemlist/");
 			const apiItems = response.data;
 			setItems(apiItems);
 			setItemid(apiItems.length);
@@ -55,7 +55,7 @@ const ItemList = () => {
 	const handleDeleteSelectedItems = () => {
 
 		if (selectedItems > 0) {
-			axios.delete(`${apiUrl}admin/${selectedItems}`,)
+			axios.delete(`${apiUrl}itemlist/${selectedItems}`,)
 			.then((response) => {
 					console.log(selectedItems)
 					console.log('Serverdan qaytgan javob:', response.data);
@@ -85,7 +85,7 @@ const ItemList = () => {
 
 	const addItem = (data) => {
 		console.log(data);
-		axios.post(`${apiUrl}admin/`, data)
+		axios.post(`${apiUrl}itemlist/`, data)
 			.then((response) => {
 				console.log(response);
 			})

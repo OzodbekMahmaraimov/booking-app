@@ -10,7 +10,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
     // Asinxron funksiya yaratamiz
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${apiUrl}admin/`);
+        const response = await axios.get(`${apiUrl}itemlist/`);
         const id = response.data.length
         setitemid(id)
       } catch (error) {
