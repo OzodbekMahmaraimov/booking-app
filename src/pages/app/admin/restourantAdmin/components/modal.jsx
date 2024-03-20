@@ -48,6 +48,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal">
       <div className="relative top-10 mx-auto p-5 border w-2/6 shadow-lg rounded-md bg-white">
         <div className="mt-8">
+          <label htmlFor="name">Item name</label>
           <input
             id="name"
             type="text"
@@ -57,6 +58,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
             value={item.name}
             onChange={handleChange}
           />
+          <label htmlFor="quantity">Item quantity</label>
           <input
             id="quantity"
             type="number"
@@ -66,7 +68,9 @@ const ItemListNew = ({ closeModal, addItem }) => {
             value={item.quantity}
             onChange={handleChange}
           />
+          <label htmlFor="price">Item price</label>
           <input
+            id="price"
             type="number"
             name="price"
             placeholder="Item Price"
@@ -74,6 +78,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
             value={item.price}
             onChange={handleChange}
           />
+          <label htmlFor="description">Item description</label>
           <textarea
             id="description"
             name="description"
@@ -83,6 +88,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
             value={item.description}
             onChange={handleChange}
           ></textarea>
+          <label htmlFor="category">Item category</label>
           <select
             id="category"
             name="category"
