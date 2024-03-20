@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// ----- ****** images ******* ------ //
 import homeIcon from "./../../../../../assets/images/Vector (1).png";
 import blackLine from "./../../../../../assets/images/Line 10.png";
 import menuIcon from "./../../../../../assets/images/svg.svg";
@@ -20,6 +21,8 @@ const ItemList = () => {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [showModal, setShowModal] = useState(false);
 	const [selectedItems, setSelectedItem] = useState(0);
+	const [item, setItem] = useState([]);
+	const [itemid, setItemid] = useState(0);
 
 
 	const handleAddItem = () => {
@@ -30,21 +33,20 @@ const ItemList = () => {
 		setShowModal(false); // Modalni yopish
 	};
 
-	const handleSearchChange = (event) => {
-		setSearchTerm(event.target.value.toLowerCase());
-	};
+
 
 	useEffect(() => {
 		fetchData();
 	}, []);
 
+
+	// ----- ******* get data ******* ----- //
 	const fetchData = async () => {
 		try {
 			const response = await axios.get(apiUrl + "admin/");
 			const apiItems = response.data;
-			setItems(apiItems); // Yangilangan ro'yxatni saqlash
-			console.log(items);
-
+			setItems(apiItems);
+			setItemid(apiItems.length);
 		} catch (error) {
 			setError("An error occurred while fetching the items.");
 		} finally {
@@ -52,70 +54,37 @@ const ItemList = () => {
 		}
 	};
 
-
-
-	// ------- ****** filter items ********* ------ //
-
-	const filteredItems =
-		searchTerm.length > 0
-			? items.filter(
-				(item) =>
-					item.name.toLowerCase().includes(searchTerm) ||
-					item.category.toLowerCase().includes(searchTerm)
-			)
-			: items;
-
-	const lastPageIndex = currentPage * itemsPerPage;
-	const firstPageIndex = lastPageIndex - itemsPerPage;
-	const currentItems = filteredItems.slice(firstPageIndex, lastPageIndex);
-
-
-	// ------ ******** delet items ******* ------ 
+	// ------ ******** delet items ******* ------ //
 	const handleDeleteSelectedItems = () => {
-		// const remainingItems = items.filter(item => !selectedItems[item.id]);
-		// setItems(remainingItems); // Yangilangan ro'yxatni saqlash
 
-
-
-		// axios.delete(apiUrl + "admin/", deletedItems)
-		// 	.then((res) => {
-		// 		console.log(res);
-		// 	}).catch((err) => {
-		// 		console.error(err);
-		// 	})
-		axios.delete(`${apiUrl}admin/${selectedItems}`,)
-			.then((response) => {
-				console.log('Serverdan qaytgan javob:', response.data);
-			})
-			.catch((error) => {
-				console.error('Xatolik yuz berdi:', error);
-			});
-
-
-		// O'chirilgan elementlarni aniqlash
-
-		// // O'chirilgan elementlarni localStorage'ga saqlash
-		// const existingDeletedItems = JSON.parse(localStorage.getItem('deletedItems') || '[]');
-		// const updatedDeletedItems = [...existingDeletedItems, ...deletedItems.map(item => item.id)];
-		// localStorage.setItem('deletedItems', JSON.stringify(updatedDeletedItems));
-
-		// setSelectedItems({}); // Tanlangan elementlarni tozalash
+		if (selectedItems > 0) {
+			axios.delete(`${apiUrl}admin/${selectedItems}`,)
+				.then((response) => {
+					console.log('Serverdan qaytgan javob:', response.data);
+				})
+				.catch((error) => {
+					console.error('Xatolik yuz berdi:', error);
+				});
+		} else {
+			alert('Please select an item to delete.');
+		}
 	};
+	// ------ ******** delet items ******* ------ //
 
+	// ------ ******** select items ******* ------ //
 	const toggleSelectItem = (id) => {
-		// Agar shu ID allaqachon tanlangan bo'lsa, uni bekor qilish (hech narsani tanlamaslik).
 		if (selectedItems === id) {
 			setSelectedItem(null);
 		} else {
-			// Aks holda, yangi tanlangan item'ni saqlash.
 			setSelectedItem(id);
 		}
 	};
+	// ------ ******** select items ******* ------ //
 
 
 
-	const isAllSelected =
-		currentItems.length > 0 && currentItems.every((item) => selectedItems[item.id]);
+
+
 
 
 	// ------ ****** pagination ****** -------- //
@@ -135,6 +104,19 @@ const ItemList = () => {
 		return <div>Error: {error}</div>;
 	}
 	// ------ ****** pagination ****** -------- //
+
+	// ------- ******* addItem ******* ------- //
+
+	const addItem = (data) => {
+		console.log(data);
+		axios.post(`${apiUrl}admin/`, data)
+			.then((response) => {
+				console.log(response);
+			})
+			.catch((error) => {
+				console.error('Xatolik yuz berdi:', error);
+			});
+	};
 
 
 	return (
@@ -160,7 +142,6 @@ const ItemList = () => {
 							type="text"
 							className="w-[500px] outline-none px-3 py-3 rounded-xl"
 							placeholder="Search"
-							onChange={handleSearchChange}
 						/>
 						<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
 							Search
@@ -173,7 +154,7 @@ const ItemList = () => {
 							<button onClick={handleAddItem} className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
 								Add new item
 							</button>
-							{showModal && <ItemListNew closeModal={handleCloseModal} />}
+							{showModal && <ItemListNew closeModal={handleCloseModal} addItem={addItem} />}
 							<button
 								onClick={handleDeleteSelectedItems}
 
