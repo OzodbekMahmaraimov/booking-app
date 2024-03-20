@@ -799,14 +799,6 @@
       "price": 4200,
       "quantity": 18,
       "description": "Judaham zor narsa"
-    },
-    {
-      "id": 1,
-      "name": "Alchool",
-      "category": "Alcoholic drinks",
-      "price": "3443234",
-      "quantity": "15234",
-      "description": "234efdsfg"
     }
   ],
   "mainadmin": {

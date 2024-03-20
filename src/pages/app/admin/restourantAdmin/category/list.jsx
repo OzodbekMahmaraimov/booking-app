@@ -14,9 +14,6 @@ import { apiUrl } from "../../../../../Api";
 
 const ItemList = () => {
 	const [currentPage, setCurrentPage] = useState(1);
-	const itemsPerPage = 5;
-	const [isLoading, setIsLoading] = useState(false);
-	const [error, setError] = useState(null);
 	const [items, setItems] = useState([]);
 	const [showModal, setShowModal] = useState(false);
 	const [selectedItems, setSelectedItem] = useState(0);
@@ -46,22 +43,21 @@ const ItemList = () => {
 			setItems(apiItems);
 			setItemid(apiItems.length);
 		} catch (error) {
-			setError("An error occurred while fetching the items.");
-		} finally {
-			setIsLoading(false);
-		}
+			console.error("An error occurred while fetching the items." + error);
+		} 
 	};
 	// ----- ******* get data ******* ----- //
 
 
 
 
-	// ------ ******** delet items ******* ------ //
+	// ------ ******** delete items ******* ------ //
 	const handleDeleteSelectedItems = () => {
 
 		if (selectedItems > 0) {
 			axios.delete(`${apiUrl}admin/${selectedItems}`,)
-				.then((response) => {
+			.then((response) => {
+					console.log(selectedItems)
 					console.log('Serverdan qaytgan javob:', response.data);
 				})
 				.catch((error) => {
@@ -71,7 +67,7 @@ const ItemList = () => {
 			alert('Please select an item to delete.');
 		}
 	};
-	// ------ ******** delet items ******* ------ //
+	// ------ ******** delete items ******* ------ //
 
 
 	// ------ ******** select items ******* ------ //
@@ -83,18 +79,6 @@ const ItemList = () => {
 		}
 	};
 	// ------ ******** select items ******* ------ //
-
-	// ------ ****** pagination ****** -------- //
-	
-
-	if (isLoading) {
-		return <div>Loading...</div>;
-	}
-
-	if (error) {
-		return <div>Error: {error}</div>;
-	}
-	// ------ ****** pagination ****** -------- //
 
 
 	// ------- ******* addItem ******* ------- //
@@ -113,7 +97,7 @@ const ItemList = () => {
 	// ------- ******* addItem ******* ------- //
 
 	// ------- ******* pagination ******* ------- //
-
+	const itemsPerPage = 5;
 	const lastItemIndex = currentPage * itemsPerPage;
 	const firstItemIndex = lastItemIndex - itemsPerPage;
 	const currentItems = items.slice(firstItemIndex, lastItemIndex);

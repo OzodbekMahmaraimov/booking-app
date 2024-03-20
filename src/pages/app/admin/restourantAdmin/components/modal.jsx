@@ -39,6 +39,10 @@ const ItemListNew = ({ closeModal, addItem }) => {
   };
 
   const handleSave = () => {
+    if (item.name == null|| item.quantity == null || item.price == null || item.description == null || item.category == null) {
+      alert("Iltimos, barcha maydonlarni to'ldiring."); // Agar maydonlar to'liq to'ldirilmagan bo'lsa, xabar chiqaradi
+      return; // Funktsiyani shu yerda to'xtatamiz
+    }
     const newItem = { ...item, "id": itemsCount + 1 }; // Yangi `id`ni hisoblash
     addItem(newItem);
     closeModal();
@@ -46,7 +50,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal">
-      <div className="relative top-10 mx-auto p-5 border w-2/6 shadow-lg rounded-md bg-white">
+      <div className="relative top-10 mx-auto p-5 border w-2/6 shadow-lg animate rounded-md bg-white">
         <div className="mt-8">
           <label htmlFor="name">Item name</label>
           <input

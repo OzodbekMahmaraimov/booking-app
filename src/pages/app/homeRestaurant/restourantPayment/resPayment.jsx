@@ -12,7 +12,6 @@ const RestaurantPayment = () => {
 	useEffect(() => {
 		fetchData()
 	})
-	const image = "https://picsum.photos/250"
 
 
 	const fetchData = async () => {
@@ -25,8 +24,17 @@ const RestaurantPayment = () => {
 		}
 	}
 
+	const deleteItems = () => {
+		axios.delete(apiUrl + "payment")
+			.then((response) => {
+				console.log("Serverdan qaytgan ma'lumot" + response.data);
+			}).catch((err) => {
+				console.log(err);
+			})
+	}
+
 	const filteredOrders = orders.filter((order) =>
-		currentFilter === "all" ? true : order.status === currentFilter
+		currentFilter === "all" ? true : order.category === currentFilter
 	);
 
 	const handleFilterChange = (filter) => {
@@ -36,8 +44,8 @@ const RestaurantPayment = () => {
 	const Card = ({ order }) => (
 		<div className="mt-5 flex justify-between items-center bg-orange-200 rounded-lg shadow-md m-2 p-2">
 			<div className="flex justify-between">
-				<img src={image} alt="picsum" className="w-56 h-40 rounded mr-2" />
-			</div>
+				<img src="https://picsum.photos/550/" alt="picsum" className="w-56 h-40 rounded mr-2" />
+			</div>  
 			<div className="px-3">
 				{currentFilter === "all" && (
 					<div className="text-orange-500 font-bold mb-2">
@@ -46,7 +54,7 @@ const RestaurantPayment = () => {
 				)}
 				<div className="w-full">
 					<div>
-						<button className="w-full bg-orange-500 rounded text-white px-2 py-1 font-bold ml-2">
+						<button onClick={deleteItems} className="w-full bg-orange-500 rounded text-white px-2 py-1 font-bold ml-2">
 							Cancel
 						</button>
 					</div>
@@ -61,12 +69,12 @@ const RestaurantPayment = () => {
 
 	return (
 		<div className="flex flex-col">
-			<div className="flex justify-end p-5">
+			<div className="flex justify-end p-5 mt-32">
 				<h1 className="text-3xl">Byiringiro Moise</h1>
 				<img className="w-10" src={pencil} alt="edit-pencil" />
 			</div>
 			<div className="flex flex-col items-center mt-40">
-				<div className="w-40 h-40 absolute top-48">
+				<div className="w-40 h-40 absolute top-80">
 					<img src={vector} alt="user-photo" />
 				</div>
 				<div className="border-2 w-11/12 border-black flex items-center flex-col mb-5">
