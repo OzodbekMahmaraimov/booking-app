@@ -23,7 +23,7 @@ const Right = () => {
 }, []);
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/mainAdmin/");
+      const response = await axios.get("http://localhost:3000/adminme/");
       setResponse(response.data.managers.restaurantManagers); // Log the response data structure to see how to access the desired data
 
     } catch (error) {

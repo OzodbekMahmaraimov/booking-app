@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { vector } from '../../assets/loginsignUp/const';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Button, Modal, message } from 'antd';
-import { apiUrl } from '../../Api';
+import { Modal, message } from 'antd';
 import { byId } from '../main-hotel-dashboard/components/api';
 
+
+const apiUrl = "http://localhost:3000/admin"
 const Login = () => {
   const [managers, setManagers] = useState([]);
   const navigate = useNavigate();
@@ -15,21 +16,24 @@ const Login = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(apiUrl + 'mainadmin');
+        const res = await axios.get("http://localhost:3000/admin/");
+        console.log(res);
         const managers = [
-          ...res.data.managers.hotelManagers,
+          ...res.data.managers.restaurantManagers,
           ...res.data.managers.restaurantManagers,
           ...res.data.managers.superadmin
         ];
+
         setManagers(managers);
-        console.log(res);
+        console.log(managers);
       } catch (error) {
         console.error("Ma'lumot kelmadi:", error);
       }
     };
 
+    // Call the fetchData function when the component mounts
     fetchData();
-  }, []);
+  }, []); // Empty dependency array means this effect runs only once, when the component mounts
 
   const showModal = () => {
     setIsModalOpen(true);
