@@ -43,7 +43,6 @@ function HotelRooms() {
             rooms={`${item['Room-Count']} Rooms`}
           />  
           ) :
-          
           <RoomCard/>
       ) : rooms === 2 ? (
         <CheckOutCard change={setRooms}/>

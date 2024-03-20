@@ -17,8 +17,7 @@ function AboutCard({ name, bodyName, description, clas, stars }) {
     }
 
     setStars(initialStars);
-  }, [])
-  console.log(star);
+  }, [stars])
   return (
     <div className={`hotel_about_card w-full md:w-[60%] ${clas} flex flex-col items-center justify-center`}>
       {/* card-header */}

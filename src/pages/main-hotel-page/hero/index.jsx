@@ -17,8 +17,7 @@ function HotelHero() {
   const getHero = () => {
     axios.get(`${apiUrl}hotel-manage`)
     .then((res) => {
-      // setHeroDes(res.data['manage-hotels-description']);
-      console.log(res);
+      setHeroDes(res.data['manage-hotels-description'][0]);
     })
     .catch((err) => {
       console.log(err);
@@ -37,6 +36,7 @@ function HotelHero() {
           bodyName={"Hotel Descritpiton"}
           description={heroDes ? heroDes.description : "Description"}
           stars={heroDes ? heroDes['hotel-stars'] : 1}
+        
         />
       </div>
       <div className="w-[80%] flex gap-3 hotel_hero_back mt-10 lg:mt-72 justify-end items-center ">
