@@ -21,10 +21,11 @@ const InfoModal = ({ modalImage, setModalImage, cardId, count = 0 }) => {
             id: cardId - 1,
             name: cardInfo.name,
             order: count,
-            category: "Complete payment",
+            category: cardInfo.detailsInfo[0].category,
         }).then((res) => {
             console.log(res.data);
             e.preventDefault()
+            
         })
     }
 

@@ -55,7 +55,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "coffeDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -81,7 +81,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "coffeDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -107,7 +107,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "coffeDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -133,7 +133,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "coffeDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -159,7 +159,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "mainDashes",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -393,7 +393,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "snacks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -419,7 +419,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "softDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -445,7 +445,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "softDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -471,7 +471,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "softDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -497,7 +497,7 @@
             "countName": "QTY:",
             "btn1": "2500 RWF",
             "detailsFilterName": "softDrinks",
-            "category":"Pending payment"
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -1282,129 +1282,10 @@
   },
   "payment": [
     {
+      "id": 1,
       "name": "BWOK RESTAURANT",
-      "order": 2,
+      "order": 0,
       "category": "Pending payment"
-    },
-    {
-      "id": "d28b",
-      "name": "The hut cafe",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "9640",
-      "name": "BWOK RESTAURANT",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "7c7d",
-      "name": "BWOK RESTAURANT",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "7c22",
-      "name": "BWOK RESTAURANT",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "d75d",
-      "name": "Mille colline hotel",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "5be1",
-      "name": "Mille colline hotel",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "846e",
-      "name": "Mille colline hotel",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "55a2",
-      "name": "Mille colline hotel",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "61b5",
-      "name": "Cucina Restaurant",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "3ebb",
-      "name": "Cucina Restaurant",
-      "order": 8,
-      "category": "Complete payment"
-    },
-    {
-      "id": "c7f0",
-      "name": "Cucina Restaurant",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": "45e7",
-      "name": "Cucina Restaurant",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": 10,
-      "name": "Cucina Restaurant",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": 16,
-      "name": "Heaven-Hotel",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": 15,
-      "name": "M-Hotel",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": 1,
-      "name": "BWOK RESTAURANT",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": 1,
-      "name": "BWOK RESTAURANT",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": 2,
-      "name": "Mille colline hotel",
-      "order": 0,
-      "category": "Complete payment"
-    },
-    {
-      "id": 0,
-      "name": "Galaxy Hotel",
-      "order": 5,
-      "category": "Complete payment"
-    },
-    {
-      "id": 1,
-      "name": "BWOK RESTAURANT",
-      "order": 0,
-      "category": "Complete payment"
     }
   ]
 }
