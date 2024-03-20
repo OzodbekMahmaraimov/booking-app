@@ -13,7 +13,6 @@ const MtnCard = ({ setModal }) => {
             .then((res) => {
                 // Ensure you're setting the products with the data from the response
                 setProducts(res.data); // Assuming the data is in res.data
-                console.log(res.data);
             }).catch((err) => {
                 console.log(err);
             });
