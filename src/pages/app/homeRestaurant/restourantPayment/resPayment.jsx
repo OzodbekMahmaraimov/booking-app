@@ -1,40 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import pencil from "../../../../assets/images/Component 42.png";
 import vector from "../../../../assets/images/pay-img.png";
 import late from "./../../../../assets/images/Latte 6 (1).png";
+import axios from "axios";
+import { apiUrl } from "../../../../Api";
 
 const RestaurantPayment = () => {
 	const [currentFilter, setCurrentFilter] = useState("all");
+	const [orders, setOrders] = useState([])
 
-	const orders = [
-		{
-			id: 1,
-			status: "complete payment",
-			title: "Americano coffee",
-			count: "x2",
-			allSea: "Canceled by the system order payment timeout",
-			btn: "Complete",
-			image: late,
-		},
-		{
-			id: 2,
-			status: "pending payment",
-			title: "Americano coffee",
-			count: "x2",
-			allSea: "Payment pending",
-			btn: "Cancel",
-			image: late,
-		},
-		{
-			id: 3,
-			status: "pending payment",
-			title: "Americano coffee",
-			count: "x2",
-			allSea: "Order payed successfully",
-			btn: "Cancel",
-			image: late,
-		},
-	];
+	useEffect(() => {
+		fetchData()
+	})
+	const image = "https://picsum.photos/250"
+
+
+	const fetchData = async () => {
+		try {
+			const response = await axios.get(apiUrl + 'payment')
+			const apiItems = response.data
+			setOrders(apiItems)
+		} catch (err) {
+			console.log(err);
+		}
+	}
+
 	const filteredOrders = orders.filter((order) =>
 		currentFilter === "all" ? true : order.status === currentFilter
 	);
@@ -46,20 +36,24 @@ const RestaurantPayment = () => {
 	const Card = ({ order }) => (
 		<div className="mt-5 flex justify-between items-center bg-orange-200 rounded-lg shadow-md m-2 p-2">
 			<div className="flex justify-between">
-				<img src={order.image} alt={order.title} className="w-56 h-40 rounded mr-2" />
+				<img src={image} alt="picsum" className="w-56 h-40 rounded mr-2" />
 			</div>
 			<div className="px-3">
 				{currentFilter === "all" && (
 					<div className="text-orange-500 font-bold mb-2">
-						{order.status.replace(/_/g, " ").toUpperCase()}
+						{order.category}
 					</div>
 				)}
-				<button className="w-full bg-orange-500 rounded text-white px-2 py-1 font-bold ml-2">
-					{order.btn}
-				</button>
-				<div className="flex">
-					<p className="font-bold text-2xl">{order.title}</p>
-					<div className="text-2xl rounded p-1 text-orange-500 ml-2">{order.count}</div>
+				<div className="w-full">
+					<div>
+						<button className="w-full bg-orange-500 rounded text-white px-2 py-1 font-bold ml-2">
+							Cancel
+						</button>
+					</div>
+					<div className="flex">
+						<p className="font-bold text-xl">{order.name}</p>
+						<div className="text-2xl rounded p-1 text-orange-500 ml-2">{order.order + 'x'}</div>
+					</div>
 				</div>
 			</div>
 		</div>
