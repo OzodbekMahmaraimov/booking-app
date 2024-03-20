@@ -16,6 +16,7 @@ import MtnCard from '../../../components/layout/mtnCard/MtnCard';
 import VisaCard from '../../../components/layout/visaCard/VisaCard';
 import Details from '../../../components/layout/details/Details';
 import BookingModal from '../../../components/layout/modal/BookingModal';
+import InfoModal from '../../../components/layout/modal/InfoModal';
 
 
 const HomeRestaurant = () => {
@@ -23,6 +24,9 @@ const HomeRestaurant = () => {
   const [visaCard, setVisaCard] = useState(false)
   const [modal, setModal] = useState(false);
   const [isPay, setIsPay] = useState(false);
+  const [modalImage, setModalImage] = useState(false);
+  const [cardId, setCardId] = useState(null);
+  const [count, setCount] = useState(0);
 
   const closeModal = (e) => {
     if (e.target.classList[1] === "modal-backdrop") {
@@ -30,7 +34,6 @@ const HomeRestaurant = () => {
     };
     if (e.key === "Escape") setModal(false);
   }
-
 
   return (
     <div onClick={closeModal} onKeyDown={closeModal} className='home-restaurant'>
@@ -40,7 +43,7 @@ const HomeRestaurant = () => {
       <Service />
       {isPay
         ?
-        <Details />
+        <Details setCount={setCount} setCardId={setCardId} setModalImage={setModalImage} />
         :
         <section className={`${styles.container} flex flex-col gap-12 border-2 shadow-lg mt-16`}>
           <div className='w-full flex flex-col md:flex-row justify-between items-center mt-10 px-7'>
@@ -48,19 +51,17 @@ const HomeRestaurant = () => {
             <DeliveryTime />
           </div>
           <hr className='border-[0.5px] mx-auto w-[90%]' />
-
           {visaCard ? <VisaCard setModal={setModal} /> : <MtnCard setModal={setModal} />}
-
-
         </section>
       }
-
-
       {modal && <BookingModal setModal={setModal} setIsPay={setIsPay} isModal={modal} />}
-
-
-
       <Galery />
+      {/* CHETDAN CHIQADIGAN MODAL👇 */}
+
+      <InfoModal count={count} cardId={cardId} modalImage={modalImage} setModalImage={setModalImage} />
+
+
+
       <footer className={`${styles.container} my-12`}>
         <hr className='border-[0.5px] mx-auto w-full' />
         <h5 className='text-center text-lg py-2'>Copyright@ 2022 Design by B.Moise</h5>
