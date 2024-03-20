@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { vector } from '../../assets/loginsignUp/const'
-import { database } from './firebaseConfig'
-import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { Button, Modal } from 'antd';
 import { apiUrl } from '../../Api'
 import { byId } from '../main-hotel-dashboard/components/api'
 const Login = () => {
@@ -12,6 +11,7 @@ const Login = () => {
   const [managers, setManagers] = useState([]);
   const navigate = useNavigate();
   const [admin, setAdmin] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     getAllData();
@@ -27,6 +27,17 @@ const Login = () => {
     }
   }
 
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   function login() {
 
     const email = byId("Email").value
@@ -43,8 +54,9 @@ const Login = () => {
           navigate('/restourant-itemlist');
           break;
         case 'super_admin':
+          showModal()
           setAdmin(true);
-          
+
           break;
         default:
           alert("Noto'g'ri foydalanuvchi roli");
@@ -76,14 +88,16 @@ const Login = () => {
             <a href='#' className='font-font-semibold text-xs ml-5 text-[#F46A06]'>Forgot password?</a>
           </div>
         </div>
+
+
         <div className=' w-[25%] mb-3'>
           <button
             onClick={login}
             className='bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>Login</button>
         </div>
+      <Modal title="Select roll" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={false}>
         {admin &&
-          <div className=' w-[25%] mb-3'>
-            <p>qaysi dashboardga borishni tanlang</p>
+          <div className=' w-[25%] mb-3 flex items-center justify-between w-full gap-2'>
             <div className='px-3 mt-4 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>
               <Link to="/MainDashboard">
                 hotel dashboard
@@ -96,8 +110,15 @@ const Login = () => {
                 restorant dashboard
               </Link>
             </div>
+            <div className='px-3 mt-3 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>
+      <Link to="/admin">
+ Super Admin
+</Link>
+</div>
           </div>}
-        {!admin &&
+           </Modal>
+
+          {!admin &&
           <div className='w-[25%] mb-[6.1rem]'>
             <p>Don't have an account?
               <Link to='/signUp' className='font-font-semibold text-xs ml-5 text-[#F46A06]'>
@@ -105,6 +126,7 @@ const Login = () => {
               </Link>
             </p>
           </div>}
+
         <img src={vector} className='w-full absolute bottom-0'  alt="Image" />
       </div>
     </>

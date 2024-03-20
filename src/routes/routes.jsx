@@ -18,6 +18,8 @@ import { ResourantProfile } from "../pages/app/admin/retourantAdmin/Profile";
 import { ResProfileAnally } from "../pages/app/restourant/profile/analthy";
 import RestourantAdmin from "../pages/app/admin/restourantAdmin/routes/routes";
 import OrderLanding from "../pages/app/orderLandingPage";
+import AdminDashboard from "../pages/app/admin/restourantAdmin/category/dashboard";
+import MainAdminpage from "../pages/main-admin-page/component/mainAdminPage";
 
 const App = () => {
 	return (
@@ -27,6 +29,7 @@ const App = () => {
 				<Route path="/MainDashboardIndex" Component={IndexMain} />
 				<Route path="/homerestourant" Component={HomeRestaurant} />
 				<Route path="/loginSignUp" Component={Login} />
+				<Route path="/admin" Component={MainAdminpage} />
 				<Route path="/signUp" Component={SignUp} />
 			</Routes>
 
