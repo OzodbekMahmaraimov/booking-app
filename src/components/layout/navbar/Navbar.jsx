@@ -40,10 +40,10 @@ const Navbar = () => {
                 <IoCall color='black' />
                 ContactUs
               </li>
-              <li className='flex items-center text-xl gap-2 cursor-pointer'>
+              <Link to="/loginSignUp" className='flex items-center text-xl gap-2 cursor-pointer'>
                 <FiLogIn color='black' />
                 Login
-              </li>
+              </Link>
             </ul>
           </nav>
           {/* / navbar */}
