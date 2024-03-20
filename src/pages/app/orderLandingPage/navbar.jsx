@@ -19,14 +19,14 @@ const Navbar = ({ navdata }) => {
                                 to={item.to}
                                 key={item.id}
                                 onClick={() => activeHadler(item.name)}
-                                className={`${active.name === item.name
+                                className={`${item.isActive
                                     ? "text-slate-900"
                                     : ""} text-[#F46A06] hover:text-slate-800 duration-300`}>
                                 <li className='flex items-center text-xl gap-2 relative group'>
                                     {item.icon}
                                     {item.name}
                                     <span className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-gray-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-bottom-right`}></span>
-                                    {active.name === item.name ? <p className="h-0.5 bg-gray-500 w-full absolute -bottom-1"></p> : null}
+                                    {item.isActive ? <p className="h-0.5 bg-gray-500 w-full absolute -bottom-1"></p> : null}
                                 </li>
                             </Link>
                         ))}

@@ -18,10 +18,11 @@ const ItemList = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState(null);
 	const [items, setItems] = useState([]);
-	const [searchTerm, setSearchTerm] = useState("");
 	const [showModal, setShowModal] = useState(false);
 	const [selectedItems, setSelectedItem] = useState(0);
 	const [itemid, setItemid] = useState(0);
+	const [searchItem, setSearchItem] = useState("")
+	// const [filteredItems, setFilteredItems] = useState([]); // Filtrlanadi yoki qidirilgan elementlar uchun state
 
 	// ---- ****** modal ******* ------ //
 	const handleAddItem = () => {
@@ -34,13 +35,9 @@ const ItemList = () => {
 	// ---- ****** modal ******* ------ //
 
 
-
-
 	useEffect(() => {
 		fetchData();
 	}, []);
-
-
 	// ----- ******* get data ******* ----- //
 	const fetchData = async () => {
 		try {
@@ -55,6 +52,8 @@ const ItemList = () => {
 		}
 	};
 	// ----- ******* get data ******* ----- //
+
+
 
 
 	// ------ ******** delet items ******* ------ //
@@ -85,15 +84,8 @@ const ItemList = () => {
 	};
 	// ------ ******** select items ******* ------ //
 
-
 	// ------ ****** pagination ****** -------- //
-	const nextPage = () => {
-		setCurrentPage((prevPage) => prevPage + 1);
-	};
-
-	const prevPage = () => {
-		setCurrentPage((prevPage) => prevPage - 1);
-	};
+	
 
 	if (isLoading) {
 		return <div>Loading...</div>;
@@ -117,7 +109,40 @@ const ItemList = () => {
 				console.error('Xatolik yuz berdi:', error);
 			});
 	};
+
 	// ------- ******* addItem ******* ------- //
+
+	// ------- ******* pagination ******* ------- //
+
+	const lastItemIndex = currentPage * itemsPerPage;
+	const firstItemIndex = lastItemIndex - itemsPerPage;
+	const currentItems = items.slice(firstItemIndex, lastItemIndex);
+
+	const nextPage = () => {
+		setCurrentPage((prevPage) => prevPage + 1);
+	};
+
+	const prevPage = () => {
+		setCurrentPage((prevPage) => prevPage - 1);
+	};
+
+	// ------- ******* pagination ******* ------- //
+
+	// ------- ******* filterItem ******* ------- //
+
+	const filteredItems = searchItem.length > 0
+		? items.filter(item => item.name.toLowerCase().includes(searchItem.toLowerCase()))
+		: currentItems;
+
+	// ------- ******* filterItem ******* ------- //
+
+	// ------- ******* searchItem ******* ------- //
+
+	const handleSearch = (e) => {
+		setSearchItem(e.target.value);
+		setCurrentPage(1); // Qidiruv boshlanganda sahifani qayta birinchi sahifaga o'rnatish
+	};
+	// ------- ******* searchItem ******* ------- //
 
 	return (
 		<div className="flex bg-[#F46A06] h-max">
@@ -142,6 +167,7 @@ const ItemList = () => {
 							type="text"
 							className="w-[500px] outline-none px-3 py-3 rounded-xl"
 							placeholder="Search"
+							onChange={handleSearch}
 						/>
 						<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
 							Search
@@ -164,7 +190,7 @@ const ItemList = () => {
 							</button>
 						</div>
 						<div className="p-2">
-							{items.length > 0 ? (
+							{filteredItems.length > 0 ? (
 								<table className="w-full ">
 									<thead>
 										<tr className="bg-[#F1E8D7] text-left h-10 rounded-xl">
@@ -179,8 +205,8 @@ const ItemList = () => {
 										</tr>
 									</thead>
 									<tbody>
-										{items.map((item, key) => (
-											<tr key={item.id} className="text-left">
+										{filteredItems.length > 0 && filteredItems.map((item, index) => ( // Bu yerda `items` o'rniga `filteredItems`dan foydalanish
+											<tr index={item.id} className="text-left">
 												<td>
 													<input
 														name="check"
@@ -189,7 +215,7 @@ const ItemList = () => {
 														onChange={() => toggleSelectItem(item.id)}
 													/>
 												</td>
-												<td>#{key + 1}</td>
+												<td>{`#${firstItemIndex + index + 1}`}</td>
 												<td>{item.name}</td>
 												<td>{item.category}</td>
 												<td>{item.price}</td>
@@ -201,7 +227,7 @@ const ItemList = () => {
 										))}
 									</tbody>
 								</table>
-							) : searchTerm.length > 0 ? (
+							) : searchItem.length > 0 ? (
 								<div className="flex justify-center items-center">
 									<img src={notFound} alt="" />
 								</div>
@@ -227,7 +253,7 @@ const ItemList = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div >
 	);
 };
 

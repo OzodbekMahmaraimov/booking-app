@@ -25,7 +25,7 @@ const RoomCard = ({
     <div className=" rounded-xl shadow-lg room_card_main pb-10">
       {/* Header */}
       <div className="flex justify-between flex-col gap-3 sm:flex-row items-center p-8">
-        <h1 className="text-2xl font-semibold">{name}</h1>
+        <h1 className="text-2xl font-bold animate-pulse">{name}</h1>
         <button onClick={changeRoomCard} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded text-shadow shadow-lg">
           {buttonName}
         </button>
@@ -47,7 +47,7 @@ const RoomCard = ({
               <span className="flex gap-3 justify-between p-3 flex-col sm:flex-row">
                 <h3 className="text-xl text-center font-semibold">Room price</h3>
                 <span>
-                  <p className="text-lg text-center">
+                  <p className="text-lg text-center animate-bounce">
                     <b>{priceUSD}</b>
                   </p>
                   <p className="text-lg text-center">{priceUZS}</p>
