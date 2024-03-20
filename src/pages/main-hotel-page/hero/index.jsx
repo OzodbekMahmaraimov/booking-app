@@ -25,10 +25,16 @@ function HotelHero() {
   }
   return (
     <div className="w-full h-full">
-      <div className="hotel_hero_bg w-full h-screen bg_setting flex items-end pb-32 sm:ps-16 md:ps-32">
-        <h1 className="text-white text-xl sm:text-4xl font-bold">
-          Average price 100 $ / 1257000 UZS
-        </h1>
+      <div className="hotel_hero_bg w-full h-screen bg_setting">
+      <div className="flex flex-col md:flex-row md:gap-6 w-full h-screen justify-center items-center">
+        <span className="text-8xl md:text-9xl font-bold font-serif text-shadow rotate-3 text-white animate-bounce">H</span>
+        <span className="text-8xl md:text-9xl font-bold font-serif text-shadow -rotate-3 text-white  delay-700 animate-pulse">O</span>
+        <span className="text-8xl md:text-9xl font-bold font-serif text-shadow rotate-3 text-white animate-bounce">T</span>
+        <span className="text-8xl md:text-9xl font-bold font-serif text-shadow -rotate-3 text-white  delay-700 animate-pulse">E</span>
+        <span className="text-8xl md:text-9xl font-bold font-serif text-shadow rotate-3 text-white animate-bounce">L</span>
+
+      </div>
+      
       </div>
       <div className="w-full flex justify-center mt-20 lg:mt-0 lg:absolute card-setting">
         <AboutCard

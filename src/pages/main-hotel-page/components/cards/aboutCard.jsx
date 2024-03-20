@@ -5,14 +5,14 @@ import "../../index.css";
 
 function AboutCard({ name, bodyName, description, clas, stars }) {
   const [star, setStars] = useState([
-  {0: <li className="card-star"><FaStar color="#F46A06" /></li>},
+  {0: <li className="card-star animate-spin"><FaStar color="#F46A06" /></li>},
   ])
 
   useEffect(() => {
     const initialStars = [];
     for (let i = 0; i < stars; i++) {
       initialStars.push(
-        {0: <li className="card-star"><FaStar color="#F46A06" /></li>},
+        {0: <li className="card-star animate-spin"><FaStar color="#F46A06" /></li>},
       );
     }
 
