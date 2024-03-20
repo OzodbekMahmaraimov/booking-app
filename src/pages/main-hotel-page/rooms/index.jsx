@@ -38,12 +38,11 @@ function HotelRooms() {
             buttonName={"Book now"}
             contentName={"Room Description"}
             description={item['Room-Description']}
-            priceRWF={`${item['Total-payment']}/USD`}                                         
-            priceUSD={`${item['Total-payment'] * 12560}/UZS`}
+            priceUSD={`${item['Total-payment']}/USD`}                                         
+            priceUZS={`${item['Total-payment'] * 12560}/UZS`}
             rooms={`${item['Room-Count']} Rooms`}
           />  
           ) :
-          
           <RoomCard/>
       ) : rooms === 2 ? (
         <CheckOutCard change={setRooms}/>

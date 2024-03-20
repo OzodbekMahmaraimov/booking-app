@@ -28,7 +28,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "coffeDrinks"
+            "detailsFilterName": "coffeDrinks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -53,7 +54,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "coffeDrinks"
+            "detailsFilterName": "coffeDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -78,7 +80,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "coffeDrinks"
+            "detailsFilterName": "coffeDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -103,7 +106,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "coffeDrinks"
+            "detailsFilterName": "coffeDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -128,7 +132,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "coffeDrinks"
+            "detailsFilterName": "coffeDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -153,7 +158,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "mainDashes"
+            "detailsFilterName": "mainDashes",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -178,7 +184,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "mainDashes"
+            "detailsFilterName": "mainDashes",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -203,7 +210,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "mainDashes"
+            "detailsFilterName": "mainDashes",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -228,7 +236,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "mainDashes"
+            "detailsFilterName": "mainDashes",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -253,7 +262,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "mainDashes"
+            "detailsFilterName": "mainDashes",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -278,7 +288,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "snacks"
+            "detailsFilterName": "snacks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -303,7 +314,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "snacks"
+            "detailsFilterName": "snacks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -328,7 +340,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "snacks"
+            "detailsFilterName": "snacks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -353,7 +366,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "snacks"
+            "detailsFilterName": "snacks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -378,7 +392,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "snacks"
+            "detailsFilterName": "snacks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -403,7 +418,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "softDrinks"
+            "detailsFilterName": "softDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -428,7 +444,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "softDrinks"
+            "detailsFilterName": "softDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -453,7 +470,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "softDrinks"
+            "detailsFilterName": "softDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -478,7 +496,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "softDrinks"
+            "detailsFilterName": "softDrinks",
+            "category": "Pending payment"
           }
         ],
         "gallery": [
@@ -503,7 +522,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "softDrinks"
+            "detailsFilterName": "softDrinks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -528,7 +548,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "alcoholicDrinks"
+            "detailsFilterName": "alcoholicDrinks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -553,7 +574,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "alcoholicDrinks"
+            "detailsFilterName": "alcoholicDrinks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -578,7 +600,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "alcoholicDrinks"
+            "detailsFilterName": "alcoholicDrinks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -603,7 +626,8 @@
             "name": "Latte(Hot)",
             "countName": "QTY:",
             "btn1": "2500 RWF",
-            "detailsFilterName": "alcoholicDrinks"
+            "detailsFilterName": "alcoholicDrinks",
+            "category": "Complete payment"
           }
         ],
         "gallery": [
@@ -1096,5 +1120,91 @@
         "status": "..."
       }
     ]
-  }
+  },
+  "payment": [
+    {
+      "id": 1,
+      "name": "BWOK RESTAURANT",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": 1,
+      "name": "Galaxy Hotel",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 2,
+      "name": "BWOK RESTAURANT",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": -1,
+      "name": "Galaxy Hotel",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": -1,
+      "name": "BWOK RESTAURANT",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": 1,
+      "name": "BWOK RESTAURANT",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": 0,
+      "name": "Galaxy Hotel",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 2,
+      "name": "Mille colline hotel",
+      "order": 0,
+      "category": "Pending payment"
+    },
+    {
+      "id": 23,
+      "name": "Pishon Caffee",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 22,
+      "name": "Mocha caffee",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 22,
+      "name": "Mocha caffee",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 1,
+      "name": "BWOK RESTAURANT",
+      "order": 2,
+      "category": "Pending payment"
+    },
+    {
+      "id": 22,
+      "name": "Mocha caffee",
+      "order": 0,
+      "category": "Complete payment"
+    },
+    {
+      "id": 22,
+      "name": "Mocha caffee",
+      "order": 0,
+      "category": "Complete payment"
+    }
+  ]
 }

@@ -25,8 +25,7 @@ const Cards = ({ item, setItems, setModalImage, setCardId, setCount }) => {
         }));
     };
 
-    const handleButtonClick = (detailId) => {
-        console.log("Button clicked on card with It:", item.id);
+    const handleButtonClick = () => {
         setCardId(item.id);
         setCount(item.shoppingCount);
     };
