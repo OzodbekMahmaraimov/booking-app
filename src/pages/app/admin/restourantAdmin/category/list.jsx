@@ -85,13 +85,7 @@ const ItemList = () => {
 	// ------ ******** select items ******* ------ //
 
 	// ------ ****** pagination ****** -------- //
-	const nextPage = () => {
-		setCurrentPage((prevPage) => prevPage + 1);
-	};
-
-	const prevPage = () => {
-		setCurrentPage((prevPage) => prevPage - 1);
-	};
+	
 
 	if (isLoading) {
 		return <div>Loading...</div>;
@@ -118,18 +112,36 @@ const ItemList = () => {
 
 	// ------- ******* addItem ******* ------- //
 
+	// ------- ******* pagination ******* ------- //
+
+	const lastItemIndex = currentPage * itemsPerPage;
+	const firstItemIndex = lastItemIndex - itemsPerPage;
+	const currentItems = items.slice(firstItemIndex, lastItemIndex);
+
+	const nextPage = () => {
+		setCurrentPage((prevPage) => prevPage + 1);
+	};
+
+	const prevPage = () => {
+		setCurrentPage((prevPage) => prevPage - 1);
+	};
+
+	// ------- ******* pagination ******* ------- //
+
 	// ------- ******* filterItem ******* ------- //
 
-	const filteredItems = items.filter(item =>
-		item.name.toLowerCase().includes(searchItem.toLowerCase())
-	);
+	const filteredItems = searchItem.length > 0
+		? items.filter(item => item.name.toLowerCase().includes(searchItem.toLowerCase()))
+		: currentItems;
 
 	// ------- ******* filterItem ******* ------- //
 
 	// ------- ******* searchItem ******* ------- //
 
-	const handleSearch = (e) => setSearchItem(e.target.value)
-
+	const handleSearch = (e) => {
+		setSearchItem(e.target.value);
+		setCurrentPage(1); // Qidiruv boshlanganda sahifani qayta birinchi sahifaga o'rnatish
+	};
 	// ------- ******* searchItem ******* ------- //
 
 	return (
@@ -193,8 +205,8 @@ const ItemList = () => {
 										</tr>
 									</thead>
 									<tbody>
-										{items.map((item, key) => (
-											<tr key={item.id} className="text-left">
+										{filteredItems.length > 0 && filteredItems.map((item, index) => ( // Bu yerda `items` o'rniga `filteredItems`dan foydalanish
+											<tr index={item.id} className="text-left">
 												<td>
 													<input
 														name="check"
@@ -203,7 +215,7 @@ const ItemList = () => {
 														onChange={() => toggleSelectItem(item.id)}
 													/>
 												</td>
-												<td>#{key + 1}</td>
+												<td>{`#${firstItemIndex + index + 1}`}</td>
 												<td>{item.name}</td>
 												<td>{item.category}</td>
 												<td>{item.price}</td>
@@ -241,7 +253,7 @@ const ItemList = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div >
 	);
 };
 
