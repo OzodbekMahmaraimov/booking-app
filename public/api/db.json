@@ -812,16 +812,17 @@
           "role": "hotel_manager"
         }
       ],
-      "restaurantManagers": {
-        "id": 1,
-        "firstName": "Asilbek",
-        "lastName": "Sagdullayev",
-        "phone": "882000923",
-        "resName": "Soy",
-        "email": "rest@gmail.com",
-        "password": "222",
-        "role": "restaurant_manager"
-      },
+      "restaurantManagers": [
+        {
+          "id": 1,
+          "firstName": "Asilbek",
+          "lastName": "Sagdullayev",
+          "phone": "882000923",
+          "email": "rest@gmail.com",
+          "password": "222",
+          "role": "restaurant_manager"
+        }
+      ],
       "superadmin": [
         {
           "id": 1,

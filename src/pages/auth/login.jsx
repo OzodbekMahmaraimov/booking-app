@@ -4,9 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Modal, message } from 'antd';
 import { byId } from '../main-hotel-dashboard/components/api';
+import { apiUrl } from '../../Api';
 
 
-const apiUrl = "http://localhost:3000/admin"
 const Login = () => {
   const [managers, setManagers] = useState([]);
   const navigate = useNavigate();
@@ -16,10 +16,10 @@ const Login = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/admin/");
-        console.log(res);
+        const res = await axios.get(apiUrl + "admin/");
+        console.log(res.data);
         const managers = [
-          ...res.data.managers.restaurantManagers,
+          ...res.data.managers.hotelManagers,
           ...res.data.managers.restaurantManagers,
           ...res.data.managers.superadmin
         ];
@@ -53,14 +53,16 @@ const Login = () => {
     const email = byId("Email").value;
     const password = byId("password").value;
 
-    let user = managers.find(manager => manager.email === email && manager.parol === password);
+    let user = managers.find(manager => manager.email === email && manager.password === password);
+    
+    console.log(user);
 
     if (user) {
       switch (user.role) {
         case "hotel_manager":
           navigate('/MainDashboard');
           break;
-        case 'restorant_manager':
+        case 'restaurant_manager':
           navigate('/restourant-itemlist');
           break;
         case 'super_admin':
@@ -102,7 +104,7 @@ const Login = () => {
         <Modal title="Select roll" visible={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null}>
           {admin &&
 
-            <div className='w-[25%] mb-3 flex items-center justify-between w-full gap-2'>
+            <div className=' mb-3 flex items-center justify-between w-full gap-2'>
               <div className='px-3 mt-4 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg'>
                 <Link to="/MainDashboard">Hotel Dashboard</Link>
               </div>
