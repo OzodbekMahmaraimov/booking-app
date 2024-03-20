@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DetailsFilterMenu from "../detailsFiltermenu/detailsFilterMenu";
 import Cards from "./Cards";
+import { apiUrl } from '../../../Api';
 
 const Details = ({ setModalImage, setCardId, setCount }) => {
     const [items, setItems] = useState([]);
@@ -9,7 +10,7 @@ const Details = ({ setModalImage, setCardId, setCount }) => {
     useEffect(() => {
         const fetchItems = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/orderLandingPage");
+                const response = await axios.get(apiUrl + "orderLandingPage");
                 setItems(response.data.mainOrder || []);
             } catch (err) {
                 console.error("Error fetching items:", err.message);

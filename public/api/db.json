@@ -775,96 +775,66 @@
       "price": 2100,
       "quantity": 30,
       "description": "Judaham zor narsa"
-    },
-    {
-      "id": "18",
-      "name": "Iced Mocha",
-      "category": "Coffee",
-      "price": 3800,
-      "quantity": 10,
-      "description": "Judaham zor narsa"
-    },
-    {
-      "id": "19",
-      "name": "Herbal Tea",
-      "category": "Beverage",
-      "price": 1700,
-      "quantity": 20,
-      "description": "Judaham zor narsa"
-    },
-    {
-      "id": "20",
-      "name": "Matcha Latte",
-      "category": "Beverage",
-      "price": 4200,
-      "quantity": 18,
-      "description": "Judaham zor narsa"
     }
   ],
-
-    "admin": {
-        "payment": {
-          "user": [
-            {
-              "id": "1",
-              "name": "Daniel Harerimana",
-              "number": "0784567890",
-              "action": "Booking",
-              "facility": "Soy asian- restaurant",
-              "paid": "1050000 Rwf",
-              "earned": "20000Rwf"
-            },
-            {
-              "id": "2",
-              "name": "Daniel Harerimana",
-              "number": "0784567890",
-              "action": "Booking",
-              "facility": "Soy asian- restaurant",
-              "paid": "1050000 Rwf",
-              "earned": "20000Rwf"
-            }
-          ]
+  "admin": {
+    "payment": {
+      "user": [
+        {
+          "id": "1",
+          "name": "Daniel Harerimana",
+          "number": "0784567890",
+          "action": "Booking",
+          "facility": "Soy asian- restaurant",
+          "paid": "1050000 Rwf",
+          "earned": "20000Rwf"
         },
-        "managers": {
-          "hotelManagers": [
-            {
-              "id": 1,
-              "firstname": "kimdir",
-              "lastname": "nimadir",
-              "phone": 12134124,
-              "email": "hotel@gmail.com",
-              "password": "333",
-              "role": "hotel_manager"
-            }
-          ],
-          "restaurantManagers":
-            {
-              "id": 1,
-              "firstName": "Asilbek",
-              "lastName": "Sagdullayev",
-              "phone": "882000923",
-              "resName": "Soy",
-              "email": "rest@gmail.com",
-              "password": "222",
-              "role": "restaurant_manager"
-            }
-          ,
-          "superadmin": [
-            {
-              "id": 1,
-              "firstname": "super admin",
-              "lastname": "garang",
-              "phone": 1112321,
-              "email": "admin@gmail.com",
-              "password": "111",
-              "role": "super_admin"
-            }
-          ]
+        {
+          "id": "2",
+          "name": "Daniel Harerimana",
+          "number": "0784567890",
+          "action": "Booking",
+          "facility": "Soy asian- restaurant",
+          "paid": "1050000 Rwf",
+          "earned": "20000Rwf"
         }
-
+      ]
     },
-
-
+    "managers": {
+      "hotelManagers": [
+        {
+          "id": 1,
+          "firstname": "kimdir",
+          "lastname": "nimadir",
+          "phone": 12134124,
+          "email": "hotel@gmail.com",
+          "password": "333",
+          "role": "hotel_manager"
+        }
+      ],
+      "restaurantManagers": {
+        "id": 1,
+        "firstName": "Asilbek",
+        "lastName": "Sagdullayev",
+        "phone": "882000923",
+        "resName": "Soy",
+        "email": "rest@gmail.com",
+        "password": "222",
+        "role": "restaurant_manager"
+      },
+      "superadmin": [
+        {
+          "id": 1,
+          "firstname": "super admin",
+          "lastname": "garang",
+          "phone": 1112321,
+          "email": "admin@gmail.com",
+          "password": "111",
+          "role": "super_admin"
+        }
+      ]
+    }
+  },
   "hotel-manage": {
     "manage-hotels-dashboard": {
       "Total-Rooms": 10,
@@ -1193,6 +1163,12 @@
       "name": "BWOK RESTAURANT",
       "order": 2,
       "category": "Pending payment"
+    },
+    {
+      "id": 22,
+      "name": "Mocha caffee",
+      "order": 0,
+      "category": "Complete payment"
     },
     {
       "id": 22,

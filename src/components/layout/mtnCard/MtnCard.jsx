@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 // components
 import Product from '../product/Product';
+import { apiUrl } from '../../../Api/index'
 // images
 import productImage from '../../../assets/images/product.jpg';
 import axios from 'axios';
@@ -9,16 +10,14 @@ const MtnCard = ({ setModal }) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/admin")
+        axios.get(apiUrl + "itemlist")
             .then((res) => {
-                // Ensure you're setting the products with the data from the response
-                setProducts(res.data); // Assuming the data is in res.data
+                setProducts(res.data);
             }).catch((err) => {
                 console.log(err);
             });
     }, []);
 
-    // Ensure total calculation handles case where products is null or empty
     const total = products.reduce((acc, product) => acc + (product.price * product.quantity), 0);
 
     const updateQuantity = (id, newQuantity) => {
@@ -30,8 +29,15 @@ const MtnCard = ({ setModal }) => {
     };
 
     const deleteProduct = (productId) => {
-        setProducts(currentProducts => currentProducts.filter(product => product.id !== productId));
+        axios.delete(apiUrl + "itemlist/" + productId)
+            .then((res) => {
+                console.log(res.data);
+            })
+            .catch((err) => {
+                console.error(err);
+            });
     };
+
 
     return (
         <>

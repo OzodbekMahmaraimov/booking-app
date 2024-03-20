@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Drawer } from 'antd';
 import axios from 'axios';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { apiUrl } from '../../../Api';
 
 const InfoModal = ({ modalImage, setModalImage, cardId, count = 0 }) => {
     const [cardInfo, setCardInfo] = useState(null);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/orderLandingPage")
+        axios.get(apiUrl + "orderLandingPage")
             .then((res) => {
                 setCardInfo(res.data.mainOrder[cardId - 1])
             }).catch((err) => {
@@ -18,7 +19,7 @@ const InfoModal = ({ modalImage, setModalImage, cardId, count = 0 }) => {
     const checkOut = (e) => {
         console.log(cardId);
         
-        axios.post("http://localhost:3000/payment", {
+        axios.post(apiUrl + "payment", {
             id: cardId - 1,
             name: cardInfo.name,
             order: count,
