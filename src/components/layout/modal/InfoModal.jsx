@@ -16,6 +16,7 @@ const InfoModal = ({ modalImage, setModalImage, cardId, count = 0 }) => {
     }, [cardId])
 
     const checkOut = (e) => {
+        console.log(cardId);
         
         axios.post("http://localhost:3000/payment", {
             id: cardId - 1,
@@ -23,9 +24,7 @@ const InfoModal = ({ modalImage, setModalImage, cardId, count = 0 }) => {
             order: count,
             category: cardInfo.detailsInfo[0].category,
         }).then((res) => {
-            console.log(res.data);
-            e.preventDefault()
-            
+            console.log(res.data);            
         })
     }
 
