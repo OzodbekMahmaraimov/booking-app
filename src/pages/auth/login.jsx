@@ -1,22 +1,58 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { vector } from '../../assets/loginsignUp/const'
 import { database } from './firebaseConfig'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { Link, useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import { apiUrl } from '../../Api'
+import { byId } from '../main-hotel-dashboard/components/api'
 const Login = () => {
-  const [emailVal, setEmailVal] = useState(null)
-  const history=useNavigate()
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+  const [managers, setManagers] = useState([]);
+  const navigate = useNavigate();
+  const [admin, setAdmin] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const  email = document.getElementById('Email').value
-    const  password = document.getElementById('password').value
+  useEffect(() => {
+    getAllData();
+  }, []);
 
-    createUserWithEmailAndPassword(database,email,password).then(res=>{
-      console.log(res);
-      history('/homerestourant')
-      alert("Succesfully")
-    })
+  async function getAllData() {
+    try {
+      const res = await axios.get(apiUrl + 'mainadmin');
+      const managers = [...res.data.category.managers.hotelManagers, ...res.data.category.managers.restorantManagers, ...res.data.category.managers.superadmin];
+      setManagers(managers);
+    } catch (error) {
+      console.error("So'rovda xato:", error);
+    }
+  }
+
+  function login() {
+
+    const email = byId("Email").value
+    const password = byId("password").value
+
+    let user = managers.find(manager => manager.email === email && manager.parol === password);
+
+    if (user) {
+      switch (user.role) {
+        case "hotel_manager":
+          navigate('/MainDashboard');
+          break;
+        case 'restorant_manager':
+          navigate('/restourant-itemlist');
+          break;
+        case 'super_admin':
+          setAdmin(true);
+          
+          break;
+        default:
+          alert("Noto'g'ri foydalanuvchi roli");
+          break;
+      }
+    } else {
+      alert("Email yoki parol noto'g'ri");
+    }
   }
 
   return (
@@ -42,17 +78,34 @@ const Login = () => {
         </div>
         <div className=' w-[25%] mb-3'>
           <button
-            onClick={handleSubmit}
+            onClick={login}
             className='bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>Login</button>
         </div>
-        <div className='w-[25%] mb-[6.1rem]'>
-          <p>Don't have an account?
-            <Link to='/signUp' className='font-font-semibold text-xs ml-5 text-[#F46A06]'>
-              Register Now
-            </Link>
-          </p>
-        </div>
-        <img src={vector} className='w-full' alt="Image" />
+        {admin &&
+          <div className=' w-[25%] mb-3'>
+            <p>qaysi dashboardga borishni tanlang</p>
+            <div className='px-3 mt-4 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>
+              <Link to="/MainDashboard">
+                hotel dashboard
+              </Link>
+
+            </div>
+            <div className='px-3 mt-3 flex bg-[#F46A06] hover:bg-[#f46906ee] outline-none duration-200 w-full py-[0.5rem] text-white font-normal rounded-md shadow-lg '>
+
+              <Link to="/restourant-itemlist">
+                restorant dashboard
+              </Link>
+            </div>
+          </div>}
+        {!admin &&
+          <div className='w-[25%] mb-[6.1rem]'>
+            <p>Don't have an account?
+              <Link to='/signUp' className='font-font-semibold text-xs ml-5 text-[#F46A06]'>
+                Register Now
+              </Link>
+            </p>
+          </div>}
+        <img src={vector} className='w-full absolute bottom-0'  alt="Image" />
       </div>
     </>
 

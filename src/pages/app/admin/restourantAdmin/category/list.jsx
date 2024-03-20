@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// ----- ****** images ******* ------ //
 import homeIcon from "./../../../../../assets/images/Vector (1).png";
 import blackLine from "./../../../../../assets/images/Line 10.png";
 import menuIcon from "./../../../../../assets/images/svg.svg";
@@ -8,17 +9,21 @@ import ResAdminSidebar from "../components/sidebar";
 import axios from "axios";
 import ItemListNew from "../components/modal";
 
+import { apiUrl } from "../../../../../Api";
+
+
 const ItemList = () => {
 	const [currentPage, setCurrentPage] = useState(1);
 	const itemsPerPage = 5;
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState(null);
-	const [selectedItems, setSelectedItems] = useState({});
 	const [items, setItems] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("");
 	const [showModal, setShowModal] = useState(false);
+	const [selectedItems, setSelectedItem] = useState(0);
+	const [itemid, setItemid] = useState(0);
 
-
+	// ---- ****** modal ******* ------ //
 	const handleAddItem = () => {
 		setShowModal(true); // Modalni ko'rsatish
 	};
@@ -26,88 +31,62 @@ const ItemList = () => {
 	const handleCloseModal = () => {
 		setShowModal(false); // Modalni yopish
 	};
+	// ---- ****** modal ******* ------ //
 
-	const handleSearchChange = (event) => {
-		setSearchTerm(event.target.value.toLowerCase());
-	};
+
+
 
 	useEffect(() => {
-		setIsLoading(true);
-		const fetchData = async () => {
-			try {
-				const response = await axios.get("http://localhost:3000/admin/");
-				const apiItems = response.data;
-	
-				// localStorage'dan o'chirilgan elementlarni o'qish
-				const deletedItemIds = JSON.parse(localStorage.getItem('deletedItems') || '[]');
-				
-				// Faqat o'chirilmagan elementlarni filtrlash
-				const filteredItems = apiItems.filter(item => !deletedItemIds.includes(item.id));
-				
-				setItems(filteredItems); // Yangilangan ro'yxatni saqlash
-			} catch (error) {
-				setError("An error occurred while fetching the items.");
-			} finally {
-				setIsLoading(false);
-			}
-		};
 		fetchData();
 	}, []);
-	
 
 
-
-	const filteredItems =
-		searchTerm.length > 0
-			? items.filter(
-				(item) =>
-					item.name.toLowerCase().includes(searchTerm) ||
-					item.category.toLowerCase().includes(searchTerm)
-			)
-			: items;
-
-	const lastPageIndex = currentPage * itemsPerPage;
-	const firstPageIndex = lastPageIndex - itemsPerPage;
-	const currentItems = filteredItems.slice(firstPageIndex, lastPageIndex);
-
-	const toggleSelectAll = (e) => {
-		const newSelectedItems = {};
-		if (e.target.checked) {
-			currentItems.forEach((item) => {
-				newSelectedItems[item.id] = true;
-			});
+	// ----- ******* get data ******* ----- //
+	const fetchData = async () => {
+		try {
+			const response = await axios.get(apiUrl + "admin/");
+			const apiItems = response.data;
+			setItems(apiItems);
+			setItemid(apiItems.length);
+		} catch (error) {
+			setError("An error occurred while fetching the items.");
+		} finally {
+			setIsLoading(false);
 		}
-		setSelectedItems(newSelectedItems);
 	};
+	// ----- ******* get data ******* ----- //
 
-	const toggleSelectItem = (id) => {
-		setSelectedItems((prevItems) => ({
-			...prevItems,
-			[id]: !prevItems[id],
-		}));
-	};
 
+	// ------ ******** delet items ******* ------ //
 	const handleDeleteSelectedItems = () => {
-		const remainingItems = items.filter(item => !selectedItems[item.id]);
-		setItems(remainingItems); // Yangilangan ro'yxatni saqlash
-	
-		// O'chirilgan elementlarni aniqlash
-		const deletedItems = items.filter(item => selectedItems[item.id]);
-	
-		// O'chirilgan elementlarni localStorage'ga saqlash
-		const existingDeletedItems = JSON.parse(localStorage.getItem('deletedItems') || '[]');
-		const updatedDeletedItems = [...existingDeletedItems, ...deletedItems.map(item => item.id)];
-		localStorage.setItem('deletedItems', JSON.stringify(updatedDeletedItems));
-	
-		setSelectedItems({}); // Tanlangan elementlarni tozalash
+
+		if (selectedItems > 0) {
+			axios.delete(`${apiUrl}admin/${selectedItems}`,)
+				.then((response) => {
+					console.log('Serverdan qaytgan javob:', response.data);
+				})
+				.catch((error) => {
+					console.error('Xatolik yuz berdi:', error);
+				});
+		} else {
+			alert('Please select an item to delete.');
+		}
 	};
-	
+	// ------ ******** delet items ******* ------ //
 
 
+	// ------ ******** select items ******* ------ //
+	const toggleSelectItem = (id) => {
+		if (selectedItems === id) {
+			setSelectedItem(null);
+		} else {
+			setSelectedItem(id);
+		}
+	};
+	// ------ ******** select items ******* ------ //
 
-	const isAllSelected =
-		currentItems.length > 0 && currentItems.every((item) => selectedItems[item.id]);
 
+	// ------ ****** pagination ****** -------- //
 	const nextPage = () => {
 		setCurrentPage((prevPage) => prevPage + 1);
 	};
@@ -123,14 +102,30 @@ const ItemList = () => {
 	if (error) {
 		return <div>Error: {error}</div>;
 	}
+	// ------ ****** pagination ****** -------- //
+
+
+	// ------- ******* addItem ******* ------- //
+
+	const addItem = (data) => {
+		console.log(data);
+		axios.post(`${apiUrl}admin/`, data)
+			.then((response) => {
+				console.log(response);
+			})
+			.catch((error) => {
+				console.error('Xatolik yuz berdi:', error);
+			});
+	};
+	// ------- ******* addItem ******* ------- //
 
 	return (
-		<div className="flex bg-[#F46A06]">
+		<div className="flex bg-[#F46A06] h-max">
 			<div className="w-[25%]">
 				<ResAdminSidebar />
 			</div>
-			<div className="w-[75%] py-3 px-4">
-				<div className="flex  mt-5">
+			<div className="w-[75%] py-3 px-4 h-max">
+				<div className="flex  mt-5 h-max">
 					<div className="flex w-full items-center gap-1">
 						<div>
 							<img src={homeIcon} alt="home icon" />
@@ -147,20 +142,19 @@ const ItemList = () => {
 							type="text"
 							className="w-[500px] outline-none px-3 py-3 rounded-xl"
 							placeholder="Search"
-							onChange={handleSearchChange}
 						/>
 						<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
 							Search
 						</button>
 					</div>
 				</div>
-				<div className="w-full mt-5 h-[570px] rounded-xl bg-[#F1E8D7] p-2">
+				<div className="w-full mt-5 h-max rounded-xl bg-[#F1E8D7] p-2">
 					<div className="bg-white w-full h-full rounded-xl">
 						<div className="p-2">
 							<button onClick={handleAddItem} className="border-[#F46A06] hover:bg-[#F46A06] m-1 hover:text-white hover:transition-all border-2 py-2 px-3 rounded-md">
 								Add new item
 							</button>
-							{showModal && <ItemListNew closeModal={handleCloseModal} />}
+							{showModal && <ItemListNew closeModal={handleCloseModal} addItem={addItem} />}
 							<button
 								onClick={handleDeleteSelectedItems}
 
@@ -170,12 +164,11 @@ const ItemList = () => {
 							</button>
 						</div>
 						<div className="p-2">
-							{currentItems.length > 0 ? (
+							{items.length > 0 ? (
 								<table className="w-full ">
 									<thead>
 										<tr className="bg-[#F1E8D7] text-left h-10 rounded-xl">
 											<th>
-												<input type="checkbox" checked={isAllSelected} onChange={toggleSelectAll} />
 											</th>
 											<th>Item ID</th>
 											<th>Item Name</th>
@@ -186,16 +179,17 @@ const ItemList = () => {
 										</tr>
 									</thead>
 									<tbody>
-										{currentItems.map((item) => (
+										{items.map((item, key) => (
 											<tr key={item.id} className="text-left">
 												<td>
 													<input
+														name="check"
 														type="checkbox"
-														checked={!!selectedItems[item.id]}
+														checked={selectedItems === item.id}
 														onChange={() => toggleSelectItem(item.id)}
 													/>
 												</td>
-												<td>#{item.id}</td>
+												<td>#{key + 1}</td>
 												<td>{item.name}</td>
 												<td>{item.category}</td>
 												<td>{item.price}</td>
