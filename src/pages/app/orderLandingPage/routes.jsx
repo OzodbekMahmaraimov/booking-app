@@ -8,7 +8,6 @@ import LocationMap from './location-map'
 const MainOrder = () => {
   return (
     <Routes>
-      <Route path='/' element={<OrderLanding />} />
       <Route path='/departure-tame' element={<DeparutreTame />} />
       <Route path='/complate-taxi-booking' element={<ComplateTaxiBooking />} />
       <Route path='/details/:id/:category/:name' element={<Details />} />
