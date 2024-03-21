@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { landingBg, parkingImg } from "../../../../assets/hotel-page";
+// import { landingBg, parkingImg } from "../../../../assets/hotel-page";
 import NoLoginModal from "../modals/noLoginModal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -16,7 +16,7 @@ const RoomCard = ({
 }) => {
   const [modal, setModal] = useState(false)
   
-  const openModal = () => setModal(true)
+  // const openModal = () => setModal(true)
   const closeModal = () => setModal(false)
 
   const changeRoomCard = () => setRooms(2)

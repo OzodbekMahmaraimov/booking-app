@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import HotelHero from "./hero";
 import HotelServices from "./services";
 import HotelRooms from "./rooms";
@@ -6,15 +6,16 @@ import HotelGallary from "./gallary";
 import Footer from "./components/footer/Footer";
 import Navbar from "../app/orderLandingPage/navbar";
 import { FaHome } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
+import {IoRestaurant, IoCall } from "react-icons/io5";
 import { FiLogIn } from "react-icons/fi";
+import { RiHotelFill } from "react-icons/ri";
 
 const navdata = [
   { id: 1, icon: <FaHome color='black' />, name: 'Home', to: "/", isActive: false },
-  { id: 4, icon: <FiLogIn color='black' />, name: 'Restaurant', to: "/homerestourant", isActive: false },
-  { id: 5, icon: <FiLogIn color='black' />, name: 'hotel', to: "/hotel", isActive: true },
+  { id: 4, icon: <IoRestaurant  color='black' />, name: 'Restaurant', to: "/homerestourant", isActive: false },
+  { id: 5, icon: <RiHotelFill color='black' />, name: 'hotel', to: "/hotel", isActive: true },
   { id: 3, icon: <IoCall color='black' />, name: 'ContactUs', to: "", isActive: false },
-  { id: 7, icon: <FiLogIn color='black' />, name: 'Login', to: "loginSignUp", isActive: false }
+  { id: 7, icon: <FiLogIn color='black' />, name: 'Login', to: "/loginSignUp", isActive: false }
 ]
 
 function HotelMain() {

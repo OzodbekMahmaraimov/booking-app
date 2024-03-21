@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
-import home from "../../../../../assets/images/Vector (1).png";
-import line from "../../../../../assets/images/Line 10.png";
-import AdminDashboard from "./dashboard";
 import ResAdminSidebar from "../components/sidebar";
 import axios from "axios";
 import { MainDashboardNavigation } from "../../../../main-hotel-dashboard/components/navigation";
 
 const Order_LIst = () => {
-    const [selectedItems, setSelectedItems] = useState({});
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 5;
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const [order, setOrder] = useState(null);
 
     const navData = [

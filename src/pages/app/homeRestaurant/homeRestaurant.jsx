@@ -5,8 +5,9 @@ import './home.css';
 // components
 import { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
+import { IoRestaurant, IoCall } from "react-icons/io5";
 import { FiLogIn } from "react-icons/fi";
+import { RiHotelFill } from "react-icons/ri";
 import Navbar from '../orderLandingPage/navbar';
 import Home from '../../../components/layout/home/home';
 import Alert from '../../../components/layout/alert/Alert';
@@ -22,10 +23,11 @@ import InfoModal from '../../../components/layout/modal/InfoModal';
 import { styles } from '../../../util/style';
 
 
+
 const navdata = [
   { id: 1, icon: <FaHome color='black' />, name: 'Home', to: "/", isActive: false },
-  { id: 4, icon: <FiLogIn color='black' />, name: 'Restaurant', to: "/homerestourant" },
-  { id: 5, icon: <FiLogIn color='black' />, name: 'hotel', to: "/hotel", isActive: false },
+  { id: 4, icon: <IoRestaurant  color='black' />, name: 'Restaurant', to: "/homerestourant", isActive: true },
+  { id: 5, icon: <RiHotelFill color='black' />, name: 'hotel', to: "/hotel", isActive: false },
   { id: 3, icon: <IoCall color='black' />, name: 'ContactUs', to: "", isActive: false },
   { id: 7, icon: <FiLogIn color='black' />, name: 'Login', to: "/loginSignUp", isActive: false }
 ]

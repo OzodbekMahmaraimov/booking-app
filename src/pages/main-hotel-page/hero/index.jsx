@@ -17,7 +17,7 @@ function HotelHero() {
   const getHero = () => {
     axios.get(`${apiUrl}hotel-manage`)
     .then((res) => {
-      setHeroDes(res.data['manage-hotels-description'][0]);
+      setHeroDes(res.data['manage-hotels-description']);
     })
     .catch((err) => {
       console.log(err);
