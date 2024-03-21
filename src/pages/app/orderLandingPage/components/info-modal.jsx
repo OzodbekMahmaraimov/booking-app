@@ -17,13 +17,13 @@ const InfoModal = ({ modalImage, setModalImage, detailsOfficanvas }) => {
                     </div>
                     <div className='w-[60%] p-3'>
                         <p className='text-sm font-medium leading-7'>{detailsOfficanvas.description}</p>
-                        <p className='text-[1.5rem] mt-5 text-orange-500 tracking-wider font-semibold'>{detailsOfficanvas.btn1}</p>
+                        <p className='text-[1.5rem] mt-5 text-orange-500 tracking-wider font-semibold'>{detailsOfficanvas.btn1} RWF</p>
                     </div>
                 </div>
                 <div className='flex justify-between items-center border-y-2 border-gray-400 py-4 mt-8'>
                     <p className='text-[1.5rem] tracking-wider font-medium text-slate-700'>SUB TOTAL:</p>
                     <p className='text-[1.5rem] text-orange-500 tracking-wider font-semibold'>
-                        {Number(detailsOfficanvas.btn1) * Number(detailsOfficanvas.shoppingCount)}
+                        {Number(detailsOfficanvas.btn1) * Number(detailsOfficanvas.shoppingCount)} RWF
                     </p>
                 </div>
                 <button className='mt-5 border-2 border-gray-400 rounded-md py-2 px-7 font-semibold tracking-wider text-[1.1rem] bg-white hover:bg-orange-500 hover:text-white duration-200 hover:shadow-md hover:shadow-gray-500'>Checkout</button>
