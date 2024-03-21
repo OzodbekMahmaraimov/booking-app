@@ -16,6 +16,7 @@
       {
         "id": 1,
         "category": "hotel",
+        "category2": "coffee drinks",
         "name": "Galaxy Hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -42,6 +43,7 @@
       {
         "id": 2,
         "category": "restuarant",
+        "category2": "coffee drinks",
         "name": "BWOK RESTAURANT",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -68,6 +70,7 @@
       {
         "id": 3,
         "category": "hotel",
+        "category2": "main dishes",
         "name": "Mille colline hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -94,6 +97,7 @@
       {
         "id": 4,
         "category": "cafe",
+        "category2": "snacks",
         "name": "Indabo cafe",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -120,6 +124,7 @@
       {
         "id": 5,
         "category": "restuarant",
+        "category2": "soft drinks",
         "name": "Soy asian restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -146,6 +151,7 @@
       {
         "id": 6,
         "category": "cafe",
+        "category2": "alcoholic drinks",
         "name": "The hut cafe",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -172,6 +178,7 @@
       {
         "id": 7,
         "category": "restuarant",
+        "category2": "main dishes",
         "name": "BWOK-Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -198,6 +205,7 @@
       {
         "id": 8,
         "category": "restuarant",
+        "category2": "snacks",
         "name": "Soy-Asian Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -224,6 +232,7 @@
       {
         "id": 9,
         "category": "restuarant",
+        "category2": "soft drinks",
         "name": "Inka-steak Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -250,6 +259,7 @@
       {
         "id": 10,
         "category": "restuarant",
+        "category2": "alcoholic drinks",
         "name": "Povoire-noire Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -276,6 +286,7 @@
       {
         "id": 11,
         "category": "restuarant",
+        "category2": "coffee drinks",
         "name": "Cucina Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -302,6 +313,7 @@
       {
         "id": 12,
         "category": "restuarant",
+        "category2": "main dishes",
         "name": "Sundowner Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -328,6 +340,7 @@
       {
         "id": 13,
         "category": "hotel",
+        "category2": "snacks",
         "name": "Galaxy Hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -354,6 +367,7 @@
       {
         "id": 14,
         "category": "hotel",
+        "category2": "soft drinks",
         "name": "Classic Hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -380,6 +394,7 @@
       {
         "id": 15,
         "category": "hotel",
+        "category2": "alcoholic drinks",
         "name": "Mille colline hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -406,6 +421,7 @@
       {
         "id": 16,
         "category": "hotel",
+        "category2": "coffee drinks",
         "name": "M-Hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -432,6 +448,7 @@
       {
         "id": 17,
         "category": "hotel",
+        "category2": "main dishes",
         "name": "Heaven-Hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -458,6 +475,7 @@
       {
         "id": 18,
         "category": "hotel",
+        "category2": "snacks",
         "name": "Marriot-Hotel",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -484,6 +502,7 @@
       {
         "id": 19,
         "category": "cafe",
+        "category2": "soft drinks",
         "name": "Camellia Coffee",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -510,6 +529,7 @@
       {
         "id": 20,
         "category": "cafe",
+        "category2": "alcoholic drinks",
         "name": "Cactus Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -536,6 +556,7 @@
       {
         "id": 21,
         "category": "cafe",
+        "category2": "coffee drinks",
         "name": "Inka-steak Restaurant",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -562,6 +583,7 @@
       {
         "id": 22,
         "category": "cafe",
+        "category2": "main dishes",
         "name": "Indabo Cafe",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -588,6 +610,7 @@
       {
         "id": 23,
         "category": "cafe",
+        "category2": "snacks",
         "name": "Mocha caffee",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",
@@ -614,6 +637,7 @@
       {
         "id": 24,
         "category": "cafe",
+        "category2": "soft drinks",
         "name": "Pishon Caffee",
         "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg",
         "title": "Title name",

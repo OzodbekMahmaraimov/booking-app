@@ -36,7 +36,7 @@ const navdata = [
 const HomeRestaurant = () => {
   const [visaCard, setVisaCard] = useState(false);
   const [modal, setModal] = useState(false);
-  const [isPay, setIsPay] = useState(false);
+  const [isPay, setIsPay] = useState(true);
   const [modalImage, setModalImage] = useState(false);
   const [cardId, setCardId] = useState(null);
   const [count, setCount] = useState(0);
