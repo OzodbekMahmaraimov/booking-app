@@ -122,7 +122,6 @@ const OrderLanding = () => {
                   id={item}
                   image={item.img}
                   name={item.name}
-                  detailsLink='/details'
                 />
               </div>
             )) : (
