@@ -46,7 +46,7 @@ const Cards = ({ item, setItemsFilterData, setModalImage, setdetailsOfficanvas }
                 </h3>
             </div>
             <div className="flex justify-between items-start p-3 mt-2">
-                <DetailsBtn name={item.btn1} />
+                <DetailsBtn name={`${item.btn1} RWF`} />
                 <span onClick={() => {
                     setModalImage(true)
                     setdetailsOfficanvas(item)
