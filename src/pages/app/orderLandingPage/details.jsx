@@ -20,13 +20,13 @@ import InfoModal from "./components/info-modal";
 import { RiHotelFill } from "react-icons/ri";
 
 const data = [
-  { id: 1, img: cofeDetails, shoppingCount: 0, name: 'Latte(Hot)', countName: 'QTY:', btn1: '2500 RWF', btn2: 'Add to order' },
+  { id: 1, img: cofeDetails, shoppingCount: 0, name: 'Not Fount', description: 'Not Fount', countName: 'QTY:', btn1: '0', detailsFilterName: 'all', category: 'not fount' },
 ]
 
 // ****************************** Navbar uchun obj ******************************
 const navdata = [
   { id: 1, icon: <FaHome color='black' />, name: 'Home', to: "/", isActive: true },
-  { id: 4, icon: <IoRestaurant  color='black' />, name: 'Restaurant', to: "/homerestourant", isActive: false },
+  { id: 4, icon: <IoRestaurant color='black' />, name: 'Restaurant', to: "/homerestourant", isActive: false },
   { id: 5, icon: <RiHotelFill color='black' />, name: 'hotel', to: "/hotel", isActive: false },
   { id: 3, icon: <IoCall color='black' />, name: 'ContactUs', to: "", isActive: false },
   { id: 7, icon: <FiLogIn color='black' />, name: 'Login', to: "/loginSignUp", isActive: false }
@@ -35,6 +35,7 @@ const navdata = [
 const Details = () => {
   const [items, setItems] = useState(null)
   const [itemsFilterData, setItemsFilterData] = useState(null)
+  const [itemsFilterDataTwo, setItemsFilterDataTwo] = useState(null)
   const [itemsGallery, setItemsGallery] = useState(null)
   const [detailsOfficanvas, setdetailsOfficanvas] = useState(null)
   const [itemsCount, setItemsCount] = useState(0)
@@ -52,6 +53,7 @@ const Details = () => {
         const itemDetailsObject = JSON.parse(detailsId);
         setItems(itemDetailsObject)
         setItemsFilterData(itemDetailsObject.detailsInfo)
+        setItemsFilterDataTwo(itemDetailsObject.detailsInfo)
         setItemsGallery(itemDetailsObject.gallery)
       } catch (error) {
         console.error("JSON parsing error:", error);
@@ -60,7 +62,7 @@ const Details = () => {
   }, [])
 
   useEffect(() => {
-    setItemsCount(itemsFilterData && itemsFilterData.map(c => c.shoppingCount).reduce((a, b) => a + b))
+    // setItemsCount(itemsFilterData && itemsFilterData.map(c => c.shoppingCount).reduce((a, b) => a + b), 0)
   }, [itemsFilterData])
 
   // ============================ pagination ====================================
@@ -69,6 +71,22 @@ const Details = () => {
   const currentUsers = itemsFilterData ? itemsFilterData.slice(indexOfFirstUser, indexOfLastUser) : null;
   const totalPages = Math.ceil(itemsFilterData ? itemsFilterData.length / usersPerPage : 0);
   const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  const filterHandler = categoryName => {
+    if (categoryName === 'all') {
+      try {
+        setItemsFilterData(itemsFilterDataTwo ? itemsFilterDataTwo : data)
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      try {
+        setItemsFilterData(itemsFilterDataTwo ? itemsFilterDataTwo.filter(c => c.detailsFilterName === categoryName) : data)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }
 
   return (
     <div className="details-main-font">
@@ -97,7 +115,7 @@ const Details = () => {
       </div>
       {/* start */}
       <div className="max-w-[1100px] mx-auto mt-16">
-        <DetailsFilterMenu itemsCount={itemsCount} />
+        <DetailsFilterMenu filterHandler={filterHandler} itemsCount={itemsCount} />
       </div>
       <div className="max-w-[1350px] mx-auto my-16 flex justify-start items-start flex-wrap">
         {currentUsers ?
