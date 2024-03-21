@@ -11,7 +11,7 @@ const MainOrder = () => {
       <Route path='/departure-tame' element={<DeparutreTame />} />
       <Route path='/complate-taxi-booking' element={<ComplateTaxiBooking />} />
       <Route path='/details/:id/:category/:name' element={<Details />} />
-      <Route path='/map-page' element={<LocationMap />} />
+      <Route path='/map-page/:name' element={<LocationMap />} />
     </Routes>
   )
 }

@@ -47,7 +47,11 @@ const LocationMap = () => {
 
         fetch(geoCodeUrl)
             .then(response => response.json())
-            .then(data => setAddressLoc(data.response.GeoObjectCollection.featureMember[0].GeoObject.metaDataProperty.GeocoderMetaData.text))
+            .then(data => {
+                let address = data.response.GeoObjectCollection.featureMember[0].GeoObject.metaDataProperty.GeocoderMetaData.text
+                setAddressLoc(address)
+                localStorage.setItem('startLocation', address)
+            })
             .catch(() => console.error('Xatolik yuz berdi!'));
     }
 

@@ -16,7 +16,7 @@ const FirstSection = ({heading, headingTwo, text}) => {
                     {headingTwo}
                 </h5>
                 <div className='mt-10 text-center'>
-                    <Button link='/map-page' name={"View on map"} />
+                    <Button link='/map-page/location' name={"View on map"} />
                 </div>
             </div>
             <div className='w-[60%] hidden lg:flex justify-center items-center'>
