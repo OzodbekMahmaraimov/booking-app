@@ -1,34 +1,25 @@
-import {  Select, Flex, Progress } from "antd";
+import { Select, Flex, Progress } from "antd";
 
 import homeIcon from "../../../../../../assets/img/Vector (2).png";
 import blackLine from "../../../../../../assets/img/Line 10.png";
 import coffeImg from "../../../../../../assets/img/Latte 3.png";
 import odamcha from "../../../../../../assets/img/fiacre-emoji 1.png";
+import { MainDashboardNavigation } from "../../../../../main-hotel-dashboard/components/navigation";
 
 const Right = () => {
 
 
 
-const handleChange = (value) => {
-  console.log(`Selected ${value}`);
-};
+	const handleChange = (value) => {
+		console.log(`Selected ${value}`);
+	};
 
 
 	return (
-		<div className="px-4 w-full">
+		<div className=" w-full h-max">
 			<div>
 				<div className="flex items-center justify-between py-3 px-4">
-					<div className="flex items-center gap-1">
-						<div>
-							<img src={homeIcon} alt="" />
-						</div>
-						<div>
-							<img src={blackLine} alt="" />
-						</div>
-						<div>
-							<p className="text-black cursor-pointer text-xl">Home</p>
-						</div>
-					</div>
+					<MainDashboardNavigation />
 					<div className="flex items-center gap-2">
 						<input
 							type="text"
@@ -127,15 +118,15 @@ const handleChange = (value) => {
 							{/* Loyal Customers */}
 							<div className="w-[1fr] shadow-xl rounded-xl p-6 h-[2fr]">
 								<div>
-								<div className="flex items-center gap-3">
-							{/* orange line  */}
-							<div className="w-[10px] rounded-xl h-[50px] bg-orange-400  "></div>
-							{/* flex-col words */}
-							<div className="flex flex-col justify-center gap-2">
-								<p className="text-xl">Loyal Customers</p>
-								<p className="text-base text-[#00000099]">These are our loay customers</p>
-							</div>
-						</div>
+									<div className="flex items-center gap-3">
+										{/* orange line  */}
+										<div className="w-[10px] rounded-xl h-[50px] bg-orange-400  "></div>
+										{/* flex-col words */}
+										<div className="flex flex-col justify-center gap-2">
+											<p className="text-xl">Loyal Customers</p>
+											<p className="text-base text-[#00000099]">These are our loay customers</p>
+										</div>
+									</div>
 								</div>
 								<div className="flex items-center gap-2 mt-20 mb-32 ml-24 mr-32">
 									<img src={odamcha} alt="" />
@@ -148,37 +139,37 @@ const handleChange = (value) => {
 							{/* Level Work */}
 							<div className="w-[1fr] shadow-xl rounded-xl p-6 h-[2fr]">
 								<div>
-								<div className="flex items-center gap-3">
-							{/* orange line  */}
-							<div className="w-[10px] rounded-xl h-[50px] bg-orange-400  "></div>
-							{/* flex-col words */}
-							<div className="flex flex-col justify-center gap-2">
-							<div className="flex justify-between gap-32">
-  <p className="text-xl">Sales Summary</p>
-  <Select defaultValue="Week" style={{ width: 120 }} onChange={handleChange}>
-    <Select.Option value="Week">Week</Select.Option>
-    <Select.Option value="Month">Month</Select.Option>
-    <Select.Option value="Year">Year</Select.Option>
-  </Select>
+									<div className="flex items-center gap-3">
+										{/* orange line  */}
+										<div className="w-[10px] rounded-xl h-[50px] bg-orange-400  "></div>
+										{/* flex-col words */}
+										<div className="flex flex-col justify-center gap-2">
+											<div className="flex justify-between gap-32">
+												<p className="text-xl">Sales Summary</p>
+												<Select defaultValue="Week" style={{ width: 120 }} onChange={handleChange}>
+													<Select.Option value="Week">Week</Select.Option>
+													<Select.Option value="Month">Month</Select.Option>
+													<Select.Option value="Year">Year</Select.Option>
+												</Select>
 
-</div>
+											</div>
 
-								<p className="text-base text-[#00000099]">Sales summary gives us overview of how we sold</p>
-							</div>
-						</div>
+											<p className="text-base text-[#00000099]">Sales summary gives us overview of how we sold</p>
+										</div>
+									</div>
 								</div>
 								<div className="flex items-center justify-center">
 
-								<div className="flex items-center gap-2 mt-4">
-								<Flex gap="small" className="flex flex-col" wrap="wrap">
-    <Progress type="dashboard" percent={75} />
-    <Progress type="dashboard" percent={15}   />
-  </Flex>
-		<Flex gap="small" className="flex flex-col" wrap="wrap">
-    <Progress type="dashboard" percent={20} />
-    <Progress type="dashboard" percent={45}   />
-  </Flex>
-								</div>
+									<div className="flex items-center gap-2 mt-4">
+										<Flex gap="small" className="flex flex-col" wrap="wrap">
+											<Progress type="dashboard" percent={75} />
+											<Progress type="dashboard" percent={15} />
+										</Flex>
+										<Flex gap="small" className="flex flex-col" wrap="wrap">
+											<Progress type="dashboard" percent={20} />
+											<Progress type="dashboard" percent={45} />
+										</Flex>
+									</div>
 								</div>
 							</div>
 						</div>

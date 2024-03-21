@@ -812,16 +812,17 @@
           "role": "hotel_manager"
         }
       ],
-      "restaurantManagers": {
-        "id": 1,
-        "firstName": "Asilbek",
-        "lastName": "Sagdullayev",
-        "phone": "882000923",
-        "resName": "Soy",
-        "email": "rest@gmail.com",
-        "password": "222",
-        "role": "restaurant_manager"
-      },
+      "restaurantManagers": [
+        {
+          "id": 1,
+          "firstName": "Asilbek",
+          "lastName": "Sagdullayev",
+          "phone": "882000923",
+          "email": "rest@gmail.com",
+          "password": "222",
+          "role": "restaurant_manager"
+        }
+      ],
       "superadmin": [
         {
           "id": 1,
@@ -884,16 +885,14 @@
         "Pending payments": false
       }
     ],
-    "manage-hotels-description": [
-      {
-        "id": 1,
-        "description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
-        "hotel-adress": "KIyovu -kigali",
-        "hotel-stars": 4,
-        "hotel-img": "/image.png",
-        "hotel-priice": 17000
-      }
-    ],
+    "manage-hotels-description": {
+      "id": 1,
+      "description": "Hotel des Milles Collines is the four stars hotel located in the center of the kigali city its beauty lies into its amazing oasis. In 2009 this hotel won the award of the best hotel of the year in Rwanda.",
+      "hotel-adress": "KIyovu -kigali",
+      "hotel-stars": 4,
+      "hotel-img": "/image.png",
+      "hotel-priice": 17000
+    },
     "Services-hotel-offers": [
       {
         "id": 1,
