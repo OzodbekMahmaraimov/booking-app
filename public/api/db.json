@@ -29,7 +29,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "coffeDrinks",
             "category": "Complete payment"
           }
@@ -38,6 +38,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -57,7 +61,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "coffeDrinks",
             "category": "Pending payment"
           }
@@ -66,6 +70,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -85,7 +93,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "coffeDrinks",
             "category": "Pending payment"
           }
@@ -94,6 +102,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -113,7 +125,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "coffeDrinks",
             "category": "Pending payment"
           }
@@ -122,6 +134,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -141,7 +157,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "coffeDrinks",
             "category": "Pending payment"
           }
@@ -150,6 +166,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -169,7 +189,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "mainDashes",
             "category": "Pending payment"
           }
@@ -178,6 +198,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -197,7 +221,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "mainDashes",
             "category": "Complete payment"
           }
@@ -206,6 +230,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -225,7 +253,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "mainDashes",
             "category": "Complete payment"
           }
@@ -234,6 +262,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -253,7 +285,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "mainDashes",
             "category": "Complete payment"
           }
@@ -262,6 +294,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -281,7 +317,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "mainDashes",
             "category": "Complete payment"
           }
@@ -290,6 +326,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -309,7 +349,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "snacks",
             "category": "Complete payment"
           }
@@ -318,6 +358,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -337,7 +381,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "snacks",
             "category": "Complete payment"
           }
@@ -346,6 +390,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -365,7 +413,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "snacks",
             "category": "Complete payment"
           }
@@ -374,6 +422,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -393,7 +445,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "snacks",
             "category": "Complete payment"
           }
@@ -402,6 +454,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -421,7 +477,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "snacks",
             "category": "Pending payment"
           }
@@ -430,6 +486,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -449,7 +509,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "softDrinks",
             "category": "Pending payment"
           }
@@ -458,6 +518,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -477,7 +541,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "softDrinks",
             "category": "Pending payment"
           }
@@ -486,6 +550,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -505,7 +573,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "softDrinks",
             "category": "Pending payment"
           }
@@ -514,6 +582,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -533,7 +605,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "softDrinks",
             "category": "Pending payment"
           }
@@ -542,6 +614,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -561,7 +637,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "softDrinks",
             "category": "Complete payment"
           }
@@ -570,6 +646,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -589,7 +669,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "alcoholicDrinks",
             "category": "Complete payment"
           }
@@ -598,6 +678,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -617,7 +701,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "alcoholicDrinks",
             "category": "Complete payment"
           }
@@ -626,6 +710,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -645,7 +733,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "alcoholicDrinks",
             "category": "Complete payment"
           }
@@ -654,6 +742,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       },
@@ -673,7 +765,7 @@
             "name": "Latte(Hot)",
             "description": "This is the system that links the tourists and hospitality facilities owners. this is done in such way that people can view the nearby their location Hospitality facilitites and be able to access their services aswell as pay on the system.",
             "countName": "QTY:",
-            "btn1": "2500 RWF",
+            "btn1": "2500",
             "detailsFilterName": "alcoholicDrinks",
             "category": "Complete payment"
           }
@@ -682,6 +774,10 @@
           {
             "id": 1,
             "img": "https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+          },
+          {
+            "id": 2,
+            "img": "https://scdn.aro.ie/Sites/50/imperialhotels2022/uploads/images/PanelImages/General/156757283_Bedford_Hotel__F_B__Botanica_Restaurant_and_Bar__General_View._4500x3000.jpg"
           }
         ]
       }
