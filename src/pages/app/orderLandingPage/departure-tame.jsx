@@ -35,7 +35,7 @@ const DeparutreTame = () => {
                     leftText='Book a car'
                     rightText='Back to home page'
                     button=''
-                    leftLink='/complate taxi-booking'
+                    leftLink='/complate-taxi-booking'
                     rightLink='/'
                 />
             </div>
