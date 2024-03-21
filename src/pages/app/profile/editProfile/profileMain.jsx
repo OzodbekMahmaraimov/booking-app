@@ -11,7 +11,7 @@ const navdata = [
 	{ id: 4, icon: <FiLogIn color='black' />, name: 'Restaurant', to: "/homerestourant" },
 	{ id: 5, icon: <FiLogIn color='black' />, name: 'hotel', to: "/hotel" },
 	{ id: 3, icon: <IoCall color='black' />, name: 'ContactUs', to: "" },
-	{ id: 7, icon: <FiLogIn color='black' />, name: 'Login', to: "loginSignUp" }
+	{ id: 7, icon: <FiLogIn color='black' />, name: 'Login', to: "/loginSignUp" }
   ]
 
 const ProfileMain = () => {
