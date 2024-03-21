@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DetailsFilterMenu from "../detailsFiltermenu/detailsFilterMenu";
 import Cards from "./Cards";
+import Pagination from '../../../pages/app/orderLandingPage/components/pagination'; // Import your Pagination component here
 import { apiUrl } from '../../../Api';
 
 const Details = ({ setModalImage, setCardId, setCount }) => {
     const [items, setItems] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [itemsPerPage] = useState(6); // Set how many items you want per page
 
     useEffect(() => {
         const fetchItems = async () => {
@@ -19,7 +22,16 @@ const Details = ({ setModalImage, setCardId, setCount }) => {
         fetchItems();
     }, []);
 
-    const itemsCount = items.reduce((acc, item) => acc + (item.shoppingCount || 0), 0);
+    // Calculate the current items
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+
+    // Calculate total pages
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+
+    // Change page
+    const paginate = pageNumber => setCurrentPage(pageNumber);
 
     return (
         <div className="details-main-font">
@@ -30,10 +42,10 @@ const Details = ({ setModalImage, setCardId, setCount }) => {
                 </button>
             </div>
             <div className="max-w-[1100px] mx-auto mt-16">
-                <DetailsFilterMenu itemsCount={itemsCount} />
+                <DetailsFilterMenu itemsCount={items.length} />
             </div>
             <div className="max-w-[1350px] mx-auto my-16 flex justify-start items-start flex-wrap">
-                {items.map((item) => (
+                {currentItems.map((item) => (
                     <div key={item.id} className="p-7 w-full md:w-1/2 lg:w-1/3">
                         <Cards
                             setCount={setCount}
@@ -46,6 +58,7 @@ const Details = ({ setModalImage, setCardId, setCount }) => {
                     </div>
                 ))}
             </div>
+            <Pagination currentPage={currentPage} totalPages={totalPages} paginate={paginate} />
         </div>
     );
 };
