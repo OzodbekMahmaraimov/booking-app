@@ -10,6 +10,7 @@ import axios from "axios";
 import ItemListNew from "../components/modal";
 
 import { apiUrl } from "../../../../../Api";
+import { MainDashboardNavigation } from "../../../../main-hotel-dashboard/components/navigation";
 
 
 const ItemList = () => {
@@ -44,7 +45,7 @@ const ItemList = () => {
 			setItemid(apiItems.length);
 		} catch (error) {
 			console.error("An error occurred while fetching the items." + error);
-		} 
+		}
 	};
 	// ----- ******* get data ******* ----- //
 
@@ -56,7 +57,7 @@ const ItemList = () => {
 
 		if (selectedItems > 0) {
 			axios.delete(`${apiUrl}itemlist/${selectedItems}`,)
-			.then((response) => {
+				.then((response) => {
 					console.log(selectedItems)
 					console.log('Serverdan qaytgan javob:', response.data);
 				})
@@ -133,19 +134,9 @@ const ItemList = () => {
 			<div className="w-[25%]">
 				<ResAdminSidebar />
 			</div>
-			<div className="w-[75%] py-3 px-4 h-max">
-				<div className="flex  mt-5 h-max">
-					<div className="flex w-full items-center gap-1">
-						<div>
-							<img src={homeIcon} alt="home icon" />
-						</div>
-						<div>
-							<img src={blackLine} alt="separator line" />
-						</div>
-						<div>
-							<p className="text-black cursor-pointer text-xl">Home</p>
-						</div>
-					</div>
+			<div className="w-[75%] h-max">
+				<div className="flex  mt-5 h-max justify-between">
+					<MainDashboardNavigation />
 					<div className="flex items-center gap-2">
 						<input
 							type="text"

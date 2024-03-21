@@ -6,6 +6,7 @@ import blackLine from "../../../../../../assets/img/Line 10.png";
 import pencil from "../../../../../../assets/img/Vector (6).png";
 import { SearchInput } from ".";
 import axios from "axios";
+import { MainDashboardNavigation } from "../../../../../main-hotel-dashboard/components/navigation";
 
 const Right = () => {
 	const [name, setName] = useState("");
@@ -16,22 +17,22 @@ const Right = () => {
 	const inputRefName = useRef(null);
 	const inputRefPhoneNumber = useRef(null);
 	const inputRefEmail = useRef(null);
-  const [response,setResponse] = useState('')
+	const [response, setResponse] = useState('')
 
-  useEffect(() => {
-    fetchData();
-}, []);
-  const fetchData = async () => {
-    try {
-      const response = await axios.get("http://localhost:3000/adminme/");
-      setResponse(response.data.managers.restaurantManagers); // Log the response data structure to see how to access the desired data
+	useEffect(() => {
+		fetchData();
+	}, []);
+	const fetchData = async () => {
+		try {
+			const response = await axios.get("http://localhost:3000/adminme/");
+			setResponse(response.data.managers.restaurantManagers); // Log the response data structure to see how to access the desired data
 
-    } catch (error) {
-      message.error("Ma'lumot topilmadi");
-        console.error("Malumot kelishida hatolik bor:", error);
-    }
-};
-const handleImageChange = (info) => {
+		} catch (error) {
+			message.error("Ma'lumot topilmadi");
+			console.error("Malumot kelishida hatolik bor:", error);
+		}
+	};
+	const handleImageChange = (info) => {
 		if (info.file.status === "done") {
 			setSelectedImage(info.file.originFileObj);
 		}
@@ -61,33 +62,23 @@ const handleImageChange = (info) => {
 	};
 
 	return (
-		<div className="px-4 w-full">
+		<div className=" w-full">
 			<div>
 				<div className="flex items-center justify-between py-3 px-4">
-					<div className="flex items-center gap-1">
-						<div>
-							<img src={homeIcon} alt="" />
-						</div>
-						<div>
-							<img src={blackLine} alt="" />
-						</div>
-						<div>
-							<p className="text-black cursor-pointer text-xl">Restaurant Manager Dashboard</p>
-						</div>
-					</div>
+					<MainDashboardNavigation />
 					<div className="flex  mt-5">
-					<div className="flex items-center gap-2">
-						<input
-							type="text"
-							className="w-[500px] outline-none px-3 py-3 rounded-xl"
-							placeholder="Search"
+						<div className="flex items-center gap-2">
+							<input
+								type="text"
+								className="w-[500px] outline-none px-3 py-3 rounded-xl"
+								placeholder="Search"
 							// onChange={handleSearchChange}
-						/>
-						<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
-							Search
-						</button>
+							/>
+							<button className="px-4 py-2.5  text-white border-[2px] border-solid border-white rounded-xl">
+								Search
+							</button>
+						</div>
 					</div>
-				</div>
 				</div>
 				<div className="bg-white m-2 p-5 container rounded-xl">
 					<div className="flex items-center gap-3 justify-center mt-5 mb-5">
@@ -106,7 +97,7 @@ const handleImageChange = (info) => {
 								value={name}
 								onChange={(e) => setName(e.target.value)}
 								className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-                placeholder={`${response.firstName}`}
+								placeholder={`${response.firstName}`}
 							/>
 							<img
 								className="w-8 cursor-pointer"
@@ -141,9 +132,8 @@ const handleImageChange = (info) => {
 								value={email}
 								style={{ outline: "none" }}
 								onChange={handleEmailChange}
-								className={`w-[500px] px-3 py-3 rounded-xl border ${
-									validEmail ? "border-green-500" : "border-red-500"
-								}`}
+								className={`w-[500px] px-3 py-3 rounded-xl border ${validEmail ? "border-green-500" : "border-red-500"
+									}`}
 								placeholder={`${response.email}`}
 							/>
 
@@ -167,7 +157,7 @@ const handleImageChange = (info) => {
 							<input
 								type="password"
 								className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-                placeholder={`${response.password}`}
+								placeholder={`${response.password}`}
 							/>
 							<img
 								className="w-8 cursor-pointer"
@@ -181,7 +171,7 @@ const handleImageChange = (info) => {
 							<input
 								type="password"
 								className="w-[500px] text-orange-500 outline-none px-3 py-3 rounded-xl"
-                placeholder={`${response.resName}`}
+								placeholder={`${response.resName}`}
 							/>
 							<img
 								className="w-8 cursor-pointer"

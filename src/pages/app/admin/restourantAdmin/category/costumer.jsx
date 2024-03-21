@@ -7,6 +7,7 @@ import { MainDashboardManageRooms } from "../../../../main-hotel-dashboard/magag
 import AdminDashboard from "./dashboard";
 import ResAdminSidebar from "../components/sidebar";
 import axios from "axios";
+import { MainDashboardNavigation } from "../../../../main-hotel-dashboard/components/navigation";
 
 
 
@@ -52,24 +53,14 @@ export const Customer = () => {
 
 
 	return (
-		<div className="w-full bg-[#F46A06]">
+		<div className="w-full bg-[#F46A06] h-screen">
 			<div className="flex">
 				<div className="w-[25%]">
 					<ResAdminSidebar />
 				</div>
 				<div className="w-[75%]">
-					<div className="flex mt-10 p-3">
-						<div className="flex w-full items-center gap-1">
-							<div>
-								<img src={home} alt="home icon" />
-							</div>
-							<div>
-								<img src={line} alt="separator line" />
-							</div>
-							<div>
-								<p className="text-black cursor-pointer text-xl">Home</p>
-							</div>
-						</div>
+					<div className="flex mt-10  justify-between">
+						<MainDashboardNavigation/>
 						<div className="flex items-center gap-2">
 							<input
 								type="text"
@@ -83,7 +74,7 @@ export const Customer = () => {
 						</div>
 					</div>
 					<div>
-						<div className=" mt-6 ml-4 bg-white rounded-xl border-[10px] border-white-600 px-1 py-4">
+						<div className=" mt-5 bg-white rounded-xl border-[10px] border-white-600 px-1 py-4">
 							<table className="mt-4 w-full ml-1 text-center rounded-lg">
 
 								<thead>
