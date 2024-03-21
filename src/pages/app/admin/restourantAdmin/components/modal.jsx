@@ -39,7 +39,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
   };
 
   const handleSave = () => {
-    if (item.name == null|| item.quantity == null || item.price == null || item.description == null || item.category == null) {
+    if (!item.name|| !item.quantity || !item.price || !item.description || !item.category) {
       alert("Iltimos, barcha maydonlarni to'ldiring."); // Agar maydonlar to'liq to'ldirilmagan bo'lsa, xabar chiqaradi
       return; // Funktsiyani shu yerda to'xtatamiz
     }
@@ -47,6 +47,7 @@ const ItemListNew = ({ closeModal, addItem }) => {
     addItem(newItem);
     closeModal();
   };
+
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal">
@@ -67,7 +68,8 @@ const ItemListNew = ({ closeModal, addItem }) => {
             id="quantity"
             type="number"
             name="quantity"
-            placeholder="Item Quantity"
+            place
+            holder="Item Quantity"
             className="mt-1 mb-3 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none"
             value={item.quantity}
             onChange={handleChange}
