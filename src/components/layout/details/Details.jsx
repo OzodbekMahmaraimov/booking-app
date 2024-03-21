@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DetailsFilterMenu from "../detailsFiltermenu/detailsFilterMenu";
 import Cards from "./Cards";
-import Pagination from '../../../pages/app/orderLandingPage/components/pagination'; // Import your Pagination component here
 import { apiUrl } from '../../../Api';
+import Pagination from '../../../pages/app/orderLandingPage/components/pagination'
 
 const Details = ({ setModalImage, setCardId, setCount }) => {
     const [items, setItems] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(6); // Set how many items you want per page
+    const [itemsPerPage] = useState(6);
 
     useEffect(() => {
         const fetchItems = async () => {
@@ -22,16 +22,15 @@ const Details = ({ setModalImage, setCardId, setCount }) => {
         fetchItems();
     }, []);
 
-    // Calculate the current items
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
 
-    // Calculate total pages
     const totalPages = Math.ceil(items.length / itemsPerPage);
 
-    // Change page
     const paginate = pageNumber => setCurrentPage(pageNumber);
+
+    const itemsCount = items.reduce((acc, item) => acc + (item.shoppingCount || 0), 0);
 
     return (
         <div className="details-main-font">
@@ -42,7 +41,7 @@ const Details = ({ setModalImage, setCardId, setCount }) => {
                 </button>
             </div>
             <div className="max-w-[1100px] mx-auto mt-16">
-                <DetailsFilterMenu itemsCount={items.length} />
+                <DetailsFilterMenu itemsCount={itemsCount} />
             </div>
             <div className="max-w-[1350px] mx-auto my-16 flex justify-start items-start flex-wrap">
                 {currentItems.map((item) => (
